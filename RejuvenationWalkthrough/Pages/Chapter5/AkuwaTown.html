@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Five - Akuwa Town</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([],[]);encountersCreate([['Akuwa Town', ['Grass', 'Fishing', 'Events']]],[0]);shopsSet([],[]);globalrunOnLoad('Fifth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Akuwa Town
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Akuwa Town<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/AkuwaTown/AkuwaTown.png">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        Once you enter Akuwa Town, you and Aelita will find that the town is completely empty aside from the old man laying down on the road. Aelita will task you with getting the defibrillator, but we can do a few other things before we get to the old man. Walk south past the Pokemon center and then go right. You'll find an abandoned egg that contains a <span class="ImportantName">Ducklett.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/AkuwaTown/DucklettEgg.png"></span></span> Head back to the top left corner, and you'll find TRUCKGUY and in the house behind him a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell18.png"></span></span> From TRUCKGUY, head south and onto the beach. You can battle <span class="ImportantName">Corsola<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/AkuwaTown/Corsola.png"></span></span> here if you interact with it. Importantly, if you have a Pokemon with the move Thief (Mighthyena is a good choice), you can farm Heart Scales from the Luvdisc here with the Good Rod. Head up along the beach and you'll find a building. Next to the building is another <span class="ZygardeCell">Zygarde Cell<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell17.png"></span></span> and if you found <span class="ImportantName">Ditto<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/AkuwaTown/Ditto.png"></span></span> four times before this, it'll be here for you to battle and catch. We'll need it for a few sidequests.
+        <br><br>
+        That's all we can do since there's no one else here. Head back to the Pokemon Center, and you can heal yourself up with the machine in the back and grab the <span class="ImportantName">defibrillator<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/AkuwaTown/Defib.png"></span></span> while you're here. Go back out and give it to Aelita, who will revive the old man. He'll be grumpy about being woken up, and you and Aelita can check out the town a bit more. Head back to the lab by the beach and talk to Aelita again, and she'll suggest to meet up in the Akuwa Aquarium in the northern part of town. Heading to the aquarium will trigger the story to progress, and we won't be able to return here for quite a while, so don't go there yet. We'll wrap up a few sidequests here first, including getting a mystery Pokemon.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter5/Route4.html">&lt&lt Route 4</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter5/SideActivities.html">Side Activities &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

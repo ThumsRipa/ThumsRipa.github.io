@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - Goldenwood Forest (Continued)</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([4]);encountersCreate([['Route 1', ['Grass', 'Fishing', 'Events']],['Goldenwood Forest', ['Grass', 'Fishing', 'Shadows']], ['Goldenwood Cave', ['Cave', 'Fishing', 'Events']]], [0,0]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="RouteOneTxT">Route 1</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodForestTxT">Goldenwood Forest</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodCaveTxT">Goldenwood Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodGroveTxT">Goldenwood Grove</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route1GrassTxT">Route 1 Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodForestEncTxT">Goldenwood Forest</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodCaveEncTxT">Goldenwood Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodEventsTxT">Route 1 & Goldenwood Forest - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodShadowsTxT">Shadow Pokemon</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Locations: Route 1 and Goldenwood Forest</a><br><br>
+    <a href="../Information/FieldEffects-Telluric.html#Cave" target="_blank" class="encounterDetailsSidebar">Cave<br>Location: Goldenwood Cave</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Goldenwood Forest
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Goldenwood Forest - Team Xen Attack<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="GoldenwoodTrainersButton" onclick="showTrainerTable('GoldenwoodTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Goldenwood2.png">
+        <br>
+        <table class="TrainerTable" id="GoldenwoodTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenNickoliTxT">Team Xen Nickoli<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenNickoli.png"></span></a></td>
+            <td>Goldenwood Forest<br>(Goldenwood Cave Entrance)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenLeelaTxT">Team Xen Leela<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenLeela.png"></span></a></td>
+            <td>Goldenwood Forest<br>(North of the Lake, by a Wooden Shrine)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenShielaTxT">Team Xen Shiela<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenShiela.png"></span></a></td>
+            <td>Goldenwood Forest<br>(Northeast of the Lake)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenDaryleTxT">Team Xen Daryle<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenDaryle.png"></span></a></td>
+            <td>Goldenwood Forest<br>(Southeast of the Lake)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenHenrieTxT">Team Xen Henrie<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenHenrie.png"></span></a></td>
+            <td>Goldenwood Forest<br>(South of the Lake)</td>
+          </tr>
+        </table>
+        <br>
+        Once you emerge from Goldenwood Cave, you and Melia will find two trainers that you battled in Goldenwood Cave previously. The old lady will walk up, and you'll find that Team Xen had attacked Goldenwood Forest, and their aim is to kidnap Melia. One of the Team Xen Grunts will send out an oddly colored Meowth, which he reveals is a Shadow Pokemon. Melia will tell you to open the brifcase, but before you enter the code she said, you can enter 3845 to get an Ability Capsule. This is a handy item that let's you change your Pokemon's ability, even into their hidden one. Now enter 6489 to get yourself a Snag Machine and some Poke Balls. Melia will tell you to try and catch the Meowth, so once you get into battle against <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenNickoliName">Team Xen Nickoli,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenNickoli.png"></span></a> go ahead and throw a Poke Ball at it.
+        <br><br>
+        <div class="ingameExplanation">
+          A Note about Shadow Pokemon: Shadow Pokemon make a return from Pokemon Colosseum and Pokemon XD: Gale of Darkness. Much of the mechanics remain the same, with these Pokemon having Shadow moves that are super effective against every type except Shadow. As you use Shadow Pokemon, their Heart Gauge will decrease, and eventually their hearts will be fully open. We will be able to purify them later. Once a Shadow Pokemon is purified, they will learn a set move that the Pokemon can not usually learn. For example, the Shadow Meowth we just cause will be able to learn the move Beat Up when it is purified. If you have the patience to drain the Heart Gauge, they can be worthwhile Pokemon to train.
+        </div>
+        <br>
+        Watch the small cutscene play, and Melia will join you once again. She won't battle with you this time around, but if you need to heal just turn around and talk to her. Head down towards the park, and on the left side near the lake is <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenLeelaName">Team Xen Leela,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenLeela.png"></span></a> who has a Shadow Finneon. From there, head on over to the right and battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenShielaName">Team Xen Shiela.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenShiela.png"></span></a>
+        <br><br>
+        Go past a few Xen Grunts that won't battle you until you meet <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenDaryleName">Team Xen Daryle.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenDaryle.png"></span></a> Just a little bit past him, as an optional battle, you can beat <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenHenrieName">Team Xen Henrie<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/XenHenrie.png"></span></a> and take his Shadow Cacnea.
+        <br><br>
+        We're finally back where we started. With the exit to Route 1 blocked, the only way is to move up the stairs behind the sign. Talk to Melia to heal up your Pokemon, and head upstairs and into a Double Battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/VSEliSharon.png">
+        <div class="eventTrainerName">
+          Misfortunate Duo Eli and Sharon
+          <span class="eventTrainerTooltip">This is a relatively straightforward battle. Melia will only have one Pokemon, so you should focus on one of the two sides so that when Melia goes down it will be a 1v1. Eli and Sharon don't have any particularly threatening Pokemon, and their levels are about the same as the Melia fight, so you can out level them if needed.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/198.png">
+              <br>
+              Murkrow, Level 12
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Wing Attack</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/200.png">
+              <br>
+              Misdreavus, Level 12
+            </th>
+            <td rowspan="4">Ghost</td>
+            <td>Shadow Sneak</td>
+          </tr>
+          <tr><td>Pursuit</td><td>Psywave</td></tr>
+          <tr>
+            <td rowspan="2">Flying</td><td>Confuse Ray</td>
+            <td>Spite</td>
+          </tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/434.png">
+              <br>
+              Stunky, Level 12
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Poison Gas</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/431.png">
+              <br>
+              Glameow, Level 12
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Feint Attack</td>
+          </tr>
+          <tr><td>Smoke Screen</td><td>Scratch</td></tr>
+          <tr>
+            <td rowspan="2">Poison</td><td>Fury Swipes</td>
+            <td>Hypnosis</td>
+          </tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">156
+            </td>
+          </tr>
+        </table>
+        <br>
+        After that battle, Eli and Sharon will get distracted by the Shiny Garbodor from Gearen Sewers. You'll have to walk up and talk to Zetta. Zetta will explain the situation, then challenge you to a battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/VSZetta.png">
+        <div class="eventTrainerName">
+          Xen Executive Zetta
+          <span class="eventTrainerTooltip">You can catch the Alolan Grimer to get it out of the way. Oddish and Cyndaquil shouldn't be too threatening, especially if you have Pokemon that are supereffective against them. Be careful of Minior, as it can Self-Destruct and possibly take one of your Pokemon down with it. Type:Null has pretty high defensive stats, so it might take a bit to whittle it down. Like the other fights, you can out level and take out most of Zetta's team from higher stats alone.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/088_1_shadow.png">
+              <br>
+              Shadow Grimer (Alola), Level 11
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Blitz</td>
+          </tr>
+          <tr><td>Shadow Rush</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/774_6.png">
+              <br>
+              Minior, Level 12
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Rollout</td>
+          </tr>
+          <tr><td>Defense Curl</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Confuse Ray</td></tr>
+          <tr><td>Self-Destruct</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/155.png">
+              <br>
+              Cyndaquil, Level 12
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Flame Wheel</td>
+          </tr>
+          <tr><td>Quick Attack</td></tr>
+          <tr><td>Aerial Ace</td></tr>
+          <tr><td>Smokescreen</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/043.png">
+              <br>
+              Oddish, Level 13
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Acid</td>
+          </tr>
+          <tr><td>Mega Drain</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Sleep Powder</td></tr>
+          <tr><td>Synthesis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/772.png">
+              <br>
+              Type:Null, Level 13
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Double Hit</td>
+          </tr>
+          <tr><td>Pursuit</td></tr>
+          <tr><td>Aerial Ace</td></tr>
+          <tr><td>Hidden Power: Fighting</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">286
+            </td>
+          </tr>
+        </table>
+        <br>
+        After you beat Zetta, he will call upon the Dimensional Rift to swallow you. Melia tries to grab on, but you are taken into the Gyarados.
+        <br>
+        <p class="subsectionHeader">Dimensional Rift</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/DimensionalRift.png">
+        <br>
+        Inside the Dimensional Rift is a pretty straightforward path. Head along the path, but before you step onto the platform, you can heal up with the star and the <span class="ImportantName">glowing red orb<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/CyberNav.png"></span></span> will allow your Cybernav to view the RiftDex, giving you access to the stats of Rift Pokemon. When you're ready, step onto the platform and battle Rift Gyarados in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#DimensionalField" target="_blank">Dimensional Field.</a>
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/VSGyarados.png">
+        <div class="eventTrainerName">
+          Dimensional Rift Gyarados
+          <span class="eventTrainerTooltip">This is basically a 6 vs 1 battle. Rift Gyarados is a pure Water type, so Grass types will actually be effective on it. Be careful of its coverage, and Dimensional Thrash, while neutral to all types, is boosted by the field and will damage everything hard. Since you have a full team, you can whittle it down as it doesn't have any recovery.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/130_2.png">
+              <br>
+              Gyarados, Level 15 - Demon Stone
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Dimensional Thrash</td>
+          </tr>
+          <tr><td>Thunder Fang</td></tr>
+          <tr><td>Ice Fang</td></tr>
+          <tr><td>Fire Fang</td></tr>
+        </table>
+        <br>
+        Once you beat it, you'll be taken back to Route 1.
+        <br><br>
+        <p class="subsectionHeader">Goldenwood Aftermath</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Route1End.png">
+        <br>
+        When you wake up, Melia will let you know that the police have taken control of the situation, and you'll find that the entrance to Goldenwood Forest is now blocked off. Wrap up what you need in Route 1, then head back to Gearen City using the train. Nothing has changed, so just head over to Gearen Lab and then into Professor Jenner's lab. There'll be a cutscene where you eavesdrop on Professor Jenner's conversation, and after a confrontation you'll control Melia in a battle against Xen Executive Madelis.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/VSMadelis.png">
+        <div class="eventTrainerName">
+          Xen Executive Madelis
+          <span class="eventTrainerTooltip">It's not required that you win this battle, and it will be extremely difficult to do so. It is effectively a 1v1 against a fully evolved Pokemon using only Togepi while also being underleveled. Houndoom easily two shots your Pokemon, so you'll have to get very luck with Ancient Power or Metronome, and spam your healing items often. While not impossible, don't sweat too much if you lose the battle.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/229.png">
+              <br>
+              Houndoom, Level 20
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Incinerate</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td rowspan="2">Dark</td><td>---</td></tr>
+          <tr><td>---</td></tr>
+        </table>
+        <br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Teleport.png">
+        <br>
+        After the battle, Melia will tell her Togepi to Metronome one more type. Togepi will use Teleport, and before Melia can grab you the two of them teleport away. A cutscene will occur where you see Team Xen Grunts start flooding the city, as Madelis orders them to capture Melia. Madelis will then leave the building, and Professor Jenner laments what had happened. Ren appears, talking about the Team Xen Grunts, but as Professor Jenner is trying to explain the situation he is inturrupted by someone. The Gothitelle from the Prologue appears between Ren and Professor Jenner, and Professor Jenner is taken into a black hole. The mysterious voice tells you to not get involved, and Gothitelle disappears.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/RenExplain.png">
+        <br>
+        You explain to Ren what is going on, and Ren agrees with the Professor's last words that Melia will be heading to Route 2, so you will need a badge and Rock Smash. The two of you exit the lab, and Ren lets you know the Venam is waiting in her gym for you to be able to get your first gym badge. He'll also warn you about the Team Xen Grunts roaming the city, then he'll take his leave. We'll be re-exploring and re-battling trainers in the next part.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter1/Route1-Goldenwood.html">&lt&lt Route 1 & Goldenwood Forest</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter1/EastGearenCity-3.html">East Gearen City - Second Visit &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="TeamXenNickoli" class="TrainerPopup">
+        <span class="close" id="TeamXenNickoliClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Team Xen Nickoli
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/052_shadow.png">
+              <br>
+              Meowth (Kantonian), Level 11
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Rush</td>
+          </tr>
+          <td>---</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: None
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="TeamXenLeela" class="TrainerPopup">
+        <span class="close" id="TeamXenLeelaClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Team Xen Leela
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/456_shadow.png">
+              <br>
+              Finneon, Level 11
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Rush</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/656.png">
+              <br>
+              Froakie, Level 12
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Quick Attack</td>
+          </tr>
+          <tr><td>Lick</td>  </tr>
+          <tr><td>Bubble</td></tr>
+          <tr><td>Growl</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/535.png">
+              <br>
+              Tympole, Level 13
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Bubble Beam</td>
+          </tr>
+          <tr><td>Round</td>  </tr>
+          <tr><td>Supersonic</td></tr>
+          <tr><td>Growl</td></tr>          
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <imc src="../../images/PokeDollar.png">52
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="TeamXenHenrie" class="TrainerPopup">
+        <span class="close" id="TeamXenHenrieClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Team Xen Henrie
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/331_shadow.png">
+              <br>
+              Cacnea, Level 11
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Rush</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/613.png">
+              <br>
+              Cubchoo, Level 13
+            </th>
+            <td rowspan="4">Ice</td>
+            <td>Icy Wind</td>
+          </tr>
+          <tr><td>Powder Snow</td>  </tr>
+          <tr><td>Bide</td></tr>
+          <tr><td>Growl</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/602.png">
+              <br>
+              Tynamo, Level 14
+            </th>
+            <td rowspan="4">Electric</td>
+            <td>Charge Beam</td>
+          </tr>
+          <tr><td>Spark</td>  </tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td>Thunder Wave</td></tr>          
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <imc src="../../images/PokeDollar.png">56
+            </td>
+          </tr>
+        </table>
+
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="RouteOne" class="EncounterPopup">
+        <span class="close" id="RouteOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Route 1
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/Route1.png">
+      </div>
+
+      <div id="GoldenwoodForest" class="EncounterPopup">
+        <span class="close" id="GoldenwoodForestClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Forest
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodForest.png">
+      </div>
+
+      <div id="GoldenwoodCave" class="EncounterPopup">
+        <span class="close" id="GoldenwoodCaveClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Cave
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodCave.png">
+      </div>
+
+      <div id="GoldenwoodGrove" class="EncounterPopup">
+        <span class="close" id="GoldenwoodGroveClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Grove
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodGrove.png">
+      </div>
+      
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

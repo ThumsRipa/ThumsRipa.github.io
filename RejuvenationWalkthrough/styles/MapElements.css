@@ -1,0 +1,214 @@
+.mapSelectionLeft{
+    width: 100%;
+}
+
+.currentLocationMapTitle {
+    border-radius: 0px 15px 15px 0px;
+    margin-left: 50px; /* Same as the width of the sidebar */
+    /*margin-right: 400px;  Same as the width of the sidebar */
+    width: 65%;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 40px;
+    display: block;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.mapSidebar {
+    height: calc(100vh - 100px); /* 100% Full-height */
+    width: 230px; /* 0 width - change this with JavaScript 230*/
+    position: fixed; /* Stay in place */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #3D5A80; /* Black*/
+    overflow-y: auto;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 100px; /* Place content 60px from the top */
+}
+
+.regionSelect {
+    display: block;
+    position: relative;
+    bottom: 7px;
+    width: 100%;
+}
+
+.regionSelect select {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.699);
+    color: black;
+}
+
+.areaSelect {
+    display: none;
+    position: relative;
+    width: 100%;
+    padding-left: 2%;
+}
+
+.areaSelect select {
+    width: 95%;
+    font-size: 18px;
+    background-color: rgba(255, 255, 240, 0.699);
+}
+
+.locationSelect {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.locationSelect select {
+    width: 100%;
+    font-size: 17px;
+    background-color: rgb(255, 255, 240);
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.locationSelect select option {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pinOptionsText {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.pinChecks {
+    margin-left: 15px;
+}
+
+.pinCheckLabels {
+    color: white;
+    font-size: 22px;
+}
+
+.mapSelectionTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    padding-bottom: 15px;
+
+    background-color: transparent;
+    border: none;
+}
+
+.mapSelectionTitle:hover {
+    color: gainsboro;
+    text-decoration: 1px gainsboro underline;
+}
+
+.mapSelectionLeft {
+    background-color: transparent;
+    border: none;
+
+    color: white;
+    font-size: 18px;
+
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.mapSelectionLeft:hover {
+    color:rgb(221, 221, 221);
+    text-decoration: 2px black solid underline;
+}
+
+.mapBackground {
+    border-radius: 0px 15px 15px 0px;
+    font-size: 17px;
+    margin-left: 50px; /* Same as the width of the sidebar */
+    /*margin-right: 400px;  Same as the width of the sidebar */
+    width: 65%;
+    padding: 10px 40px;
+    display: block;
+    background-color: rgb(221, 221, 221);
+}
+
+.largeMap{
+    height: 800px;
+    width: 800px;
+    z-index: 2;
+
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-20px,0px);
+
+    border: 2px black solid;
+}
+
+.NoEncounters {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.mapEncounterTable{
+    width: 100%;
+    border: solid black 2px;
+    border-collapse: collapse;
+    background-color: rgb(180, 180, 180);
+
+    text-align: center;
+}
+
+.mapEncounterTable th {
+    border: solid black 2px;
+    width: 22%;
+    min-height: 100px;
+    font-size: 18px;
+}
+
+.mapEncounterTable td {
+    border: solid black 2px;
+    width: 13%;
+    font-size: 18px;
+}
+
+.mapEncounterTableType{
+    width: 100px;
+    color: rgb(247, 247, 247);
+}
+
+.mapEncounterTableMethod{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.mapEncounterTableImage{
+    width: 100px;
+    height: 100px;
+}
+
+.compactEncounterTable{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.compactPokemonPosition {
+    position:relative;
+    background-color: rgb(184, 184, 184);
+    border-radius: 10px;
+    max-width: 20%;
+}
+
+.compactTitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+    background-color: rgb(199, 199, 199);
+    border-radius: 10px;
+    border: solid black;
+}

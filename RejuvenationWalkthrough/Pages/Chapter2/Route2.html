@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Route 2</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([7],['Route2Trainers']);encountersCreate([['Route 2', ['Grass', 'Fishing', 'Others']]], [0]);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2MapTxT">Route 2</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2GrassTxT">Route 2 Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2OthersTxT">Route 2 - Others</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="KecleonShopTxT">Kecleon Shop</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#PsychicTerrain" target="_blank" class="encounterDetailsSidebar">Psychic Terrain<br>VS Apprentice Nim</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Route 2
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Route 2<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="Route2TrainersButton" onclick="showTrainerTable('Route2Trainers')">Show Trainers</button></span><button class="showHiddenButton" id="Route2HiddenButton" onclick="showHiddenTable('Route2Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Route2/Nim1.png">
+        <br>
+        <table class="TrainerTable" id="Route2Trainers">
+        </table>
+        <table class="TrainerTable" id="Route2Hidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Carbos<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/Carbos.png"></span></a></td>
+            <td>Southwest of the train station</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/GreenShard.png"></span></a></td>
+            <td>Clearing by the Meganium</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/RedShard.png"></span></a></td>
+            <td>Upper branch before going across the first bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/BlueShard.png"></span></a></td>
+            <td>On the path to the first bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Gourmet Treat<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/GourmetTreat.png"></span></a></td>
+            <td>Above the Kecleon shop</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Magical Seed<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/MagicalSeed.png"></span></a></td>
+            <td>Southeast of the Kecleon shop</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/BlueShard2.png"></span></a></td>
+            <td>On the path after Prima Donna Jiara</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Rose Incense<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/RoseIncense.png"></span></a></td>
+            <td>In the bottom left of the northwest patch of grass</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Friend Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HiddenItems/FriendBall.png"></span></a></td>
+            <td>In the top right of the northwest patch of grass</td>
+          </tr>
+        </table>
+        <br>
+        When you enter Route 2, you'll be bumped into by a black-haired girl. She'll run away, and you realized she stole some money away from you. There's a few hidden items in Route 2, the most useful being a Carbos and Magical Seed. Follow the girl to the right and use Rock Smash, and she'll continue running away. There's a few things that we to note that we can do here. There is a chance of a Pokemon battle when you use Rock Smash, and there are also <span class="ImportantName">headbuttable trees<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/HeadbuttTree.png"></span></span> scattered throughout the map. The trees are separated into two variants. High trees have a higher chance of spawning a Pokemon, but have less rare Pokemon as a result. Low trees have a lower chance of spawning a Pokemon, but have rarer Pokemon. As for Pokemon that can learn Headbutt, Seel from the Chrisola Casino is one of the easiest option. You can also catch Drowzee at nights on this route. You can also fish here if you picked up the Old Rod, but you'll only find Finneon here.
+        <br><br>
+        Head back down to where the girl ran away, and you'll see a tree run away across the bridge, and on the bridge you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="TouristHinataName">Tourist Hinata.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/Trainers/TouristHinata.png"></span></a> Once you beat him, go ahead and cross the bridge.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Route2/Aipoms.png">
+        <br>
+        In this area, during the day you can find Aipom standing around the tree. If you do want to use one, catch an extra one as it will be used to trade with a Pancham in the next city. You can also find a <span class="ImportantName">Kecleon Shop<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/KecleonShop.png"></span></span> here, who will sell you some items if you need to restock on a few basic needs. Above the Kecleon Shop you can find a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell8.png"></span></span> From there, head to the right to battle <a href="javascript:void(0)" class="normalTrainerName" id="FragrantLadyRuddieName">Fragrant Lady Ruddie,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/Trainers/FragrantLadyRuddie.png"></span></a> and then you can use the Healing Star to heal if needed. Roaming near the Healing Star is <a href="javascript:void(0)" class="normalTrainerName" id="YoungsterKaiusName">Youngster Kaius<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/Trainers/YoungsterKaius.png"></span></a> and below him on the bridge is <a href="javascript:void(0)" class="normalTrainerName" id="FishermanConnaldName">Fisherman Connald.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/Trainers/FishermanConnald.png"></span></a>
+        <br><br>
+        That's all to do on the right side, so head on over to the left side of the Kecleon Shop. Before you cross the bridge, you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="PrimaDonnaJiaraName">Prima Donna Jiara.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/Trainers/PrimaDonnaJiara.png"></span></a> Keep heading left and up the stairs. Here, you can also find a <span class="ImportantName">painter<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Route2/PainterQuest.png"></span></span> who is looking for his favorite three Pokemon. If you do have a Cherrim in your party, showing it to him will give you a Miracle Seed. We don't have access to Magcargo yet, so we'll come back later.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Route2/Nim2.png">
+        <br>
+        Head back down and interact with the totally normal tree. Nim will eventually give up and teleport away. Head back over to the right side and heal up for an upcoming battle. At the entrace of the cave, Nim will let you know its just a prank and that your money never left your possession. Additionally, she'll challenge you to a battle and teleports you to a <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#PsychicTerrain" target="_blank">different dimension</a> to start the battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Route2/VSNim.png">
+        <br>
+        <div class="eventTrainerName">
+          Apprentice Nim
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/337.png">
+              <br>
+              Lunatone, Level 18
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Rock Slide</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/338.png">
+              <br>
+              Solrock, Level 18
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Rock Slide</td>
+          </tr>
+          <tr><td>Confusion</td><td>Psywave</td></tr>
+          <tr>
+            <td rowspan="2">Psychic</td><td>Ancient Power</td>
+            <td rowspan="2">Psychic</td><td>Fire Spin</td>
+          </tr>
+          <tr><td>Cosmic Power</td><td>Harden</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/686.png">
+              <br>
+              Inkay, Level 12
+            </th>
+            <td rowspan="2">Psychic</td>
+            <td>Feint Attack</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/677.png">
+              <br>
+              Espurr, Level 12
+            </th>
+            <td rowspan="4">Psychic</td>
+            <td>Disarming Voice</td>
+          </tr>
+          <tr><td>Psywave</td><td>Psybeam</td></tr>
+          <tr>
+            <td rowspan="2">Dark</td><td>Hypnosis</td>
+            <td>Reflect</td>
+          </tr>
+          <tr><td>Swagger</td><td>Light Screen</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+        </table>
+        <br>
+        This is another one of the battles where the field is not in your favor. In the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#PsychicTerrain" target="_blank">Psychic Terrain,</a> Dark-type moves are severely weakened, so the common moves of Bite will not do much. Bug-type Pokemon will also be hurt by the fact that Solrock and Lunatone both have Rock Slide, which will deal heavy damage. If you have a Water-type and a non-Poison Grass-type, they can make short work of Solrock and Lunatone. Once those two are out of the way, Inkay and Espurr are not too threatening. Espurr will often try to set up screens, so get rid of it before it can set up. Inkay can status your Pokemon, but otherwise its moves are not very strong. You can use Bug-type Pokemon to great effect once the two Rock Sliders are down.
+        <br><br>
+        After the battle, Nim will give you a Twisted Spoon, which can boost your Psychic-type moves. She'll teleport you back to the cave entrance, and lets you know that she'll be cheering you on. Heal up, then head on into Amethyst Cave.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/AfterVenam.html">&lt&lt After the First Badge</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter2/AmethystCave.html">Amethyst Cave &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="FishermanConnald" class="TrainerPopup">
+        <span class="close" id="FishermanConnaldClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+          Fisherman Connald
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 13
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 13
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 14
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 15
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 15
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 16
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">96
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      <div id="Route2Map" class="EncounterPopup">
+        <span class="close" id="Route2MapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Route 2
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Route 2.png">
+      </div>
+      
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Amethyst Cave</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([8],['AmethystCaveTrainers']);encountersCreate([['Amethyst Cave', ['Cave', 'Fishing', 'Events']]], [0]);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveOneMapTxT">Amethyst Cave<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveTwoMapTxT">Amethyst Cave<br>Second Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveThreeMapTxT">Amethyst Cave<br>Third Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthOneMapTxT">Amethyst Depths<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthTwoMapTxT">Amethyst Depths<br>Second Room</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveEncountersTxT">Amethyst Cave Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystOthersTxT">Amethyst Cave - Other Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystEventsTxT">Amethyst Cave - Events</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank" class="encounterDetailsSidebar">Crystal Cavern<br>Location: Amethyst Cave</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#DimensionalField" target="_blank" class="encounterDetailsSidebar">Dimensional Field<br>VS Dimensional Rift Galvantula</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Amethyst Cave
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">The Search for Melia<button class="showHiddenButton" id="AmethystHiddenOneButton" onclick="showHiddenTable('AmethystHiddenOne')">Show Hidden Items</button></span></p>
+        <table class="TrainerTable" id="AmethystHiddenOne">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Nugget<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/Nugget.png"></span></a></td>
+            <td>First floor, left side in a hole</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/GreenShard.png"></span></a></td>
+            <td>First floor, left side top left corner</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Mineral Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/MineralBall.png"></span></a></td>
+            <td>First floor, left side in the minecart</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">HP Up<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/HPUp.png"></span></a></td>
+            <td>Basement One, before crossing any bridges</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Antidote<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/Antidote.png"></span></a></td>
+            <td>Basement One, before crossing any bridges</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/Potion.png"></span></a></td>
+            <td>Basement One, before crossing any bridges</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Zinc<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/Zinc.png"></span></a></td>
+            <td>Basement One, across the bridge by Ren</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/GreenShard2.png"></span></a></td>
+            <td>Basement One, across the second bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Resist Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/ResistWing.png"></span></a></td>
+            <td>Basement One, across the second bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/BlueShard.png"></span></a></td>
+            <td>Basement One, across the second bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Revive<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/Revive.png"></span></a></td>
+            <td>Amethyst Depths, across Lunatone</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Electric Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/ElectricGem.png"></span></a></td>
+            <td>Amethyst Depths, northeast of the healing star</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Fire Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/FireGem.png"></span></a></td>
+            <td>Amethyst Depths, the first rock on the right at the intersection</td>
+          </tr>
+        </table>
+        <br>
+        Upon entering Amethyst Cave, you'll be reunited with Ren and Venam. The three of you start heading to Sheridan, but is blocked by a hooded man. After some conversation, the three of you agree to detour deeper into Amethyst Cave to check if Melia is there or not. Battles in the Amethyst Cave are fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank">Crystal Cavern,</a> which boosts Rock-type moves and give some moves additional typing. Also, we will need a Carbink for Zumi's Pokedex quest, so be sure to catch one if you run into it. Before you head right and deeper into Amethyst Cave, there's a few hidden items including a Nugget to the left. The hooded man will prevent you from going deeper into the cave, so head down the stairs on the right instead.
+        <br><br>
+        Along this path you can find a lot of hidden items. Out of those, the HP Up and Zinc are useful for extra cash. Head on down and cross the second bridge, where Venam will let you know that she got a Team Xen Grunt to confirm that Melia is deep in Amethyst Depths. Follow them across the bridge. The path here is straightforward, so just continue on and head down the stairs at the end of the path.
+        <br><br>
+        On the bottom floor, there is a red Healing Star. I would not recommend using it yet, as is one optional battle before we continue the story. Go past the red Healing Star, and at the intersection head right. You'll come across a dead end with a <span class="ImportantName">Lunatone<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/Lunatone.png"></span></span> that you can battle and catch if you have Gourmet Treat. Across from the Lunatone is a Revive that you can grab.
+        <br><br>
+        With that done, go ahead and heal at the red Healing Star and head up from the previous intersection. You'll come across Zetta, who will reveal that he came across Melia's bloody bag with a Galvantula chewing on it. Zetta will reveal a Dimensional Rift, then challenge you to a battle. You'll have a choice to partner with either Venam or Ren for this battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/AmethystCave/VSZetta.png">
+        <br>
+        <div class="eventTrainerName">
+          Xen Executive Zetta
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/147.png">
+              <br>
+              Dratini, Level 20
+            </th>
+            <td rowspan="4">Dragon</td>
+            <td>Dragon Breath</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/215.png">
+              <br>
+              Sneasel, Level 20
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Night Slash</td>
+          </tr>
+          <tr><td>Thunder Wave</td><td>Slash</td></tr>
+          <tr>
+            <td>Reflect</td>
+            <td rowspan="2">Ice</td><td>Pursuit</td>
+          </tr>
+          <tr><td>Light Screen</td><td>Ice Shard</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/156.png">
+              <br>
+              Quilava, Level 22
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Flame Burst</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/044.png">
+              <br>
+              Gloom, Level 22
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Giga Drain</td>
+          </tr>
+          <tr><td>Flame Charge</td><td>Acid</td></tr>
+          <tr>
+            <td>Aerial Ace</td>
+            <td rowspan="2">Poison</td><td>Sleep Powder</td>
+          </tr>
+          <tr><td>Double Kick</td><td>Powder</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/774_6.png">
+              <br>
+              Minior, Level 22
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Ancient Power</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/772.png">
+              <br>
+              Type: Null, Level 23 - Sitrus Berry
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Crush Claw</td>
+          </tr>
+          <tr><td>Charge Beam</td><td>Shadow Claw</td></tr>
+          <tr>
+            <td rowspan="2">Flying</td><td>Confuse Ray</td>
+            <td>Aerial Ace</td>
+          </tr>
+          <tr><td>Defense Curl</td><td>Flame Charge</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">506
+            </td>
+          </tr>
+        </table>
+        <br>
+        While this is effectively a 9v6 battle, you can't control your partner so it can make the battle a bit harder than it seems. All of his Pokemon have very strong moves at this point in the game, and if Dratini gets its screens up his whole team is very bulky. Try to take out Dratini before it can get the screens out, and take out Sneasel quickly with a Fighting-type move. His Quilava is not too threatening if you have something that resists its Fire-type moves, but Gloom can be annoying with it spreading Sleep to your Pokemon. Minior can boost itself with the field-boosted Ancient Power, so take it out before it gets a boost. Type: Null is very strong, especially if its behind screens. If you can Paralyze or Burn it, that would help a lot.<br><br>If you're having trouble with this battle, you can always leave to train your Pokemon up. Since the battle is in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank">Crystal Cavern,</a> you can take advantage of Rock-type moves being boosted. A Lycanroc or Geodude can work wonders in this battle. After the battle, Zetta will command the Dimensional Rift to take the three of you, and you'll be thrown into the Rift
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/AmethystCave/DimensionalRiftGalvantula.png">
+        <br>
+        Inside, there'll be a gold Healing Star for you to use. To progress, you'll need to collect all the gray Joltiks around the area. Once you've collected five, heal up and head to the center area to battle the Rift. Once again, you can pair with either Ren or Venam. As always with Dimensional Rift battles, it will be in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#DimensionalField" target="_blank">Dimensional Field.</a>
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/AmethystCave/VSGalvantula.png">
+        <br>
+        <div class="eventTrainerName">
+          Xen Executive Zetta
+          <span class="eventTrainerTooltip">This is another 9v5 battle, and it's not as difficult as the Zetta battle. The Joltiks will try their best to slow you down with Electroweb or lower your Special Attack with Struggle Bug, but they are pretty frail so you can take them out pretty easily if you have a super effective move. The real danger here is the Rift Galvantula, as it has the ability Parental Bond letting it hit twice per turn. In this field, its Sucker Punch is also boosted, and with your team being slowed by Electroweb this means it will almost always go first. It is 4x weak to Ground-type moves though, so if you have something that can tank one of its hits it will be heavily damaged by any Ground-type moves. As long as you turn it into a 2v1 against Galvantula, this battle won't be too much trouble.
+          </span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/595.png">
+              <br>
+              Joltik, Level 22
+            </th>
+            <td rowspan="2">Electric</td>
+            <td>Electroweb</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/595.png">
+              <br>
+              Joltik, Level 23
+            </th>
+            <td rowspan="2">Elecric</td>
+            <td>Electroweb</td>
+          </tr>
+          <tr><td>Struggle Bug</td><td>Struggle Bug</td></tr>
+          <tr>
+            <td rowspan="2">Bug</td><td>Confusion</td>
+            <td rowspan="2">Bug</td><td>Confusion</td>
+          </tr>
+          <tr><td>Toxic Thread</td><td>Toxic Thread</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/595.png">
+              <br>
+              Joltik, Level 24
+            </th>
+            <td rowspan="2">Electric</td>
+            <td>Electroweb</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/595.png">
+              <br>
+              Joltik, Level 25
+            </th>
+            <td rowspan="2">Elecric</td>
+            <td>Electroweb</td>
+          </tr>
+          <tr><td>Struggle Bug</td><td>Struggle Bug</td></tr>
+          <tr>
+            <td rowspan="2">Bug</td><td>Confusion</td>
+            <td rowspan="2">Bug</td><td>Confusion</td>
+          </tr>
+          <tr><td>Toxic Thread</td><td>Toxic Thread</td></tr>
+
+          <tr>
+            <th rowspan="4" colspan="2">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/596_1.png">
+              <br>
+              Galvantula, Level 27
+            </th>
+            <td rowspan="2" colspan="2">Electric</td>
+            <td colspan="2">Electroweb</td>
+          </tr>
+          <tr><td colspan="2">Cross Poison</td></tr>
+          <tr>
+            <td rowspan="2" colspan="2">Poison</td><td colspan="2">Sucker Punch</td>
+          </tr>
+          <tr><td colspan="2">Toxic Thread</td></tr>
+        </table>
+        <br>
+        After the battle, the three of you will reappear outside the Rift in front of Zetta. Before much else happens though, the Gothitelle from earlier along with a girl from the ship will appear. She'll take Zetta away, and warn the three of you to not get involved. Venam will head back into Gearen to train, and Ren lets you know that you should head to Sheridan Village and get the next badge there. He himself is heading back to his hometown of Goldenleaf. Before you leave the Area, check Melia's bloody bag to get a <span class="ImportantName">Room ID Card.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/RoomIDCard.png"></span></span> With that, you can head back up and we'll head over to Sheridan Village.
+        <p class="subsectionHeader">Onward to Sheridan<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="AmethystCaveTrainersButton" onclick="showTrainerTable('AmethystCaveTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="AmethystHiddenTwoButton" onclick="showHiddenTable('AmethystHiddenTwo')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/AmethystCave/MainBridge.png">
+        <br>
+        <table class="TrainerTable" id="AmethystCaveTrainers">
+        </table>
+        <table class="TrainerTable" id="AmethystHiddenTwo">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/RedShard.png"></span></a></td>
+            <td>First room, right across the first bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Mineral Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/MineralBall.png"></span></a></td>
+            <td>First room, left side rock</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/ReverseCandy.png"></span></a></td>
+            <td>First room, left side near a cave exit</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/SuperPotion.png"></span></a></td>
+            <td>First room, left side along the top, near an empty cart</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/GreenShard.png"></span></a></td>
+            <td>First room, right side rock</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Mineral Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/MineralBall2.png"></span></a></td>
+            <td>First room, right side near the gear cart</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Zinc<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/Zinc.png"></span></a></td>
+            <td>First room, up the stairs, right across the bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Electric Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/ElectricGem.png"></span></a></td>
+            <td>First room, up the stairs, at the dead end across the bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Genius Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/GeniusWing.png"></span></a></td>
+            <td>Second room, near the entrance</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/RedShard2.png"></span></a></td>
+            <td>Second room, near the computer</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/ReverseCandy2.png"></span></a></td>
+            <td>Second room, across the bridge right after the U-turn</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/BlueShard.png"></span></a></td>
+            <td>Second room, before the last bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">X Attack<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/XAttack.png"></span></a></td>
+            <td>Second room, after the last bridge</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">X Defend<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/XDefend.png"></span></a></td>
+            <td>Third room, upper level, near the drill</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/Repel.png"></span></a></td>
+            <td>Third room, lower level, in a hole</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Rock Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/RockGem.png"></span></a></td>
+            <td>Third room, lower level, on a rock</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/Repel2.png"></span></a></td>
+            <td>Third room, lower level, on a rock near the exit</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/SuperPotion2.png"></span></a></td>
+            <td>Fourth room, on a rock on the left branch</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Mineral Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/MineralBall3.png"></span></a></td>
+            <td>Fourth room, at the end of the left branch</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/ReverseCandy3.png"></span></a></td>
+            <td>Fourth room, at the end of the right branch</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Rock Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/HiddenItems/SecondHalf/RockGem.png"></span></a></td>
+            <td>Fourth room, in a hole near the sign</td>
+          </tr>
+        </table>
+        <br>
+        You can go back and heal at Route 2, and during the day you'll find that the news crew had completed their filming infront of the Aipom tree. Talk to them to battle <a href="javascript:void(0)" class="normalTrainerName" id="NewsCrewHenriettaandJeffName">News Crew Henrietta and Jeff.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/Trainers/NewsCrewHenriettaandJeff.png"></span></a> Head back into the cave, and now we can cross the bridge in the center.
+        <br><br>
+        In this area, there are a lot of hidden items, including a few Mineral Balls and a Zinc for cash. For the <span class="ImportantName">cart full of gears,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/Klink.png"></span></span> if you dropped the Electric Gem we found earlier, you can battle and catch a Klink. If you missed the Electric Gem in the Amethyst Depths, there's another one nearby. Head near the stairs and listen to the hooded man, then go upstairs and battle <a href="javascript:void(0)" class="normalTrainerName" id="TechnicianEdwardName">Technician Edward.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/Trainers/TechnicianEdward.png"></span></a> Across the bridge to his left is a Zinc and an Eletric Gem mentioned early. Use it to catch a Klink if you want, then head to the second room.
+        <br><br>
+        The second room has a few hidden items, but not very useful ones. There's an X Attack near the end if you want it. Before you cross the second bridge, you can battle <a href="javascript:void(0)" class="normalTrainerName" id="MistressEraName">Mistress Era,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/AmethystCave/Trainers/MistressEra.png"></span></a>, but then you can head into the third room.
+        <br><br>
+        The third room and fourth rooms are pretty straightforward as we don't yet have Surf. The third room contains an X Defend and a Rock Gem if you want it, and the fourth room has a Super Potion, a Mineral Ball, and another Rock Gem. With that, we've completed exploring Amethyst Cave, and we can head on out of the cave and into Sheridan Village.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/AmethystCave/SheridanExit.png">
+        <br>
+      </p> 
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/Route2.html">&lt&lt Route 2</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter2/SheridanVillageArena.html">Sheridan Village & Sheridan Arena &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="AmethystCaveOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - First Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-Entrance.png">
+      </div>
+      
+      <div id="AmethystCaveTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Second Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-2.png">
+      </div>
+
+      <div id="AmethystCaveThreeMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveThreeClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Third Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-3.png">
+      </div>
+
+      <div id="AmethystDepthOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement One
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-1.png">
+      </div>
+
+      <div id="AmethystDepthTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement Two
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-Zetta.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

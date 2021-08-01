@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Site</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="pokemonMoves.js"></script>
+<script src="output.js"></script>
+
+</head>
+
+<body onload="emptyHashed();">
+    <div id="testOutput"></div>
+
+    <script>
+        window.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter') {
+            emptyHashed();
+          }
+        })
+      </script>
+</body>
+</html>

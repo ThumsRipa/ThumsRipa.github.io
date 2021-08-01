@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Pokedex</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+<link rel="stylesheet" href="../../styles/pokedex.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/pokemonMoves.js"></script>
+<script src="../../Scripts/pokedexPage.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="globalrunOnLoad('','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="pokedexSidebar">
+    <form autocomplete="off">
+      <div class="autocompleteTest">
+        <input class="pokemonTextInput" type="text" id="myTextInput" placeholder="Pokemon Name or Number" onclick="this.select();">
+      </div>
+    </form>
+    <div class="buttonAnchor">
+      <button class="pokemonTextButton" id="textInputButton" onclick="alltext=readText(alltext);alltext=showText(alltext);">Click Here</button>
+    </div>
+    <br><br><br>
+    <input type="checkbox" class="pinChecks" id="showEvolution" name="showEvolution" value="evolutions" checked="true" onchange="showText(alltext);"><label class="pinCheckLabels" for="showEvolution"> Show Evolution Table</label><br>
+    <input type="checkbox" class="pinChecks" id="showMoves" name="showMoves" value="moves" checked="true" onchange="showText(alltext);"><label class="pinCheckLabels" for="showMoves"> Show Moves</label><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      <span class="pokedexNumber" id="pokemonBigName">Pokemon</span>
+    </div>
+    <div class="walkthrough">
+      <div class="pokedexOutputs" id="mainOutput">
+        Input a Pokemon on the left
+      </div>
+      <div class="pokedexOutputs" id="evoOutput">
+      </div>
+      <br>
+      <div class="pokedexOutputs" id="moveOutput">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    alltext="";
+
+    //Enter to send input text
+    var input=document.getElementById("myTextInput");
+    autocomplete(input, PokemonListNumbers, alltext);
+
+    //setClickableEvoImages
+  </script>
+</body>
+</html>

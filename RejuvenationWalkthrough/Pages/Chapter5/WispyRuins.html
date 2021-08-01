@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Five - Wispy Ruins</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([19],['WispyRuinsTrainers']);encountersCreate([['Goldenleaf Town', ['Grass', 'Events']],['Wispy Ruins',['Cave', 'Events']]],[]);shopsSet([[15,2]],[]);globalrunOnLoad('Fifth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#HauntedField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Location: Wispy Ruins</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Wispy Ruins
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Post-Badge Activities</p>
+        <br>
+        Now that we have our fourth badge and changed the ways of Goldenleaf, there's a few things we can do in town. First off, the inhabitants of the house above the Route 3-Goldenleaf Gate will give us healing items, so go ahead and grab those. The house below Ren's house will have a <span class="ImportantName">Snubbull<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/PostBadge/Snubbull.png"></span></span> that you can get if you interact with it. If you go to the graveyard on the left side at night you can catch yourself a <span class="ImportantName">Misdreavus.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/PostBadge/Misdreavus.png"></span></span> Finally, now that we have four badge we can open the door we found earlier. Cut down the three beside the gym and enter the cave behind the waterfall. Step on the blue circle, and the door will open and let us optain a <span class="ImportantName">Big Nugget.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/4BadgeDoor.png"></span></span>
+        <br><br>
+        We can also get another sidequest out of the way. For this quest, you'll need to have a Cherrim, Zebstrika, and Magcargo. Cherrim evolves from Cherubi at level 25, which you can get at the Chrisola Hotel Rooftop in East Gearen City. Blitzle evolves at level 27 and is catchable below Dr. Jenkel's lab in Gearen Junction, just west of the Route 1 train station. Finally, Slugma can be caught in Caratos Mountain behind the waterfall in Sheridan Arena, and evolves at level 38. With the Pokemon Breeder in Goldenleaf, you can evolve these Pokemon pretty quickly.
+        <br><br>
+        Once you have the three Pokemon in your party, head over to Route 2 and up to the top left corner of the map. The painter there will ask for the three Pokemon, and you'll get a Miracle Seed for the Cherrim, Charcoal for the Magcargo, and Magnet for the Zebstrika. Once you have shown him all three Pokemon, you'll get <span class="ImportantName">TM94 - Nature Power,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/PostBadge/NaturePower.png"></span></span> which is a very versatile move in this game. Nature Power will change depending on the field it is used on, and will often turn into very powerful moves. With that, we've done all we can for now so head on back to Goldenleaf and talk to Narcissa and Aelita in front of the Giratina statue. Narcissa will open the path for us to continue.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/WispyRuins/OpenRuins.png">
+        <br>
+        <p class="subsectionHeader">Wispy Ruins<span class="showTrainersButtonAnchor">
+          <button class="showTrainersButton" id="WispyRuinsTrainersButton" onclick="showTrainerTable('WispyRuinsTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/WispyRuins/WispyRuins.png">
+        <br>
+        <table class="TrainerTable" id="WispyRuinsTrainers">
+        </table>
+        <br>
+        Wispy Ruins is initially a straightforward path, but before you get too deep you'll be dropped into the basement level by a few Shuppets. The path to continue here will be blocked until you find and play with 4 Shuppets that are located around the map. Here, you can also jump from platform to platform. Head over to the right and up, and you'll find the <span class="ImportantName">first Shuppet,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Shuppet1.png"></span></span> but you'll need to do a bit of maneuvering to trap it. On the little roundabout area there's <a href="javascript:void(0)" class="normalTrainerName" id="BattleGirlMoiraName">Battle Girl Moira<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Trainers/BattleGirlMoira.png"></span></a> to the south and <a href="javascript:void(0)" class="normalTrainerName" id="PunkRudeyName">Punk Rudey<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Trainers/PunkRudey.png"></span></a> to the north. Just a little bit north from the first Shuppet is the <span class="ImportantName">second Shuppet.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Shuppet2.png"></span></span>
+        <br><br>
+        The next to Shuppets are to the left side of the map. If you head up to the top left corner, you can find a gate with the Number 2, so open it to get a <span class="ImportantName">Dawn Stone.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/2BadgeDoor.png"></span></span> From there, the <span class="ImportantName">third Shuppet<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Shuppet3.png"></span></span> is down south from there and the <span class="ImportantName">fourth<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Shuppet4.png"></span></span> is even more south and a little to the right. You'll also see a <span class="ImportantName">Phantump<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Phantump.png"></span></span> or two roaming around, so be sure to catch one. We'll be able to get a special Pokemon in return for it in a little bit.
+        <br><br>
+        Once you found all four Shuppets, head back to the center part of the map and head up. The Shuppets will remove the barrier, and you can progress further. Before going up the stairs, go past it and grab a Dusk Stone behind the <span class="ImportantName">one badge door.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/1BadgeDoor.png"></span></span> Go back, head up the stairs, and grab a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell16.png"></span></span>
+        <br><br>
+        Once you exit that room to the right, you can head back out to Goldenleaf through the bottom exit. We can't progress to the right exit without Strength, so once you're ready head up through the top exit and up the stairs. On the second floor, <a href="javascript:void(0)" class="normalTrainerName" id="HikerJeremieName">Hiker Jeremie<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Trainers/HikerJeremie.png"></span></a> will battle you. You can also choose to battle <a href="javascript:void(0)" class="normalTrainerName" id="GuitaristVitaliName">Guitarist Vitali<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/WispyRuins/Trainers/GuitaristVitali.png"></span></a> who is all the way to the left of that floor. Once you're done, heal up and then head over to the left, then jump through the platforms. A bunch of Pokemon will appear to play with you.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/WispyRuins/VSPokeGang.png">
+        <div class="eventTrainerName">
+          PokeGang Scrafty and PokeGang Banette
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/559.png">
+              <br>
+              Scraggy, Level 36
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Brick Break</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/353.png">
+              <br>
+              Shuppet, Level 36
+            </th>
+            <td rowspan="4">Ghost</td>
+            <td>Phantom Force</td>
+          </tr>
+          <tr><td>High Jump Kick</td><td>Hex</td></tr>
+          <tr>
+            <td rowspan="2">Fighting</td><td>Chip Away</td>
+            <td>Shadow Ball</td>
+          </tr>
+          <tr><td>Scary Face</td><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/533.png">
+              <br>
+              Gurdurr, Level 36
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Wake-Up Slap</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/608.png">
+              <br>
+              Lampent, Level 36
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Flame Burst</td>
+          </tr>
+          <tr><td>Rock Slide</td><td>Hex</td></tr>
+          <tr>
+            <td>Chip Away</td>
+            <td rowspan="2">Fire</td><td>Shadow Ball</td>
+          </tr>
+          <tr><td>Bulk Up</td><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/674.png">
+              <br>
+              Pancham, Level 36
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Circle Throw</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/355.png">
+              <br>
+              Duskull, Level 36
+            </th>
+            <td rowspan="4">Ghost</td>
+            <td>Phantom Force</td>
+          </tr>
+          <tr><td>Vital Throw</td><td>Hex</td></tr>
+          <tr>
+            <td>Slash</td>
+            <td>Shadow Ball</td>
+          </tr>
+          <tr><td>Body Slam</td><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/560.png">
+              <br>
+              Scraggy, Level 38
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Sludge Bomb</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/354.png">
+              <br>
+              Banette, Level 38
+            </th>
+            <td rowspan="4">Ghost</td>
+            <td>Phantom Force</td>
+          </tr>
+          <tr><td>High Jump Kick</td><td>Hex</td></tr>
+          <tr>
+            <td rowspan="2">Fighting</td><td>Chip Away</td>
+            <td>Shadow Ball</td>
+          </tr>
+          <tr><td>Scary Face</td><td>Will-O-Wisp</td></tr>
+        </table>
+        <br>
+        This is effectively an 6v8 in a Haunted Field, but your opponents aren't exactly the strongest at this point. Psychic-type and Fairy-type moves are weakened, so similar to the Narcissa battle you can switch the field with Flash to get the advantage. Once you defeat them, the exit will be on the right. There'll be a healing spot soon so there's no need to go back and heal, so head out through the right and enter Route 4.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter4/GoldenleafGym.html">&lt&lt Goldenleaf Gym</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter5/Route4.html">Route 4 &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

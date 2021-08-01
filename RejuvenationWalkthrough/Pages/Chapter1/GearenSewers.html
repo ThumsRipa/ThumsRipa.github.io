@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - Gearen Sewers</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([2],['SewersTrainers']);encountersCreate([['Gearen Sewers', ['Cave', 'Fishing']],['Chrisola Hotel', ['Events']]], [0]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AbandonedSewersTxT">Abandoned Sewers</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenSewersEncountersTxT">Gearen Sewers - Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenSewersOthersTxT">Gearen Sewers - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="HotelEventsTxT">Chrisola Hotel Casino</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CasinoShopTxT">Chrisola Hotel<br>Casino Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="APShopTxT">Chrisola Hotel<br>AP Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SewerkTxT">Sewerk</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      The Abandoned Sewers
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">The Abandoned Sewers<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="SewersTrainersButton" onclick="showTrainerTable('SewersTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="SewersHiddenButton" onclick="showHiddenTable('SewersHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Sewers/SewerWelcome.bmp">
+        <br>
+        <table class="TrainerTable" id="SewersTrainers">
+        </table>
+        <table class="TrainerTable" id="SewersHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Poison Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Hidden Items/PoisonGem.png"></span></a></td>
+            <td>Bottom right, by the white barrel</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Hidden Items/Potion.png"></span></a></td>
+            <td>Top right, beside the girl</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Hidden Items/Potion2.png"></span></a></td>
+            <td>Top right, behind the girl</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Hidden Items/ReverseCandy.png"></span></a></td>
+            <td>Below Schoolgirl Amanda, in the white barrel</td>
+          </tr>
+        </table>
+        <br>
+        As you walk it, Ren will give you a welcome and rundown of the Abandoned Sewers. After that, he'll join you. Battles in the Abandoned Sewers, both trainer and wild, during this section will be in double battles with Ren as your partner. Ren's Pokemon are pretty strong, so if you have any underleveled Pokemon you can put them in front to soak up experience. After every battle, Ren will heal up your Pokemon. As another point of note, you can fish in the sewers if you picked up the Old Rod earlier in the Aqua Building. With that being said, head on down and begin exploring.
+        <br><br>
+        As you cross the first bridge, <a href="javascript:void(0)" class="normalTrainerName" id="EnthusiastLucaName">Enthusiast Luca.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Trainers/EnthusiastLuca.png"></span></a> will challenge you to a battle. Off to the right you can find a Great Ball. Go back left and up, and you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="TechnicianJeraldName">Technician Jerald.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Trainers/TechnicianJerald.png"></span></a> If you go north there two hidden Potions up there.
+        <br><br>
+        Head back down to Technician Jerald and cross the bridge. Head up and talk to the Bug Catcher in the corner, who'll give you a <span class="hiddenItemText">Pecha Berry.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Sewers/Hidden Items/PechaBerry.png"></span></span> You can enter the generator room above him if you want, but we'll have to come back here later. Head back down, across the bottom bridge, and turn left to battle <a href="javascript:void(0)" class="normalTrainerName" id="SchoolgirlAmandaName">Schoolgirl Amanda.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Trainers/SchoolgirlAmanda.png"></span></a>. Right by her will be a Coin Case if you talked to the red-haired woman in Chrisola Hotel Casino. If not, it'll be here when you do talk to her. Head back up across the bridge by Amanda and into the room.
+        <br><br>
+        Here, all the way inside, you can by Chinese Food for <img src="../../images/PokeDollar.png">300. This is a healing item that heals for 50 HP, so it's a good idea to stock up on a few. Talking to <a href="javascript:void(0)" class="normalTrainerName" id="YoungsterBenName">Youngster Ben<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Trainers/YoungsterBen.png"></span></a> will prompt a battle. That's all that's in this room, so go ahead and leave. Head left and up, and you'll meet up with Venam.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Sewers/VenamEntrance.png">
+        <br>
+        Venam will complain about your speed and head on in, but before you and Ren can enter the power will flicker, shutting the doors. Ren tells you that we'll need to go reset the generators, but before we do that cross the left bridge and battle <a href="javascript:void(0)" class="normalTrainerName" id="GangMemberBobName">Gang Member Bob.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Sewers/Trainers/GangMemberBob.png"></span></a> Right above him is an Antidote.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Sewers/Generators.png">
+        <br>
+        With that done, head all the way back over to the generator room, which is next to the Bug Catcher on the left. Ren will tell you that Melia said that 3+1+2 is the solution. As such, reset the generators in that order, the third one, the first, then the second. Once you've done that, you can go ahead and follow Venam into the main control room. Make sure to save beforehand, as there's a fight coming up.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Sewers/MeliaIntro.png">
+        <br>
+        Inside, you'll finally be properly introduced to Melia, Professor Jenner's daughter. Regardless, she can't seem to figure out where the power issues are, so she'll leave it to the engineers. The three start talking about their experiment to confirm the rumors that abandoned trash bags turns into Trubbish, and right on cue a Garbodor emerges from the backrooms, revealing itself as the source of the power issues. Two Trubbishes also appear from the shadow. You and Ren take point and begin the battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Sewers/VSGarbodor.png">
+        <br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Garbodor Garbage Crew
+          <span class="eventTrainerTooltip">This shouldn't be a very challenging battle if you have a full team. Ren's Pokemon are capable of doing large chunks of damage, and once you take out the two Trubbish the Garbodor won't be much of a threat. They really only have Pound as their damaging move, so as long as you can take care of the Poison damage this fight should be a breeze.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/568.png">
+              <br>
+              Trubbish, Level 11
+            </th>
+            <td rowspan="4">Poison</td>
+            <td>Pound</td>
+          </tr>
+          <tr><td>Poison Gas</td></tr>
+          <tr><td>Recycle</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/568.png">
+              <br>
+              Trubbish, Level 11
+            </th>
+            <td rowspan="4">Poison</td>
+            <td>Pound</td>
+          </tr>
+          <tr><td>Poison Gas</td></tr>
+          <tr><td>Recycle</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/569.png">
+              <br>
+              Garbodor, Level 13
+            </th>
+            <td rowspan="4">Poison</td>
+            <td>Pound</td>
+          </tr>
+          <tr><td>Poison Gas</td></tr>
+          <tr><td>Toxic Spikes</td></tr>
+          <tr><td>---</td></tr>
+        </table>
+        <br><br>
+        Once the battle is over, Venam will sneak an opportunity to catch one of the Trubbish. Melia will scold the other two and Garbodor will leave with the remaining Trubbish in tow. Either way, with the reason for the power outage gone Melia will go ahead and go to Route 1. Venam, currently homeless, will oversee the repairs. Ren will take you out of the Sewers, direct you to where the train station is, and tells you that he'll be in the library.
+        <br><br>
+        <p class="subsectionHeader">Extra Content</p>
+        Now that you have the Coin Case, you can go to the Chrisola Hotel Casino to check if there's any Pokemon or TM Prizes that you're interested in. Additionally, we can also go to Magnolia Library to battle Ren for some EXP and money.
+        <br><br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Pokemon Trainer Ren
+          <span class="eventTrainerTooltip">Ren has leveled up quite a bit since your last battle against him, and he also added two more Pokemon to complete his starting type chart. His Growlithe can hit really hard, and his Froakie has Protean which can be annoying. But as long as you have a full team with a few Pokemon with type advantages, this battle shouldn't be too difficult.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/058.png">
+              <br>
+              Growlithe, Level 13
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Bite</td>
+          </tr>
+          <tr><td>Flame Burst</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/331.png">
+              <br>
+              Cacnea, Level 14
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Absorb</td>
+          </tr>
+          <tr><td>Leech Seed</td></tr>
+          <tr><td>Growth</td></tr>
+          <tr><td>---</td></tr>
+
+          
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/656.png">
+              <br>
+              Froakie, Level 15
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Water Pulse</td>
+          </tr>
+          <tr><td>Quick Attack</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">105
+            </td>
+          </tr>
+        </table>
+        <br><br>
+        With all that done, feel free to do a bit of shopping before we leave East Gearen City for a bit. We'll have access to the Pokemon Box, but not any shops so make sure to bring a few Pokeballs and Potions for new Pokemon. If you want, you can also detour here to do some <a class="continueElsewhere">sidequests around the city.</a> Otherwise, head over to the station all the way on the top left corner. We'll be headed to Route 1.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="EastGearenCity-2.html">&lt&lt East Gearen City (Continued)</a>
+        <span class="nextWalkthroughPage">
+          <a href="Route1-Goldenwood.html">Route 1 & Goldenwood Forest &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="SchoolgirlAmanda" class="TrainerPopup">
+        <span class="close" id="SchoolgirlAmandaClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+          Schoolgirl Amanda
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/011.png">
+              <br>
+              Metapod, Level 8
+            </th>
+            <td rowspan="4">Bug</td>
+            <td>Tackle</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/014.png">
+              <br>
+              Kakuna, Level 9
+            </th>
+            <td rowspan="4">Bug</td>
+            <td>Poison Sting</td>
+          </tr>
+          <tr><td>String Shot</td><td>String Shot</td></tr>
+          <tr><td>Harden</td><td>Harden</td></tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/266.png">
+              <br>
+              Silcoon, Level 8
+            </th>
+            <td rowspan="4">Bug</td>
+            <td>Tackle</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/268.png">
+              <br>
+              Cascoon, Level 9
+            </th>
+            <td rowspan="4">Bug</td>
+            <td>Tackle</td>
+          </tr>
+          <tr><td>String Shot</td><td>String Shot</td></tr>
+          <tr><td>Harden</td><td>Harden</td></tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">45
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="AbandonedSewers" class="EncounterPopup">
+        <span class="close" id="AbandonedSewersClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Abandoned Sewers
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/AbandonedSewers.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

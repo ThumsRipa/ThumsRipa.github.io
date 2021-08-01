@@ -1,0 +1,190 @@
+/*Left Side Navigation*/
+.FieldEffectList {
+    position: absolute;
+    top: 95px;
+    border-collapse: collapse;
+    border:solid;
+}
+
+.FieldEffectList th.FieldEffectListTitle {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.FieldEffectList th.FieldEffectListSubheader {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.FieldEffectList tr{
+    padding:10px;
+    background-color: lightcyan;
+    border:lightgoldenrodyellow 10px;
+}
+
+.FieldEffectList td{
+    padding: 3px;
+    padding-left: 10px;
+    border: 20px black;
+}
+
+.FieldSideNavigation {
+    text-decoration: underline;
+    font-size: 20px;
+    color: black;
+}
+
+.FieldSideNavgation {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+
+.FieldSideNavgation:hover {
+    text-decoration: 1px solid underline black;
+    font-weight: bolder;
+    color: rgb(36, 36, 36);
+}
+
+.FieldEffectTextTable {
+    background-color: lightcyan;
+    width: 100%;
+    border:2px solid black;
+}
+
+.FieldEffectTextTable td {
+    text-align: center;
+    width: 25%;
+}
+
+.FieldEffectsTopNavigation {
+    display: block;
+    margin-left: 50px; /* Same as the width of the sidebar */
+    /*margin-right: 400px;  Same as the width of the sidebar */
+    width: 65%;
+
+    padding: 0px 40px;
+    padding-bottom: 20px;
+}
+
+/* Main Field Effect Content*/
+.FieldEffectHeader {
+    display: block;
+    
+    margin-left: 50px; /* Same as the width of the sidebar */
+    /*margin-right: 400px;  Same as the width of the sidebar */
+    width: 65%;
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 40px;
+
+    border-radius: 0px 15px 15px 0px;
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.FieldEffects {
+    display: block;
+    margin-left: 50px; /* Same as the width of the sidebar */
+    /*margin-right: 400px;  Same as the width of the sidebar */
+    width: 65%;
+
+    padding: 0px 40px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+}
+
+.FieldEffectTitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.FieldEffectExplanation {
+    font-size: 20px;
+}
+
+.FieldEffectTable{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.FieldEffectTable tr{
+    background-color: rgb(250, 250, 250);
+}
+
+.FieldEffectTable th {
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.FieldEffectTable th.FieldEffectOverviewTable{
+    font-size: 20px;
+    background-color: skyblue;
+}
+
+.FieldEffectTable th.FieldEffectType {
+    width: 50%;
+    font-size: 20px;
+}
+
+.FieldEffectTable td {
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+
+    font-size: 18px;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.FieldEffectTable td.FieldEffectEffects{
+    width: 50%;
+}
+
+.FieldChanged {
+    text-decoration: solid underline rgb(0, 0, 255) 1px;
+    color: rgb(0, 0, 255);
+    font-weight: 900;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: white;
+}
+
+.backToTopText {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.backToTopText:hover {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.backToTopText:visited {
+    text-decoration: none;
+}
+
+.topDropField {
+    text-decoration: underline;
+}
+
+.topDropField:visited {
+    text-decoration: none;
+}

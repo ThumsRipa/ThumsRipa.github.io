@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Field Effects - Telluric Fields</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+<link rel="stylesheet" href="../../styles/FieldEffects.css">
+
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="globalrunOnLoad('','Telluric');">
+
+  <!--LeftSideBar-->
+  <div class="trainerSidebar" id="ElementalFields">
+    <a href="FieldEffects-Elemental.html#ElectricTerrain" class="encounterDetailsSidebar">Electric Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#GrassyTerrain" class="encounterDetailsSidebar">Grassy Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#MistyTerrain" class="encounterDetailsSidebar">Misty Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#CorrosiveMistField" class="encounterDetailsSidebar">Corrosive Mist Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#IcyField" class="encounterDetailsSidebar">Icy Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#WaterSurface" class="encounterDetailsSidebar">Water Surface</a><br><br>
+    <a href="FieldEffects-Elemental.html#Underwater" class="encounterDetailsSidebar">Underwater</a><br><br>
+    <a href="FieldEffects-Elemental.html#MurkwaterSurface" class="encounterDetailsSidebar">Murkwater Surface</a><br><br>
+    <a href="FieldEffects-Elemental.html#SkyField" class="encounterDetailsSidebar">Sky Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#VolcanicField" class="encounterDetailsSidebar">Volcanic Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#DragonsDen" class="encounterDetailsSidebar">Dragon's Den</a><br><br>
+    <a href="FieldEffects-Elemental.html#InfernalField" class="encounterDetailsSidebar">Infernal Field</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="TelluricFields">
+    <a href="FieldEffects-Telluric.html#Cave" class="encounterDetailsSidebar">Cave</a><br><br>
+    <a href="FieldEffects-Telluric.html#RockyField" class="encounterDetailsSidebar">Rocky Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#MountainField" class="encounterDetailsSidebar">Mountain</a><br><br>
+    <a href="FieldEffects-Telluric.html#SnowyMountainField" class="encounterDetailsSidebar">Snowy Mountain Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#VolcanicTopField" class="encounterDetailsSidebar">Volcanic Top Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#DesertField" class="encounterDetailsSidebar">Desert Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#AshenBeach" class="encounterDetailsSidebar">Ashen Beach</a><br><br>
+    <a href="FieldEffects-Telluric.html#ForestField" class="encounterDetailsSidebar">Forest Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#SwampField" class="encounterDetailsSidebar">Swamp Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#CorrosiveField" class="encounterDetailsSidebar">Corrosive Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#Wasteland" class="encounterDetailsSidebar">Wasteland</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="SyntheticFields">
+    <a href="FieldEffects-Synthetic.html#CorruptedCave" class="encounterDetailsSidebar">Corrupted Cave</a><br><br>
+    <a href="FieldEffects-Synthetic.html#FactoryField" class="encounterDetailsSidebar">Factory Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ShortCircuitField" class="encounterDetailsSidebar">Short-Circuit Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#GlitchField" class="encounterDetailsSidebar">Glitch Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#BigTopArena" class="encounterDetailsSidebar">Big Top Arena</a><br><br>
+    <a href="FieldEffects-Synthetic.html#MirrorArena" class="encounterDetailsSidebar">Mirror Arena</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ChessBoard" class="encounterDetailsSidebar">Chess Board</a><br><br>
+    <a href="FieldEffects-Synthetic.html#FlowerGardenField" class="encounterDetailsSidebar">Flower Garden Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ColosseumField" class="encounterDetailsSidebar">Colosseum Field</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="MagicalFields">
+    <a href="FieldEffects-Magical.html#PsychicTerrain" class="encounterDetailsSidebar">Psychic Terrain</a><br><br>
+    <a href="FieldEffects-Magical.html#RainbowField" class="encounterDetailsSidebar">Rainbow Field</a><br><br>
+    <a href="FieldEffects-Magical.html#DimensionalField" class="encounterDetailsSidebar">Dimensional Field</a><br><br>
+    <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="encounterDetailsSidebar">Frozen Dimensional Field</a><br><br>
+    <a href="FieldEffects-Magical.html#BlessedField" class="encounterDetailsSidebar">Blessed Field</a><br><br>
+    <a href="FieldEffects-Magical.html#HauntedField" class="encounterDetailsSidebar">Haunted Field</a><br><br>
+    <a href="FieldEffects-Magical.html#InverseField" class="encounterDetailsSidebar">Inverse Field</a><br><br>
+    <a href="FieldEffects-Magical.html#BewitchedWoods" class="encounterDetailsSidebar">Bewitched Woods</a><br><br>
+    <a href="FieldEffects-Magical.html#CrystalCavern" class="encounterDetailsSidebar">Crystal Cavern</a><br><br>
+    <a href="FieldEffects-Magical.html#DarkCrystalCavern" class="encounterDetailsSidebar">Dark Crystal Cavern</a><br><br>
+    <a href="FieldEffects-Magical.html#FairyTaleField" class="encounterDetailsSidebar">Fairy Tale Field</a><br><br>
+    <a href="FieldEffects-Magical.html#StarlightArena" class="encounterDetailsSidebar">Starlight Arena</a><br><br>
+    <a href="FieldEffects-Magical.html#NewWorld" class="encounterDetailsSidebar">New World</a><br><br>
+  </div>
+
+  <!--Main Content-->
+  
+  <div class="maincontent">
+    <div class="FieldEffectHeader" id="FieldEffectHeaderID">
+      Field Effects - Telluric
+    </div>
+    
+    <br>
+    <!--Begin Telluric Fields-->
+
+    <div class="FieldEffects" id="Cave"> <!--Cave-->
+      <p class="FieldEffectTitle">Cave [Telluric]</p>
+      <p class="FieldEffectExplanation">The Cave is a field effect you will find very often during the game, as either it or one of its variations will be used in nearly all caves. In here, Ground-type moves can hit airborne Pokemon, Rock moves are boosted, and non-contact Flying-type moves have decreased power.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Bulldoze, Magnitude<br>Earthquake, Tectonic Rage</td><td class="FieldEffectEffects">Only when in a <a href="FieldEffects-Magical.html#CrystalCavern" class="FieldChanged">Crystal Cavern</a> or <a href="FieldEffects-Magical.html#DarkCrystalCavern" class="FieldChanged">Dark Crystal Cavern</a><br>Requires two uses</td></tr>
+
+        <tr><td class="FieldEffectEffects">Bulldoze, Magnitude, Earthquake</td><td class="FieldEffectEffects">Only when on an <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Fire Pledge, Flame Burst, Heat Wave<br>Lava Plume, Eruption, Magma Drift, Searing Shot</td><td class="FieldEffectEffects">Only when on an <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field</a><br>The original field must not be <a href="FieldEffects-Elemental.html#WaterSurface" class="FieldChanged">Water Surface</a> or <a href="FieldEffects-Elemental.html#MurkwaterSurface" class="FieldChanged">Murkwater Surface</a></td></tr>
+
+        <tr><td class="FieldEffectEffects">Water Sport, Water Pledge, Muddy Water<br> Surf, Water Spout, Sparkling Aria<br>Hydro Vortex, Oceanic Operetta<br>Tailwind, Whirlwind, Defog<br>Gust, Razor Wind, Hurricane<br>Blizzard, Sand Tomb, Continental Crush<br>Change the weather to Rain or Sandstorm</td><td class="FieldEffectEffects">Only when in a <a href="FieldEffects-Elemental.html#VolcanicField" class="FieldChanged">Volcanic Field</a></td></tr>
+
+        <tr><td class="FieldEffectEffects">Solar Beam, Solar Blade<br>Seed Flare, Purify</td><td class="FieldEffectEffects">Only when in a <a href="FieldEffects-Synthetic.html#CorruptedCave" class="FieldChanged">Corrupted Cave</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
+        <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
+        <tr><td class="FieldEffectEffects">Power Gem, Diamond Storm</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#CrystalCavern" class="FieldChanged">Crystal Cavern</a></td></tr>
+
+        <tr><td class="FieldEffectEffects">Lava Plume, Magma Drift<br>Eruption, Overheat<br>Fire Lash, Fever Pitch, Fusion Flare</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#VolcanicField" class="FieldChanged">Volcanic Field</a></td></tr>
+
+        <tr><td class="FieldEffectEffects">Sludge Wave, Acid Downpour</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Synthetic.html#CorruptedCave" class="FieldChanged">Corrupted Cave</a></td></tr>
+        <tr><td class="FieldEffectEffects">Blizzard</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Draco Meteor</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#DragonsDen" class="FieldChanged">Dragon's Den</a></td></tr>
+        <tr><td class="FieldEffectEffects">Dragon Pulse</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#DragonsDen" class="FieldChanged">Dragon's Den<br>Requires 2 uses</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td colspan="2" class="FieldEffectEffects">Stealth Rock damage is doubled</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Punk Rock</td><td class="FieldEffectEffects">Increase Base Power of sound moves by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Rock</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td colspan="2" class="FieldEffectEffects">Earthquake, Magnitude, Bulldoze, Tectonic Rage, and Continental Crush will collapse the cave after two uses, instantly KOing all active Pokemon<br><br>Pokemon with these abilities are immune to the collapse: Rock Head, Bulletproof, Stalwart<br>Pokemon under the effects of these moves are immune to the collapse: Protection moves such as Protect, Detect, and Wide Guard<br><br>Pokemon with these abilities take 33% Max HP damage from the collapse: Solid Rock, Prism Armor<br><br>Pokemon under the effects of these moves take 33% Max HP damage from the collapse: Arenite Wall<br><br>Pokemon with these abilities take 50% Max HP damage from the collapse: Battle Armor, Shell Armor<br><br>Pokemon with these abilities survive with 1 HP after the collapse: Sturdy (If at full health)<br>Pokemon under the effects of these moves survive with 1 HP after the collapse: Endure</td></tr>
+        <tr><td colspan="2" class="FieldEffectEffects">Ground-type moves can hit airborne Pokemon</td></tr>
+        <tr><td colspan="2" class="FieldEffectEffects">Rock-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td colspan="2" class="FieldEffectEffects">Sound-based moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td colspan="2" class="FieldEffectEffects">Non-contact Flying-type moves have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Rock Tomb</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Fly, Bounce</td><td class="FieldEffectEffects">Only lasts one turn</td></tr>
+        <tr><td class="FieldEffectEffects">Sky Drop</td><td class="FieldEffectEffects">Always fails</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Rock Tomb</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Rock</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can cause Flinch</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Defense by 1 stage<br>Damages the user with Stealth Rocks</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="RockyField"> <!--Rocky Field-->
+      <p class="FieldEffectTitle">Rocky Field [Telluric]</p>
+      <p class="FieldEffectExplanation">A field filled with rocks gives a lot of cover from certain moves. Missing a contact move or flinching here will cause damage to the Pokemon.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Pokemon may dodge Bulletproof-blockable moves (Such as Aura Sphere, Electro Ball, Energy Ball, Seed Bomb, etc) if they have a substitute or their evasion is boosted by at least one stage</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Stealth Rock damage is doubled</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Missing a physical, contact move causes the user to take 1/8 Max HP recoil damage<br><br>Pokemon with these abilities are immune to the recoil damage: Rock Head<br><br>Pokemon with these abilities take double recoil damage: Gorilla Tactics</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Flinching additionally causes 1/16 Max HP recoil damage<br><br>Pokemon with these abilities are immune to the recoil damage: Sturdy, Steadfast</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Long Reach</td><td class="FieldEffectEffects">All moves have their accuracy reduced to 0.9x</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Rock-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Earthquake, Magnitude, Bulldoze<br>Rock Climb, Strength, Accelerock</td><td class="FieldEffectEffects">Deals Rock-type damage in addition to its usual type<br>Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Rock Smash</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Rock Polish</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Arenite Wall</td><td class="FieldEffectEffects">Can be used regardless of weather<br>Lasts for 8 turns</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Rock Smash</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Rock</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can cause Flinch</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Defense and Special Defense by one stage<br>Damages the user with Stealth Rocks</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="MountainField"> <!--Mountain Field-->
+      <p class="FieldEffectTitle">Mountain Field [Telluric]</p>
+      <p class="FieldEffectExplanation">Up high in the mountain, Rock-types and Flying-types have their moves boosted. Many moves that depend on the wind are also boosted, and Strong Winds is a strong weather up here.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Fire Pledge, Flame Burst, Searing Shot<br>Heat Wave, Lava Plume, Inferno Overdrive</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Telluric.html#SnowyMountainField" class="FieldChanged">Snowy Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">3 consecutive turns of Sunny weather</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Telluric.html#SnowyMountainField" class="FieldChanged">Snowy Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Subzero Slammer</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Telluric.html#VolcanicTopField" class="FieldChanged">Volcanic Top Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Gravity, Ingrain, Thousand Arrows<br>*Smack Down, *Grav Apple</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Elemental.html#SkyField" class="FieldChanged">Sky Field</a><br>Requires two uses</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
+        <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Subzero Slammer</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#SnowyMountainField" class="FieldChanged">Snowy Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">3 consecutive turns of Hail weather</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#SnowyMountainField" class="FieldChanged">Snowy Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Lava Plume, Magma Drift<br>Eruption, Inferno Overdrive</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#VolcanicTopField" class="FieldChanged">Volcanic Top Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Fly, Bounce, Heavenly Wing</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#SkyField" class="FieldChanged">Sky Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Long Reach</td><td class="FieldEffectEffects">Increase Base Power of moves by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Gale Wings</td><td class="FieldEffectEffects">Flying-type move priority is always active regardless of HP<br>Requires Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Drought</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Rock</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Rock-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Flying-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Twister, Fairy Wind, Silver Wind<br>Icy Wind, Ominous Wind, Razor Wind<br>Thunder, Eruption, Avalanche<br>Vital Throw, Storm Throw, Circle Throw</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Special Flying-type moves<br>Gust, Twister, Fairy Wind, Silver Wind<br>Icy Wind, Ominous Wind, Razor Wind</td><td class="FieldEffectEffects">Base Power increased by an additional 1.5x<br>Stacks with previous boosts<br>Requires Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Thunder</td><td class="FieldEffectEffects">Will never miss</td></tr>
+        <tr><td class="FieldEffectEffects">Sunny Day</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Tailwind</td><td class="FieldEffectEffects">Lasts for 6 turns instead of 5<br>Additionally creates Strong Winds weather</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Rock Slide</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Rock</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can cause Flinch</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Attack by one stage<br>Lower's user Accuracy by one stage</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="SnowyMountainField"> <!--Snowy Mountain Field-->
+      <p class="FieldEffectTitle">Snowy Mountain Field [Telluric]</p>
+      <p class="FieldEffectExplanation">The Snowy Mountain Field shares its traits between the <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a> and the <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field.</a> Ice-type, Rock-type, and Flying-type Pokemon can find its home in this field.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Subzero Slammer</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">3 consecutive turns of Hail weather</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
+        <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
+        <tr><td class="FieldEffectEffects">Fire Pledge, Flame Burst, Searing Shot<br>Heat Wave, Lava Plume, Inferno Drive</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">3 consecutive turns of Sunny weather</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Eruption, Magma Drift</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#VolcanicTopField" class="FieldChanged">Volcanic Top Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Fly, Bounce, Heavenly Wing</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#SkyField" class="FieldChanged">Sky Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Long Reach</td><td class="FieldEffectEffects">Increase Base Power of moves by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Aerilate</td><td class="FieldEffectEffects">Damage boost increased to 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Refrigerate</td><td class="FieldEffectEffects">Damage boost increased to 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Ice Body</td><td class="FieldEffectEffects">Pokemon with this ability are healed at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Slush Rush</td><td class="FieldEffectEffects">Speed boost is active regardless of weather</td></tr>
+        <tr><td class="FieldEffectEffects">Snow Cloak</td><td class="FieldEffectEffects">Evasion boost is active regardless of weather</td></tr>
+        <tr><td class="FieldEffectEffects">Ice Scales</td><td class="FieldEffectEffects">Pokemon with this ability have their Ice-type weaknesses nullified</td></tr>
+        <tr><td class="FieldEffectEffects">Gale Wings</td><td class="FieldEffectEffects">Flying-type move priority is always active regardless of HP<br>Requires Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Drought, Snow Warning</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Ball Fetch</td><td class="FieldEffectEffects">Pokemon with this ability may pick up Snowballs</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Ice</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Rock-type moves deals Ice-type damage in addition to its usual type</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Rock-type, Flying-type, and Ice-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Fire-type moves have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Icy Wind</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Twister, Fairy Wind, Silver Wind<br>Ominous Wind, Razor Wind<br>Powder Snow, Avalanche<br>Vital Throw, Storm Throw, Circle Throw</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Special Flying-type moves<br>Gust, Twister, Fairy Wind, Silver Wind<br>Icy Wind, Ominous Wind, Razor Wind</td><td class="FieldEffectEffects">Base Power increased by an additional 1.5x<br>Stacks with previous boosts<br>Requires Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Scald, Steam Eruption</td><td class="FieldEffectEffects">Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Thunder</td><td class="FieldEffectEffects">Will never miss</td></tr>
+        <tr><td class="FieldEffectEffects">Sunny Day, Hail</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Tailwind</td><td class="FieldEffectEffects">Lasts for 6 turns instead of 5<br>Additionally creates Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Aurora Veil</td><td class="FieldEffectEffects">Can be used regardless of weather</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Avalanche</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Ice</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can inflict Freeze</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Special Attack by one stage<br>Lower's user Accuracy by one stage</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="VolcanicTopField"> <!--Volcanic Top Field-->
+      <p class="FieldEffectTitle">Volcanic Top Field [Telluric]</p>
+      <p class="FieldEffectExplanation">The Volcanic Top Field is a Fire-type Mountain Field, boosting many Fire-type moves as well as adding the Fire-type to many wind-based moves. The volcano will also erupt, dealing large amounts of damage to those that aren't protected by their typing or their ability.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Lava Plume, Magma Drift, Eruption</td><td class="FieldEffectEffects">Only when on a <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Eruption</td><td class="FieldEffectEffects">Only when on a <a href="FieldEffects-Telluric.html#SnowyMountainField" class="FieldChanged">Snowy Mountain Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
+        <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Subzero Slammer</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#MountainField" class="FieldChanged">Mountain Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Fly, Bounce, Heavenly Wing</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#SkyField" class="FieldChanged">Sky Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Weather cannot be Hail in this field</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Some moves will cause volcano to erupt, dealing Fire-type scaling damage to all active Pokemon<br><br>Fire-type Pokemon are immune to this damage<br><br>Pokemon with these abilities are immune to field damage:<br>Magma Armor, Flash Fire, Flare Boost, Flame Body, Blaze<br>Solid Rock, Sturdy, Battle Armor, Shell Armor, Prism Armor<br>Water Bubble, Magic Guard, Wonder Guard<br><br>Pokemon under the effects of these moves are immune to field damage: Aqua Ring, Wide Guard<br><br>Pokemon under the effects of these moves take double damage from the eruption: Tar Shot</td></tr>
+        <tr><td class="FieldEffectEffects">Moves:<br>Bulldoze, Magnitude, Earthquake, Earth Power<br>Lava Plume, Magma Drift, Eruption, Precipice Blades</td><td class="FieldEffectEffects">Causes the field to erupt</td></tr>
+        <tr><td class="FieldEffectEffects">Ability: Desolate Land</td><td class="FieldEffectEffects">Causes the field to erupt at the end of the turn</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">The field is cleared of hazards, including Leech Seed, on both sides after an eruption</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Sleeping Pokemon are woken up after an eruption, unless the Sleeping Pokemon has the ability Soundproof</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Stealth Rocks deals Fire-type damage</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Gale Wings</td><td class="FieldEffectEffects">Flying-type move priority is always active regardless of HP<br>Requires Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Magma Armor</td><td class="FieldEffectEffects">Boosts user's Defense and Special Defense by one stage after an eruption<br>Pokemon with this abilit are immune to Fire-type moves</td></tr>
+        <tr><td class="FieldEffectEffects">Flare Boost</td><td class="FieldEffectEffects">Boosts user's Special Attack by one stage after an eruption</td></tr>
+        <tr><td class="FieldEffectEffects">Steam Engine</td><td class="FieldEffectEffects">Boosts user's Speed by one stage after every turn</td></tr>
+        <tr><td class="FieldEffectEffects">Flash Fire, Blaze</td><td class="FieldEffectEffects">Activated for one turn after an eruption</td></tr>
+        <tr><td class="FieldEffectEffects">Solar Idol</td><td class="FieldEffectEffects">Is always active</td></tr>
+        <tr><td class="FieldEffectEffects">Ice Face</td><td class="FieldEffectEffects">Melts upon entering the battle</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Fire</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Fire-type moves have their Base Power increased by 1.2x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Physical Water-type moves have their Base Power decreased by 0.9x<br>Special Water-type moves have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Ice-type moves have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Rock-type moves deal Fire-type damage in addition to its usual type</td></tr>
+        <tr><td class="FieldEffectEffects">Self Destruct, Explosion<br>Dig, Dive<br>Magnet Bomb, Egg Bomb, Seismic Toss</td><td class="FieldEffectEffects">Deals Fire-type damage in addition to its usual type</td></tr>
+        <tr><td class="FieldEffectEffects">Silver Wind, Ominous Wind, Razor Wind<br>Icy Wind, Gust, Twister<br>Smog, Clear Smog, Precipice Blades</td><td class="FieldEffectEffects">Deals Fire-type damage in addition to its usual type<br>Base Power increased by 1.2x</td></tr>
+        <tr><td class="FieldEffectEffects">Scald, Steam Eruption</td><td class="FieldEffectEffects">Base Power increased by 1.5x<br>After factoring in the above Water-type move Base Power decrease</td></tr>
+        <tr><td class="FieldEffectEffects">Thunder</td><td class="FieldEffectEffects">Base Power increased by 1.5x<br>Will never miss</td></tr>
+        <tr><td class="FieldEffectEffects">Eruption, Heat Wave, Magma Storm<br>Lava Plume, Magma Drift</td><td class="FieldEffectEffects">Base Power increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Water Sport, Water Pledge, Water Spout<br>Surf, Muddy Water, Sparkling Aria, Oceanic Operetta</td><td class="FieldEffectEffects">Base Power decreased by 0.5x<br>After factoring in the above Water-type move Base Power decrease<br>Additionally causes steam that lowers all Pokemon's accuracy by one stage<br></td></tr>
+        <tr><td class="FieldEffectEffects">Smokescreen</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Poison Gas</td><td class="FieldEffectEffects">Inflicts Badly Poisoned instead of Poisoned</td></tr>
+        <tr><td class="FieldEffectEffects">Tailwind</td><td class="FieldEffectEffects">Lasts for 6 turns instead of 5<br>Additionally creates Strong Winds weather</td></tr>
+        <tr><td class="FieldEffectEffects">Outrage, Thrash, Petal Dance</td><td class="FieldEffectEffects">Fatigues after one turn</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Eruption</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Fire</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can inflict Burn</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Defense by one stage<br>Applies Shell Trap on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="DesertField"> <!--Desert Field-->
+      <p class="FieldEffectTitle">Desert Field [Telluric]</p>
+      <p class="FieldEffectExplanation">In the desert, Ground-types and their moves are boosted while Water-type and Electric-type moves are weakened. The field also activates abilities that are normally active during Sandstorm. If the weather is Sunny, Grass-type and Water-type Pokemon will take damage at the end of each turn.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Ground-type Pokemon's Special Defense is increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">If the weather is Sandstorm, Pokemon take 1/8 Max HP damage instead of 1/16 Max HP</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">If the weather is Sunny:<br><br>Grass-type and Water-type Pokemon take 1/8 Max HP damage at the end of each turn<br><br>Grass-type and Water-type Pokemon are healed by Water-type moves</td></tr>
+
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Sand Veil, Sand Rush, Sand Force<br>Solar Idol</td><td class="FieldEffectEffects">Stat boost is activated regardless of weather</td></tr>
+        <tr><td class="FieldEffectEffects">Dry Skin</td><td class="FieldEffectEffects">Pokemon with this ability are damaged at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Wandering Spirit</td><td class="FieldEffectEffects">Pokemon with this ability have its Speed lowered by one stage at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Drought, Sandstream</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Ground</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Water-type moves from grounded Pokemon have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Electric-type moves against grounded Pokemon have their Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Heat Wave, Burn Up, Scald*, Steam Eruption*<br>Sand Tomb, Dig, Thousand Waves<br>Pin Missile, Needle Arm</td><td class="FieldEffectEffects">Base Power increased by 1.5x<br>*These moves are not affected by the above Base Power decreased</td></tr>
+        <tr><td class="FieldEffectEffects">Sand Tomb</td><td class="FieldEffectEffects">Damage increased to 1/6 Max HP per turn</td></tr>
+        <tr><td class="FieldEffectEffects">Shore Up</td><td class="FieldEffectEffects">Heal amount increased to 66%</td></tr>
+        <tr><td class="FieldEffectEffects">Sand Attack</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Sunny Day, Sandstorm</td><td class="FieldEffectEffects">Lasts for 8 turns instead of 5</td></tr>
+        <tr><td class="FieldEffectEffects">Dig</td><td class="FieldEffectEffects">Only lasts one turn</td></tr>
+        <tr><td class="FieldEffectEffects">Arenite Wall</td><td class="FieldEffectEffects">Can be used regardless of weather<br>Lasts for 8 turns</td></tr>
+        <tr><td class="FieldEffectEffects">Soak, Aqua Ring</td><td class="FieldEffectEffects">Always fails</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Sand Tomb</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Ground</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can lower target's Accuracy</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Defense, Special Defense, and Speed by one stage<br>Applies Sand Tomb on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="AshenBeach"> <!--Ashen Beach-->
+      <p class="FieldEffectTitle">Ashen Beach [Telluric]</p>
+      <p class="FieldEffectExplanation">The Ashen Beach field helps Ground-types, Water-types, Psychic-types, and Fighting-types. Here, certain moves will cause ash and sand to fly up, lowering all Pokemon's accuracy unless their ability prevents it.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Fighting-type Pokemon cannot be Confused</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Sandstorm weather lasts for 8 turns</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Some moves causes ash and sand to stir, lowering all active Pokemon's accuracy by one stage</td></tr>
+        <tr><td class="FieldEffectEffects">Moves:<br>Special Flying-type moves<br>Leaf Tornado, Fire Spin, Whirlpool<br>Twister, Razor Wind</td><td class="FieldEffectEffects">Causes the ash and sand to stir</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Sand Veil, Sand Rush, Sand Force</td><td class="FieldEffectEffects">Stat boost is activated regardless of weather</td></tr>
+        <tr><td class="FieldEffectEffects">Inner Focus, Own Tempo, Pure Power, Steadfast</td><td class="FieldEffectEffects">Ignores all accuracy and evasion changes when attacking<br>Does not ignore stat changes if the opponent has the ability Unnerve</td></tr>
+        <tr><td class="FieldEffectEffects">Sand Spit</td><td class="FieldEffectEffects">Additionally lowers all oppoenent's accuracy when activated</td></tr>
+        <tr><td class="FieldEffectEffects">Water Compaction</td><td class="FieldEffectEffects">Additionally boosts user's Special Defense when activated</td></tr>
+        <tr><td class="FieldEffectEffects">Zen Mode</td><td class="FieldEffectEffects">Is always active</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Ground</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Strength</td><td class="FieldEffectEffects">Deals Fighting/Psychic-type damage<br>Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Mud Slap, Mud Shot, Mud Bomb, Sand Tomb</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Surf, Muddy Water, Hidden Power<br>Land's Wrath, Thousand Waves</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Zen Headbutt, Stored Power<br>Aura Sphere, Focus Blast</td><td class="FieldEffectEffects">Base Power increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Psychic</td><td class="FieldEffectEffects">Base Power increased by 1.2x</td></tr>
+        <tr><td class="FieldEffectEffects">Shore Up</td><td class="FieldEffectEffects">Heal amount increased to 75%</td></tr>
+        <tr><td class="FieldEffectEffects">Calm Mind, Kinesis, Sand Attack, Meditate</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Focus Energy</td><td class="FieldEffectEffects">Critical hit rate is raised by 3 stages instead of 2 stages</td></tr>
+        <tr><td class="FieldEffectEffects">Psych-Up</td><td class="FieldEffectEffects">Additionally cures the user's status</td></tr>
+        <tr><td class="FieldEffectEffects">Sand Tomb</td><td class="FieldEffectEffects">Additionally lowers the target's accuracy by 1 stage after every turn</td></tr>
+        <tr><td class="FieldEffectEffects">Arenite Wall</td><td class="FieldEffectEffects">Can be used regardless of weather<br>Lasts for 8 turns</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Meditate</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Ground</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can lower target's accuracy</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Applies Focus Energy on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="ForestField"> <!--Forest Field-->
+      <p class="FieldEffectTitle">Forest Field [Telluric]</p>
+      <p class="FieldEffectExplanation">In the forest, many Bug-type and Grass-type moves are boosted and may moves will gain additional Grass-type damage. Many abilities common in Grass-types are also actiavted, regardless of other conditions.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Purify</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Magical.html#BewitchedWoods" class="FieldChanged">Bewitched Woods</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Overgrow, Swarm</td><td class="FieldEffectEffects">Damage boost is activated regardless of user's HP levels</td></tr>
+        <tr><td class="FieldEffectEffects">Grass Pelt</td><td class="FieldEffectEffects">Defense boost is activated on this field</td></tr>
+        <tr><td class="FieldEffectEffects">Sap Sipper</td><td class="FieldEffectEffects">Restores health at the end of every turn</td></tr>
+        <tr><td class="FieldEffectEffects">Leaf Guard</td><td class="FieldEffectEffects">Prevents all status effects regardless of weather</td></tr>
+        <tr><td class="FieldEffectEffects">Effect Spore</td><td class="FieldEffectEffects">Activation chance is doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Long Reach</td><td class="FieldEffectEffects">Base accuracy for all moves used by this Pokemon is lowered to 0.9x</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Bug</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Grass-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Special Bug-type moves have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Cut</td><td class="FieldEffectEffects">Deals Grass-type damage in addition to its usual type<br>Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Fury Cutter, Air Cutter, Psycho Cut<br>Slash, Air Slash, Gale Strike<br>Breaking Swipe</td><td class="FieldEffectEffects">Deals Grass-type damage in addition to its usual type<br>Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Attack Order</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Grav Apple</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Surf, Muddy Water</td><td class="FieldEffectEffects">Base Power decreased by 0.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Infestation</td><td class="FieldEffectEffects">Damage increased to 1/6 Max HP damage per turn</td></tr>
+        <tr><td class="FieldEffectEffects">Nature's Madness</td><td class="FieldEffectEffects">Damage increased to 75% of target's HP</td></tr>
+        <tr><td class="FieldEffectEffects">Ingrain</td><td class="FieldEffectEffects">Heal amount is doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Heal Order</td><td class="FieldEffectEffects">Heal amount increased to 66% Max HP</td></tr>
+        <tr><td class="FieldEffectEffects">Strength Sap</td><td class="FieldEffectEffects">Heal amount increased by 30%</td></tr>
+        <tr><td class="FieldEffectEffects">Growth, Defend Order</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Sticky Web</td><td class="FieldEffectEffects">Speed is lowered by two stages instead of one on switch in</td></tr>
+        <tr><td class="FieldEffectEffects">Forest's Curse</td><td class="FieldEffectEffects">Additionally Curses the target<br>Does not lower user's health</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Wood Hammer</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Bug</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can inflict Sleep</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Attack by one stage<br>Applies Spiky Shield on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="SwampField"> <!--Swamp Field-->
+      <p class="FieldEffectTitle">Swamp Field [Telluric]</p>
+      <p class="FieldEffectExplanation">This damp, moist field combines some effects of the <a href="FieldEffects-Elemental.html#WaterSurface" class="FieldChanged">Water Surface</a> and <a href="FieldEffects-Telluric.html#Desert" class="FieldChanged">Desert Field.</a> Muddy and wet moves are boosted, and the field slows down all grounded Pokemon after every turn. Sleeping in this field damages you.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Grass Pledge<br>Water Pledge</td><td class="FieldEffectEffects">5 Turns<br>When used consecutively in either order</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">All grounded Pokemon have their Speed lowered by one stage at the end of every turn<br><br>Pokemon that are trapped have their Speed lowered by two stages.<br><br>Pokemon with these abilities are immune to the Speed drop: Clear Body, Quick Feet, Swift Swim, White Smoke, Propellor Tail</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Sleeping Pokemon take 1/16 Max HP damage at the end of each turn<br><br>Sleeping Pokemon that are trapped take double damage</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Dry Skin</td><td class="FieldEffectEffects">Restored 1/16 Max HP at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Water Compaction</td><td class="FieldEffectEffects">Activates at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Gooey</td><td class="FieldEffectEffects">Speed decrease effect is doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Gulp Missle</td><td class="FieldEffectEffects">Always picks up Arrokuda when activated</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Water</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Poison-type moves against grounded Pokemon have their Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Mud Slap, Mud Shot, Mud Bomb, Muddy Water<br>Surf, Brine, Hydro Vortex<br>Sludge Wave, Gunk Shot, Smack Down, Thousand Arrows</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Smack Down, Thousand Arrows</td><td class="FieldEffectEffects">Deals Water-type damage in addition to its original type</td></tr>
+        <tr><td class="FieldEffectEffects">Sleep Powder</td><td class="FieldEffectEffects">Base accuracy increased to 100</td></tr>
+        <tr><td class="FieldEffectEffects">Aqua Ring</td><td class="FieldEffectEffects">Heal amount increased to 1/8 Max HP</td></tr>
+        <tr><td class="FieldEffectEffects">Strength Sap</td><td class="FieldEffectEffects">Heal amount increased by 30%</td></tr>
+        <tr><td class="FieldEffectEffects">Ingrain</td><td class="FieldEffectEffects">Damages the user instead of healing<br>Damage is nullified if the user is Poison-type or Steel-type</td></tr>
+        <tr><td class="FieldEffectEffects">Self-Destruct, Explosion</td><td class="FieldEffectEffects">Always fails</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Muddy Water</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Water</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can lower target's Speed</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Defense and Special Defense by one stage<br>Applies Ingrain on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="CorrosiveField"> <!--Corrosive Field-->
+      <p class="FieldEffectTitle">Corrosive Field [Telluric]</p>
+      <p class="FieldEffectExplanation">The Corrosive Field will damage all Pokemon that are sent in, aside from Poison-types and Steel-types. Many Poison-type moves are boosted, and many moves that rely on dirt gain additional Poison-type.</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
+        <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
+        <tr><td class="FieldEffectEffects">Gravity</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Elemental.html#CorrosiveMistField" class="FieldChanged">Corrosive Mist Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Sludge Wave, Acid Downpour</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Elemental.html#GrassyField" class="FieldChanged">Grassy Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
+        <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
+        <tr><td class="FieldEffectEffects">Seed Flare, Purify</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#GrassyField" class="FieldChanged">Grassy Field</a></td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Pokemon switching in take type-scaling Poison-type damage<br><br>Poison-type and Steel-type Pokemon are immune to this damage<br><br>Pokemon with these abilities are immune to this damage: Toxic Boost, Poison Heal, Immunity, Wonder Guard, Pastel Veil</td></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Sleeping Pokemon take 1/16 Max HP damage at the end of each turn<br><br>Poison-type and Steel-type Pokemon are immune to this damage<br><br>Pokemon with these abilities are immune to this damage: Wonder Guard</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Toxic Boost</td><td class="FieldEffectEffects">Damage boost is activated regardless of status effect<br>Only for grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Corrosion</td><td class="FieldEffectEffects">Base Power of moves increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Merciless</td><td class="FieldEffectEffects">Always treats the target as Poisoned, always dealing critical hits</td></tr>
+        <tr><td class="FieldEffectEffects">Poison Heal</td><td class="FieldEffectEffects">Pokemon with this ability are healed at the end of each turn<br>Only for grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Grass Pelt</td><td class="FieldEffectEffects">Pokemon with this ability are damaged at the end of each turn</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Poison</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects" colspan="2">Grass-type moves deals Poison-type damage in addition to its usual type</td></tr>
+        <tr><td class="FieldEffectEffects">Mud Slap, Mud Shot, Mud Bomb, Muddy Water<br>Apple Acid, Whirlpool, Smack Down, Thousand Arrows</td><td class="FieldEffectEffects">Deals Poison-type damage in addition to its usual type<br>Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Grass Knot, Acid, Acid Spray, Snap Trap</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Sleep Powder, Poison Powder, Stun Spore, Toxic</td><td class="FieldEffectEffects">Base accuracy increased to 100</td></tr>
+        <tr><td class="FieldEffectEffects">Acid Armor</td><td class="FieldEffectEffects">Stat changes are doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Venom Drench, Venoshock</td><td class="FieldEffectEffects">Always treats the target as Poisoned</td></tr>
+        <tr><td class="FieldEffectEffects">Toxic Spikes</td><td class="FieldEffectEffects">Cannot be absorbed by Poison-type Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Floral Healing</td><td class="FieldEffectEffects">Additionally inflicts Poison onto the target</td></tr>
+        <tr><td class="FieldEffectEffects">Ingrain</td><td class="FieldEffectEffects">Damages the user instead of healing</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Acid</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Poison</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can inflict Poison</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Attack by one stage<br>Applies Baneful Bunker on the user</td></tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects" id="Wasteland"> <!--Wasteland-->
+      <p class="FieldEffectTitle">Wasteland [Telluric]</p>
+      <p class="FieldEffectExplanation">The Wasteland is a a toxic area where many Poison-type Pokemon thrive. The ground here is muddy, lowering the effectiveness of some Ground-type moves. Due to the toxicity of the area, some moves can inflict a random status onto the target</p>
+      <table class="FieldEffectTable">
+        <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
+        <tr><td class="FieldEffectEffects" colspan="2">Entry Hazards (Stealth Rocks, Spikes, Toxic Spikes, and Sticky Web) are consumed at the end of the turn, dealing damage depend on the type of hazard</td></tr>
+        <tr><td class="FieldEffectEffects">Stealth Rocks</td><td class="FieldEffectEffects">Deals double damage<br>Damage is still Rock-type</td></tr>
+        <tr><td class="FieldEffectEffects">Spikes</td><td class="FieldEffectEffects">Deals 33% Max HP damage<br>Only affects grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Toxic Spikes</td><td class="FieldEffectEffects">Deals 12.5% Max HP damage<br>Inflicts Poison<br>Poison-type and Steel-type Pokemon are not affected<br>Only affects grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Sticky Web</td><td class="FieldEffectEffects">Lowers the target's Speed by 2 stages</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
+        <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Toxic Boost</td><td class="FieldEffectEffects">Damage boost is activated regardless of status effect<br>Only for grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Liquid Ooze</td><td class="FieldEffectEffects">Damage inflicted by this ability is doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Corrosion</td><td class="FieldEffectEffects">Can inflict the field's random status effect below on any Pokemon regardless of typing (See Below)</td></tr>
+        <tr><td class="FieldEffectEffects">Merciless</td><td class="FieldEffectEffects">Always treats the target as Poisoned, always dealing critical hits</td></tr>
+        <tr><td class="FieldEffectEffects">Poison Heal</td><td class="FieldEffectEffects">Pokemon with this ability are healed at the end of each turn<br>Only for grounded Pokemon</td></tr>
+        <tr><td class="FieldEffectEffects">Effect Spore, Poison Point, Stench</td><td class="FieldEffectEffects">Activation chance is doubled</td></tr>
+        <tr><td class="FieldEffectEffects">Gooey</td><td class="FieldEffectEffects">Additionally Poisons on activation</td></tr>
+        <tr><td class="FieldEffectEffects">Mimicry</td><td class="FieldEffectEffects">Changes user's type to Poison</td></tr>
+
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Moves Modified</th></tr> <!--Moves-->
+        <tr><th class="FieldEffectType">Move</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Mud Slap, Mud Shot, Mud Bomb</td><td class="FieldEffectEffects">Deals Poison-type damage in addition to its usual type<br>Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Spit-Up</td><td class="FieldEffectEffects">Base Power increased by 2x</td></tr>
+        <tr><td class="FieldEffectEffects">Vine Whip, Power Whip</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
+        <tr><td class="FieldEffectEffects">Sludge, Sludge Wave, Sludge Bomb<br>Gunk Shot, Octazooka, Acid Downpour</td><td class="FieldEffectEffects">Base Power increased by 1.2x<br>Additionally has a chance to inflict a random status on the target</td></tr>
+        <tr><td class="FieldEffectEffects">Acid Downpour</td><td class="FieldEffectEffects">Additionally has a chance to inflict a random status on the target</td></tr>
+        <tr><td class="FieldEffectEffects">Bulldoze, Magnitude, Earthquake</td><td class="FieldEffectEffects">Base Power decreased by 0.25x</td></tr>
+        <tr><td class="FieldEffectEffects">Swallow</td><td class="FieldEffectEffects">Heal amount is doubled<br>At max stacks (3), additionally cures user of all status</td></tr>
+        <tr><td class="FieldEffectEffects">Venom Drench, Venoshock</td><td class="FieldEffectEffects">Always treats the target as Poisoned</td></tr>
+
+        <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Gunk Shot</td></tr>
+        <tr><td class="FieldEffectEffects">Camouflage</td><td class="FieldEffectEffects">Changes user's type to Poison</td></tr>
+        <tr><td class="FieldEffectEffects">Secret Power</td><td class="FieldEffectEffects">Can randomly inflict Poison, Burn, Freeze, or Paralysis</td></tr>
+        
+        <tr><th colspan="2" class="FieldEffectOverviewTable">Held Items</th></tr> <!--Items-->
+        <tr><th class="FieldEffectType">Item</th><th class="FieldEffectType">Modification</th></tr>
+        <tr><td class="FieldEffectEffects">Telluric Seed</td><td class="FieldEffectEffects">Boosts user's Attack and Special Attack by one stage<br>Inflicts a random status on the user</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <div class="backToTop">
+    <a href="#" class="backToTopText" onclick="scrollTop();">Back To Top</a>
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

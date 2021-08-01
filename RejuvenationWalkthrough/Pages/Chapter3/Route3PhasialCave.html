@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Three - Route 3 and Phasial Cave</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([11],['Route3Trainers']);encountersCreate([['Route 3', ['Grass', 'Fishing']],['Phasial Cave', ['Cave', 'Fishing']]],[]);shopsSet([],['Route 3']);globalrunOnLoad('Third','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route3EncountersTxT">Route 3 Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="PhasialCaveEncountersTxT">Phasial Cave Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route3OthersTxT">Route 3 and Phasial Cave Fishing</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route3UpperLeftTxT">Route 3 Market - Upper Left Vendor<br>Daytime Only</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route3UpperRightTxT">Route 3 Market - Upper Right Vendor<br>Daytime Only</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#Cave" target="_blank" class="encounterDetailsSidebar">Cave Field<br>Location: Phasial Cave</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Route 3 and Phasial Cave
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Route 3<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="Route3TrainersButton" onclick="showTrainerTable('Route3Trainers')">Show Trainers</button></span><button class="showHiddenButton" id="Route3HiddenButton" onclick="showHiddenTable('Route3Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 3/Route3/Route3.png">
+        <br>
+        <table class="TrainerTable" id="Route3Trainers">
+        </table>
+        <br>
+        <table class="TrainerTable" id="Route3Hidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Honey<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/Honey.png"></span></a></td>
+            <td>Along the river, top side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Yellow Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/YellowShard.png"></span></a></td>
+            <td>On the table next to the caravan</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Protein<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/Protein.png"></span></a></td>
+            <td>In the grass, near entrance to Mirage Woods</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Sitrus Berry<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/SitrusBerry.png"></span></a></td>
+            <td>In the grass, south of the entrance to Mirage Woods</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/BlueShard.png"></span></a></td>
+            <td>Along the right of the Route 3 path, before the Market</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Star Piece<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/StarPiece.png"></span></a></td>
+            <td>In a small alcove to the left of the Route 3 path, before the Market</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/StarPiece.png"></span></a></td>
+            <td>Left side of the Route 3 path, after the Market</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/SuperPotion.png"></span></a></td>
+            <td>In the grass, right side of the golden forest area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/RedShard.png"></span></a></td>
+            <td>In the grass, left side of the golden forest area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Honey<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/Honey2.png"></span></a></td>
+            <td>In the grass, right across the bridge in the golden forest area</td>
+          </tr>
+        </table>
+        <br>
+        Exit the gate from Sheridan and onto Route 3. <a href="javascript:void(0)" class="normalTrainerName" id="SchoolgirlLizzyName">Schoolgirl Lizzy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Trainers/SchoolgirlLizzy.png"></span></a> is right outside the gate ready for a battle. After battling her, you can head over to the left and into the RV nearby. Here, we can continue our Johto quest by talking to <span class="ImportantName">the man inside the RV.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Johto.png"></span></span> He'll let you battle both Whitney and Morty, which can both be tough in their own right. Use the opportunity of their weaker first Pokemon to set up before dealing with their more annoying Pokemon. The Mirage Woods is in the upper left corner, but we'll explore that later as we need an item found deeper in Route 3. Head on down from the starting area and battle <a href="javascript:void(0)" class="normalTrainerName" id="OptimistMarissaName">Optimist Marissa.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Trainers/OptimistMarissa.png"></span></a> A little bit below her, you'll find a fork in the road. To the left, there's Phasial Cave which has no trainers, but more wild Pokemon as you'll have to travel in a cave. You can choose to go that route, we'll cover it after we go through Route 3.
+        <br><br>
+        Keep going along the path and you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="CoolCoupleNateDelilahName">Cool Couple Nate and Delilah.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Trainers/CoolCoupleNateDelilah.png"></span></a> and <a href="javascript:void(0)" class="normalTrainerName" id="HardcoreTrainerElizabethName">Hardcore Trainer Elizabeth.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Trainers/HardcoreTrainerElizabeth.png"></span></a> Right after Elizabeth, you'll find an area that hosts a marketplace during the day along with a Red Healing Star. I would advise going back to heal at the Sheridan Village-Route 3 Gate as we can use the Red Healing Star later. The market here sells a variety of useful items, and the Ice Cream here are healing items that you can use in battle. Particularly, the Vanilla Ice Cream heals for 30 HP, the Choc Ice Cream heals for 70 HP, and the Berry Ice Cream heals for 90 HP, so the Choc Ice Creams are well worth the price at this stage. Enter the RV here, and if you've met Ditto when it was a Kecleon, you'll find yourself with two Hikers. You can answer either one, but Ditto will run off again. Talk to the remaining Hiker to obtain a <span class="ImportantName">Rose Tea.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/RoseTea.png"></span></span> Out side the RV and to the right, you can use Cut on a tree to grab yourself <span class="ImportantName">TM88, Sleep Talk.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/TM88SleepTalk.png"></span></span> Make sure you're healed up, then head down to below the marketplace and enter a battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 3/Route3/VSRorimB.png">
+        <div class="eventTrainerName">
+          Dance Prodigy Rorim B.
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/549.png">
+              <br>
+              Lilligant, Level 24
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Petal Dance</td>
+          </tr>
+          <tr><td>Nature Power</td></tr>
+          <tr><td>Teeter Dance</td></tr>
+          <tr><td>Quiver Dance</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/666.png">
+              <br>
+              Vivillon, Level 24
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Signal Beam</td>
+          </tr>
+          <tr><td>Psybeam</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Draining Kiss</td></tr>
+          <tr><td>Quiver Dance</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/779.png">
+              <br>
+              Bruxish, Level 24
+            </th>
+            <td rowspan="2">Psychic</td>
+            <td>Aqua Jet</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr><td rowspan="2">Water</td><td>Aerial Ace</td></tr>
+          <tr><td>Swords Dance</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/741_2.png">
+              <br>
+              Oricorio (Pa'u Style), Level 25
+            </th>
+            <td rowspan="2">Psychic</td>
+            <td>Revelation Dance</td>
+          </tr>
+          <tr><td>Air Slash</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Teeter Dance</td></tr>
+          <tr><td>Feather Dance</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/272.png">
+              <br>
+              Ludicolo, Level 26
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Bubble Beam</td>
+          </tr>
+          <tr><td>Knock Off</td></tr>
+          <tr><td rowspan="2">Water</td><td>Teeter Dance</td></tr>
+          <tr><td>Rain Dance</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">936
+            </td>
+          </tr>
+        </table>
+        <br>
+        After Amanda, this battle shouldn't be too difficult. Be careful of Lilligant and Vivillon setting up with Quiver Dance or Bruxish with Swords Dance, and this battle shouldn't be too difficult. Once you beat him, go ahead and take the path to the left. Right by the river, walk down to find an <span class="ImportantName">Ancient Wing.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/AncientWing.png"></span></span> We'll use it to explore an optional area in the next section.
+        <br><br>
+        From here, you can go ahead and head along the path until you find yourself at the Goldenleaf Town Gate. If you don't care to go through Phasial Cave, then you can skip to the next section. Phasial Cave has a lot of hidden items (the most important of which is a Moon Stone) and new encounters, so I'd suggest at least looking through the list to see if there's anything you want.
+        <p class="subsectionHeader">Phasial Cave<span class="showTrainersButtonAnchor"><button class="showHiddenButton" id="PhasialCaveHiddenButton" onclick="showHiddenTable('PhasialCaveHidden')">Show Hidden Items</button></span></p>
+        <table class="TrainerTable" id="PhasialCaveHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Rock Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/RockGem.png"></span></a></td>
+            <td>Brown rock near the entrance, first room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Mineral Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/MineralBall.png"></span></a></td>
+            <td>Small white rock on the right, first room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/GreenShard.png"></span></a></td>
+            <td>Large white rock on the right near the river, first room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/ReverseCandy.png"></span></a></td>
+            <td>Small white rock below the Mineral Ball above, first room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Steel Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/SteelGem.png"></span></a></td>
+            <td>Large brown rock on the left side, first room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Full Heal<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/FullHeal.png"></span></a></td>
+            <td>South of the exit of the grassy area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Moon Stone<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/MoonStone.png"></span></a></td>
+            <td>Near the opposite exit of the grassy area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/RedShard.png"></span></a></td>
+            <td>Brown rock on the left, second room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Grass Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/HiddenItems/PhasialCave/GrassGem.png"></span></a></td>
+            <td>Small right rock on the path to the exit, second room</td>
+          </tr>
+        </table>
+        <br>
+        Phasial Cave is a very straightforward path. There's a Blue Shard in a Poke Ball to the right side near the river in the first room. The most important item here is a Moon Stone, which you can use to evolve the Nido-s, Clefairy, Jigglypuff, Skitty, or Munna. Battles here are fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#Cave" target="_blank">Cave Field.</a> Once you're done exploring, head on over to the Goldenleaf Gate.
+        <br><br>
+        You'll run into <span class="ImportantName">Ren<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/Route3/Ren.png"></span></span> who, after a little talk, will close the gate and makes sure that you can't pass. He'll speak too much and reveal that Venam can probably melt the gates, so that will be our next story objective. If you want to continue the story, you can skip to <a class="continueElsewhere" href="Courtyard.html">here,</a> but otherwise we will go explore Mirage Woods to get the Itemfinder.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter3/AfterKeta.html">&lt&lt After the Third Badge</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter3/MirageWoods.html">Side Activity - Mirage Woods &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="HardcoreTrainerElizabeth" class="TrainerPopup">
+        <span class="close" id="HardcoreTrainerElizabethClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Hardcore Trainer Elizabeth
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/573.png">
+              <br>
+              Cincinno, Level 24
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Rock Blast</td>
+          </tr>
+          <tr><td>Bullet Seed</td></tr>
+          <tr><td>Tail Slap</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward:<img src="../../images/PokeDollar.png">480
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

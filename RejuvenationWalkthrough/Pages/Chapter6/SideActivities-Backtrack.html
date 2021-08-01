@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Six</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([],[]);encountersCreate([['East Gearen City', ['Events']], ['Chrisola Hotel', ['Events']], ['Route 1', ['Surfing', 'Fishing']], ['Goldenwood Forest - Overgrown', ['Surfing', 'Fishing']], ['Goldenwood Cave', ['Surfing', 'Fishing']], ['Route 2', ['Surfing', 'Fishing']], ['Rivers End', ['Grass', 'Surfing', 'Fishing', 'Others', 'Events']], ['Amethyst Cave', ['Surfing', 'Fishing']], ['Sheridan Village and Sheridan Arena', ['Surfing', 'Fishing']], ['Route 3', ['Surfing', 'Fishing']], ['Mirage Woods', ['Surfing', 'Fishing']], ['Goldenleaf Town', ['Surfing', 'Fishing']], ['Forgotten Path', ['Surfing', 'Fishing']], ['Wispy Path', ['Surfing', 'Fishing']], ['Akuwa Town', ['Surfing', 'Fishing']]],[6, 3]);shopsSet([],[]);globalrunOnLoad('Sixth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Side Activity - Backtracking on Floria Island
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader" id="EastGearenCity">East Gearen City<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 6/">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        Content
+        <br>
+        <p class="subsectionHeader" id="Goldeenwood">Route 1, Goldenwood Forest, Goldenwood Cave<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 6/">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        <span class="ZygardeCell">Zygarde Cell 23<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell23.png"></span></span>
+        <span class="ZygardeCell">Zygarde Cell 24<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell24.png"></span></span>
+        <span class="ZygardeCell">Zygarde Cell 25<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell25.png"></span></span>
+        <span class="ImportantName">Orphan<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/LostCamp/Orphan6.png"></span></span>
+        <br>
+
+        <p class="subsectionHeader" id="Route2">Route 2 & Amethyst Cave<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 6/">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        <span class="ZygardeCell">Zygarde Cell 26<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell26.png"></span></span>
+        <span class="ImportantName">Orphan<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/LostCamp/Orphan9.png"></span></span>
+        <br>
+
+        <p class="subsectionHeader" id="Sheridan">Sheridan Village & Route 3<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 6/">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        <span class="ZygardeCell">Zygarde Cell 27<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell27.png"></span></span>
+        <span class="ImportantName">Orphan<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/LostCamp/Orphan7.png"></span></span>
+        <span class="ImportantName">Orphan<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/LostCamp/Orphan8.png"></span></span>
+        <br>
+        Poliwags
+        <br>
+
+        <p class="subsectionHeader" id="Goldenleaf">Goldenleaf Town, Wispy Path, Wispy Tower, and Wispy Ruins<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="HiddenButton" onclick="showHiddenTable('Hidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 6/">
+        <br>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        Content
+        <br>
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter6/SideActivities-Overview.html">&lt&lt Side Activity - Overview</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter6/SideActivities-Route11Evergreen.html">Side Activity - Route 11 and Evergreen Islands &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

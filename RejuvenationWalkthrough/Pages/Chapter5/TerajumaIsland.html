@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Five - Terajuma Island</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([],[]);encountersCreate([['Terajuma Beach', ['Fishing', 'Others', 'Events']], ['Terajuma Jungle', ['Grass', 'Fishing', 'Others' ,'Events']]],[]);shopsSet([[19,2]],[]);globalrunOnLoad('Fifth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Terajuma Island
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Terajuma Shore<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="ShoreHiddenButton" onclick="showHiddenTable('ShoreHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/TerajumaIsland/WashedAshore.png">
+        <br>
+        <table class="TrainerTable" id="ShoreHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Fresh Water<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/HiddenItems/FreshWater.png"></span></a></td>
+            <td>Next to the Passho Berries on Terajuma Shore, right side</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Soda Pop<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/HiddenItems/SodaPop.png"></span></a></td>
+            <td>Near the bridge on Terajuma Shore, right side</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Grass Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/HiddenItems/GrassGem.png"></span></a></td>
+            <td>On Terajuma Shore, left of the entrance to the jungle</td>
+          </tr>
+        </table>
+        <br>
+        After you talk to Melia, a purple fog will wash over the ship. Watch the cutscene play out, and you'll find yourself crashing into Terajuma Island with Saki flying away from the force of impact. Two rangers will come inspect, and battle you thinking you are part of Team Xen.
+        <div class="eventTrainerName">
+          Pokemon Ranger Sam & Pokemon Ranger Alex
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/768.png">
+              <br>
+              Golisopod, Level 37
+            </th>
+            <td rowspan="2">Water</td>
+            <td>First Impression</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/279.png">
+              <br>
+              Pelipper, Level 37
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Hydro Pump</td>
+          </tr>
+          <tr><td>Sucker Punch</td><td>Hurricane</td></tr>
+          <tr>
+            <td rowspan="2">Bug</td><td>Aqua Jet</td>
+            <td rowspan="2">Flying</td><td>Roost</td>
+          </tr>
+          <tr><td>Swords Dance</td><td>Protect</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/068.png">
+              <br>
+              Machamp, Level 38
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Dynamic Punch</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/181.png">
+              <br>
+              Ampharos, Level 38
+            </th>
+            <td rowspan="4">Electric</td>
+            <td>Thunder</td>
+          </tr>
+          <tr><td>Rock Slide</td><td>Signal Beam</td></tr>
+          <tr>
+            <td>Bulk Up</td>
+            <td>Thunder Wave</td>
+          </tr>
+          <tr><td>-</td><td>-</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">3344
+            </td>
+          </tr>
+        </table>
+        <br>
+        This isn't a particularly difficult battle. Pelliper will set up rain so that Golisopod and Ampharos have boosted moves, but otherwise they won't be hitting too hard. Plus, its a 6v4 so there's plenty of ways to simply out muscle their team, as long as you're careful of Golisopod's priority moves. Once you defeat them, Melia and co will explain that we're not Team Xen, and we'll be able to pass through Terajuma Jungle to Kakori Village.
+        <br><br>
+        Before we head off, you can enter the building here to <span class="ImportantName">shop<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/Shop.png"></span></span> around. I would suggest buying a few Spice Powders if you have the extra cash. You can also grab the <span class="ImportantName">Passho Berries<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/PasshoBerry.png"></span></span> growing here and plant some extra berries for later. Along the beach, interacting with <span class="ImportantName">Pyokumuku<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/Pyokumuku.png"></span></span> will allow you to catch one. I strongly suggest getting one, as it is very helpful in a few of the fields that we will be faced with soon. As a point of note, leveling up Charjabug on Terajuma Island will evolve the Pokemon into a Vikavolt. If you need to heal up, the Battleship is located inside the pier on the left side of the shore. You can now go ahead and follow the group into the jungle when you're ready.
+        <br>
+        <p class="subsectionHeader">Terajuma Jungle<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="JungleHiddenButton" onclick="showHiddenTable('JungleHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/TerajumaIsland/TerrajumaJungle.png">
+        <br>
+        <table class="TrainerTable" id="JungleHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Grass Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/HiddenItems/GrassGem2.png"></span></a></td>
+            <td>In Terajuma Jungle, left of the entrance from Terajuma Shore</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Sitrus Berry<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/TerajumaIsland/HiddenItems/SitrusBerry.png"></span></a></td>
+            <td>In Terajuma Jungle, first area right side</td>
+          </tr>
+        </table>
+        <br>
+        Inside the jungle, we'll find that there are vines blocking the direct route to Kakori Village. After some experimentation, the group will realize we'll have to take the long way round. Head left into Deep Terajuma Jungle and then along the path into the cave. We'll need to be able to use Surf, which means we need one more badge. Valarie will allow us to battle her for the badge, and the group will head back out of the cave and prepare the field.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter5/XenBattleship.html">&lt&lt The Battleship</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter5/Badge5.html">Terajuma Jungle Gym Battle &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

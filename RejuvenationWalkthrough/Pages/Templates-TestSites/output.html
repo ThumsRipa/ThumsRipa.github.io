@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Site</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="pokemonMoves.js"></script>
+<script src="pokemonMoveDetails.js"></script>
+<script src="output.js"></script>
+
+<style>
+  .pokedexMoveTable {
+      width: 100%;
+      max-width: 1000px;
+      margin: .25rem auto;
+      table-layout: fixed;
+      border-collapse: collapse;
+  }
+
+  .pokedexMoveTable tr {
+      color: black;
+      width:auto;
+      min-width: 200px;
+      max-width:1000px;
+      margin:.25rem auto;
+      height: 30px;
+  }
+
+  .pokedexMoveTable th {
+    min-width: 300px;
+    font-size: 16px;
+  }
+
+  .pokedexMoveTable td {
+      min-width: 200px;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration-style: dotted;
+      border: 1px solid black;
+  }
+
+  .pokedexMoveTable tr:nth-child(even) {
+    background-color: white;
+  }
+
+  .pokedexMoveTable tr:nth-child(odd) {
+      background-color: rgb(235, 235, 235);
+  }
+
+  .pokemonmoveTooltipPosition {
+    position:relative;
+  }
+
+  .pokemonMove .pokemoveTooltip {
+      visibility: hidden;
+
+      height: auto;
+      width: auto;
+
+      font-size: 18px;
+
+      background-color: teal;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px;
+      margin: 5px;
+    
+      /* Position the tooltip */
+      position: absolute;
+      top:0;
+      left:0;
+      transform: translate(300%,-50%);
+      z-index: 4;   
+  }
+
+  .pokemonMove:hover .pokemoveTooltip {
+      visibility: visible;
+  }
+
+  .moveType {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 4px;
+    left: 15px;
+  }
+
+  .damageType {
+    display: inline-block;
+
+    position: absolute;
+    top: 7px;
+    left: 2px;
+  }
+
+  .levelCell{
+    position:relative;
+    width: 50px;
+  }
+
+  .typeCell{
+    position:relative;
+    width: 60px;
+
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+  }
+
+  .powerCell{
+    position:relative;
+    width: 70px;
+  }
+
+  .accCell{
+    position:relative;
+    width: 70px;
+  }
+
+  .pokemonMoveNameCell{
+    position:relative;
+  }
+
+  .pokemonDamageTypeCell{
+    position:relative;
+    width: 30px;
+  }
+
+</style>
+
+</head>
+
+<body onload="outputMoves();">
+    <input type="text" id="pokemonName">
+    <button onclick="outputMoves();">Submit</button>
+
+    <div id="testOutput"></div>
+
+    <div id="speNum" style="font-size: 50px;"></div>
+
+    <div id="stats"></div>
+
+    <div id="evolutions" style="font-size: 40px;"></div>
+    <script>
+        window.addEventListener('keydown', function (event) {
+          if (event.key === 'Enter') {
+            outputMoves();
+          }
+        })
+      </script>
+</body>
+</html>

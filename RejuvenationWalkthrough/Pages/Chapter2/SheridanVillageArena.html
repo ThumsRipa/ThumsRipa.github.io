@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Sheridan Village & Arena</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([9]);encountersCreate([['Sheridan Village and Sheridan Arena', ['Grass', 'Events']], ['Route 2', ['Grass', 'Fishing', 'Others']], ['Amethyst Cave', ['Cave', 'Fishing', 'Events']], ['Amethyst Grotto', ['Grass']]], [0, 1]);shopsSet([[12,2]],['Sheridan Village']);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanVillageMapTxT">Sheridan Village</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanArenaMapTxT">Sheridan Arena</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoMapTxT">Amethyst Grotto</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveOneMapTxT">Amethyst Cave<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveTwoMapTxT">Amethyst Cave<br>Second Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveThreeMapTxT">Amethyst Cave<br>Third Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthOneMapTxT">Amethyst Depths<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthTwoMapTxT">Amethyst Depths<br>Second Room</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanVillageArenaGrassTxT">Sheridan Village & Arena Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanEventsTxT">Sheridan Village - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveEncountersTxT">Amethyst Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystOthersTxT">Amethyst Cave - Other Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystEventsTxT">Amethyst Cave - Events</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoEncountersTxT">Amethyst Grotto</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanShopTxT">Sheridan Village Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="VillageDrinksTxT">Sheridan Village Drinks<br>Inside Sheridan Village Shop</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Location: Sheridan Village, Sheridan Arena</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank" class="encounterDetailsSidebar">Crystal Cavern<br>Location: Amethyst Cave</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#BlessedField" target="_blank" class="encounterDetailsSidebar">Blessed Field<br>Location: Amethyst Grotto<br>VS Sensei Keta</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Sharidan Village, Sheridan Arena, and Amethyst Grotto
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Sheridan Village<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="SheridanVillageTrainersButton" onclick="showTrainerTable('SheridanVillageTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="SheridanVillageHiddenButton" onclick="showHiddenTable('SheridanVillageHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/SheridanVillage.png">
+        <br>
+        <table class="TrainerTable" id="SheridanVillageTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="BattleGirlLilithTxT">Battle Girl Lilith<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleGirlLilith.png"></span></a></td>
+            <td>Walking up and down next to TRUCKGUY</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="BattleBoyAlexanderTxT">Battle Boy Alexander<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleBoyAlexander.png"></span></a></td>
+            <td>Before the first bridge near Sheridan Shop</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="FragrantLadyJessibelleTxT">Fragrant Lady Jessibelle<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/FragrantLadyJessibelle.png"></span></a></td>
+            <td>Walking up and down near the Pokemon Center</td>
+          </tr>
+        </table>
+        <table class="TrainerTable" id="SheridanVillageHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">HP Up<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/HPUp.png"></span></a></td>
+            <td>Next to TRUCKGUY</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Poke Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/PokeBall.png"></span></a></td>
+            <td>Across the road from Sheridan Village Shop</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Clever Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/CleverWing.png"></span></a></td>
+            <td>Behind the Move Reminder house</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Ultra Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/UltraBall.png"></span></a></td>
+            <td>Southeast of the Eldest's house</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Zinc<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/Zinc.png"></span></a></td>
+            <td>Near the old lady west of Eldest's house</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/Repel.png"></span></a></td>
+            <td>Near the backdoor of Sheridan Village Shop</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Swift Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/SwiftWing.png"></span></a></td>
+            <td>Across the path from the Daycare</td>
+          </tr>
+        </table>
+        <br>
+        Upon entering Sheridan Village you'll find yourself listening to a conversation between a purple-haired girl and an elder. The purple-haired girl will walk off, and the elder will introduce herself as Eldest of the Village. After that, you'll have free reign to explore Sheridan Village. There are trainers that will battle you, so keep on your toes. The house on the right belongs to the <span class="ImportantName">Move Reminder,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/MoveReminderHouse.png"></span></span> who will reteach moves in exchange for a Heart Scale. You can only do this once every two days though, and Heart Scales are limited right now so choose wisely. On the left, there's <a href="javascript:void(0)" class="normalTrainerName" id="BattleGirlLilithName">Battle Girl Lilith.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleGirlNatalia.png"></span></a> roaming around. Next to her is TRUCKGUY, who will let you fast travel between towns quickly. We'll be seeing him a lot. Head up, and the next building is the Sheridan Village Shop, where you can buy supplies. If you enter on a Monday, Wednesday, Friday, or Sunday morning there'll be a <span class="ImportantName">girl selling drinks.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Beth.png"></span></span> Talking to her, you get a free Moomoo Milk sample and buy Berry Juice.
+        <br><br>
+        Right before the bridge is <a href="javascript:void(0)" class="normalTrainerName" id="BattleBoyAlexanderName">Battle Boy Alexander.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleBoyAlexander.png"></span></a> Head up, and enter the <span class="ImportantName">house on the right.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/DittoQuestStart.png"></span></span> A girl will approach you and ask you to look for her boyfriend who went collecting herbs in Amethyst Cave. We'll have to head back in there soon, so its best to just start this sidequest now. We can talk to Eldest, then enter her house. In the top room there's a Revival Herb, and below her room is Aelita's room. We can read her diary for a bit of lore. Outside Eldest's house to the left is <a href="javascript:void(0)" class="normalTrainerName" id="FragrantLadyJessibelleName">Fragrant Lady Jessibelle,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/FragrantLadyJessibelle.png"></span></a> and right above her a little to the right is the Pokemon Center. Go ahead and heal up if you need to.
+        <br><br>
+        There's a few areas to visit in the village. To the left of the Pokemon Center across the bridge is the Pokemon Daycare. You can breed Pokemon here, and inside the house the woman in green will give you a Sweet Heart. Go back down to the Eldest's house, and go across the bridge to the left. Entering the shop from the back door and talking to the owner will get you a Super Potion. Our final stop is the house to the right of the Help Plaza. You can <span class="ImportantName">trade for a Cleffa<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/IgglybuffTrade.png"></span></span> with an Igglybuff here. With that done, head through the trees to the north to get to Sheridan Arena.
+        <br><br>
+        <p class="subsectionHeader">Sheridan Arena<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="SheridanArenaTrainersButton" onclick="showTrainerTable('SheridanArenaTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/SheridanArena.png">
+        <br>
+        <table class="TrainerTable" id="SheridanArenaTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="BattleBoyCharlesTxT">Battle Boy Charles<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleBoyCharles.png"></span></a></td>
+            <td>Left side of Sheridan Arena</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="BattleGirlNataliaTxT">Battle Girl Natalia<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleGirlNatalia.png"></span></a></td>
+            <td>Right side of Sheridan Arena</td>
+          </tr>
+        </table>
+        <br>
+        In Sheridan Arena, if you entered from the left side you'll face off against <a href="javascript:void(0)" class="normalTrainerName" id="BattleBoyCharlesName">Battle Boy Charles,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleBoyCharles.png"></span></a> or if you entered from the right you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="BattleGirlNataliaName">Battle Girl Natalia.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Trainers/BattleGirlNatalia.png"></span></a> Go ahead and beat both of them regardless. Here, at night, you can also find a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell9.png"></span></span> With that done, head up the stairs and be introduced to Aelita.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/Aelita.png">
+        <br>
+        Once she finishes introducing herself, go ahead and walk into the house and follow Keta into the backrooms. He'll send you on a fetch quest to get the Soul Stone from Amethyst Cave, and then go to where Melia died. Go ahead and leave the house and prepare. You can trek through Amethyst Cave from Sheridan to get there, but there's a few things to do in East Gearen City, so we'll be going back to the city via TRUCKGUY.
+        <p class="subsectionHeader">Backtracking in East Gearen City</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/TRUCKGUY.png">
+        <br>
+        When you're ready, speak with TRUCKGUY to head back to East Gearen City. There's a few extra things we can do now that we've travelled to Sheridan Village once.
+        <br><br>
+        First, head over to the right and into Chrisola Hotel. Inside the first room of the right hallway, you'll find a <span class="ImportantName">lady with a Shinx.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/ShinxTrade.png"></span></span> If you talk with her, she'll let you take her Shinx, no battle required. Head back outside and head over to the left side of the city, then up to Magnolia Library. There's not much to do here, but if you've caught a Dedenne, Carbink, and Ledyba, Zumi will give you our next target: Skrelp. Skrelp is catchable in Gearen Sewers with a Good Rod, and we'll get that before the chapter is over.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/RoomIDCard.png">
+        <br>
+        Our final stop is at Gearen Lab. Head deep into the lab and into the room above if you picked up the Room ID Card from Melia's bag. In here, you can find a <span class="ImportantName">Exp. Share<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/ExpShare.png"></span></span> as well as some notes between Melia and Jenner. For some more lore bits, check the dresser to find an Audition CD and then play the CD with the computer. A lot of items in this room are also interactable.
+        <br><br>
+        With that, we are more or less done with the necessary things in East Gearen City. If you have enough Achievement Points, you can consider getting a Golden Hammer so you don't need to teach Rock Smash to a Pokemon. We'll also get Cut soon, so a Golden Axe is also not a bad idea if you have AP to spare. Once you're ready, buy another ticket to Route 2 (or go back to Sheridan Village and trek through Amethyst Cave). Inside the Route 2 entrance of Amethyst Cave to the left, there's a red stone that Keta mentioned. Interact with it, and a room with stairs will appear.
+        <p class="subsectionHeader">Amethyst Grotto<button class="showHiddenButton" id="GrottoHiddenButton" onclick="showHiddenTable('GrottoHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/AmethystGrotto.png">
+        <table class="TrainerTable" id="GrottoHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Heart Scale<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/HeartScale.png"></span></a></td>
+            <td>Lower area, right side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/RedShard.png"></span></a></td>
+            <td>Middle area, bottom left of the right side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/HiddenItems/RedShard2.png"></span></a></td>
+            <td>Middle area, top of the left side</td>
+          </tr>
+        </table>
+        <br>
+        Downstairs, you'll find a grotto and a spirit that looks like Keta will greet you. Head inside, grabbing a hidden Heart Scale on the right along the way. You can go ahead and talk to Spirit Keta first, and he'll let you know what's going on including the fact that Keta is currently part of Team Xen. He'll give you the Soul Stone, which you'll need to take all the way down to Amethyst Depths.
+        <br><br>
+        Head down to Amethyst Depths where you fought Zetta. After that, you'll be teleported back to the Amethyst Cave entrance, so heal up in Route 2 if you need to. We can start heading back to Sheridan Village. If you talked with the girl who asked you to find her boyfriend, in the second to last room you'll find a <span class="ImportantName">basket of vegetables,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/DittoQuest2.png"></span></span> and you'll hear a scream from the previous room. Head back up there, and on the northwest corner of the room you'll find a guy cornered by a <span class="ImportantName">Solrock.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/SheridanVillageArena/DittoQuest3.png"></span></span> You must catch it, as defeating it won't make it go away. If you have a reliable way to knock it out, it can be a nice place to train your Pokemon. Otherwise, catch it to continue the quest. Once you've caught it, the guy will head back to his house.
+        <br><br>
+        Head back to Sheridan Village, and before we go back to Keta head into the house of the guy that we just saved. After the cutscene, we would have unlocked an ongoing sidequest to hunt for Ditto. We'll be finding it as we go along our journey and we can catch it before too long. Now, finally, head to Keta back in his house on the mountain. After a conversation, he'll let you battle him, so head over to the actual arena and stand across from him to begin the battle.
+        <br><br>
+        <div class="eventTrainerName">
+          Sensei Keta
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/499.png">
+              <br>
+              Pignite, Level 22 - Payapa Berry
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Gale Strike</td>
+          </tr>
+          <tr><td>Flame Charge</td></tr>
+          <tr><td rowspan="2">Fighting</td><td>Fire Punch</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/619.png">
+              <br>
+              Mienfoo, Level 22 - Coba Berry
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Drain Punch</td>
+          </tr>
+          <tr><td>Fake Out</td></tr>
+          <tr><td>U-Turn</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/256.png">
+              <br>
+              Combusken, Level 21 - Charcoal
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Gale Strike</td>
+          </tr>
+          <tr><td>Flame Burst</td></tr>
+          <tr><td rowspan="2">Fighting</td><td>Cut</td></tr>
+          <tr><td>Protect</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/559.png">
+              <br>
+              Scraggy, Level 21 - Black Belt
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Gale Strike</td>
+          </tr>
+          <tr><td>Fake Out</td></tr>
+          <tr><td rowspan="2">Fighting</td><td>Feint Attack</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/067.png">
+              <br>
+              Machoke, Level 22 - Sitrus Berry
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Gale Strike</td>
+          </tr>
+          <tr><td>Knock Off</td></tr>
+          <tr><td>Meditate</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/448.png">
+              <br>
+              Lucario, Level 23 - Black Belt
+            </th>
+            <td rowspan="2">Steel</td>
+            <td>Gale Strike</td>
+          </tr>
+          <tr><td>Bullet Punch</td></tr>
+          <tr><td rowspan="2">Fighting</td><td>Drain Punch</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">506
+            </td>
+          </tr>
+        </table>
+        <br>
+        This battle with be in a Doubles format in the <a href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank" class="continueElsewhere">Forest Field.</a> In this field, his signature move Gale Strike as well as cut moves such as Cut or Air Cutter will deal additional Grass-type damage. Keta definitely accounts for his weaknesses very well, as many of his Pokemon carry some sort of Rock-type or Dark-type move. Mienfoo will very often Fake Out on the first turn, and if the match up is unfavortable U-Turn out for another Pokemon. Pignite will often try to speed up with Flame Charge, and Combusken will nearly always first turn Protect for a Speed Boost. His Scraggy is not very threatening, though it does have good coverage, and Machoke hits very hard. His main threat is Lucario, but the extra Steel-type means that it is weak to Rock Smash, so if you can tank or lower is Attack, it can be dealt with.<br><br>
+        If you are having trouble with this fight, spreading status effects can go a long way. His Pokemon rely on outspeeding you and doing heavy damage, as none of his Pokemon outside of Pignite and Machoke are particularly tanky. If you're able to spread Paralysis, this battle becomes a lot easier. A Pokemon that can do this well is Pachirisu, especially if you have Charm. If you manage to Charm one of the targets into -6 Attack, the battle effectively becomes a 2v1 where you can ignore the second Pokemon. Psychic-type can also still deal heavy damage if it has Psybeam, so Girafarig and Chimecho can still do well.
+        <br><br>
+        After the battle, Keta will run off before giving you your badge. Aelita and Elder will follow, but before we follow them make sure to go heal your Pokemon and be especially sure to have a few Pokeballs ready. Also, now that the Elder has moved, we can pick up a Lava Cookie along the path around her house. Go back to Sheridan Arena, and go behind the waterfall next to the elder, and enter the hidden cave behind it.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/AmethystCave.html">&lt&lt Amethyst Cave</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter2/CaratosMountain.html">Caratos Mountain &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="SheridanVillageMap" class="EncounterPopup">
+        <span class="close" id="SheridanVillageMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Sheridan Village
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Sheridan/Sheridan Village.png">
+      </div>
+
+      <div id="SheridanArenaMap" class="EncounterPopup">
+        <span class="close" id="SheridanArenaMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Sheridan Arena
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Sheridan/Sheridan Arena.png">
+      </div>
+
+      <div id="AmethystGrottoMap" class="EncounterPopup">
+        <span class="close" id="AmethystGrottoMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Grotto
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Grotto.png">
+      </div>
+
+      <div id="AmethystCaveOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - First Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-Entrance.png">
+      </div>
+      
+      <div id="AmethystCaveTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Second Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-2.png">
+      </div>
+
+      <div id="AmethystCaveThreeMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveThreeClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Third Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-3.png">
+      </div>
+
+      <div id="AmethystDepthOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement One
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-1.png">
+      </div>
+
+      <div id="AmethystDepthTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement Two
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-Zetta.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

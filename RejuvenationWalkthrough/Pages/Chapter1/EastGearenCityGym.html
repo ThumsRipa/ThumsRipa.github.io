@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - East Gearen City Gym</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([6]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GymEventsTxT">Gym Event Pokemon</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#CorrosiveField" target="_blank" class="encounterDetailsSidebar">Corrosive Field<br>Location: VS Punk Girl Venam</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      East Gearen City Gym
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Facilities</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/PoisonGym/GymOverview.png">
+        <br>
+        There are a few facilities we can use here inside the gym. First, on the right side is a Healing Machine, as well as a Pokemon Box. You can come here at anytime to heal up your Pokemon. On the left side, you'll find a Gym Panel, which you can access to talk to Jan. He'll give you information about Venam's Ace, as well as her the field she uses. Once you're ready, let's head on and solve the gym puzzle.
+        <br>
+        <p class="subsectionHeader">The Gym Puzzle<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="GymTrainersButton" onclick="showTrainerTable('GymTrainers')">Show Trainers</button></span></p>
+        <table class="TrainerTable" id="GymTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="EnthusiastLucaTxT">Enthusiast Luca<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/EnthusiastLuca.png"></span></a></td>
+            <td>Gearen Gym<br>(First Room)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="HardcoreTrainerReinaTxT">Hardcore Trainer Reina<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/HardcoreTrainerReina.png"></span></a></td>
+            <td>Gearen Gym<br>(Second Room)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="HardcoreTrainerLennyTxT">Hardcore Trainer Lenny<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/HardcoreTrainerLenny.png"></span></a></td>
+            <td>Gearen Gym<br>(Second Room)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="GuitaristNataliaTxT">Guitarist Natalia<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/GuitaristNatalia.png"></span></a></td>
+            <td>Gearen Gym<br>(Third Room)</td>
+          </tr>
+        </table>
+        <br>
+        This gym is centered around colors, and you have to mix certain colors to open the path to the next room. As to what colors you want as a result, you'll need to defeat the gym trainers to find out. In the first room, defeating <a href="javascript:void(0)" class="normalTrainerName" id="EnthusiastLucaName">Enthusiast Luca<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/EnthusiastLuca.png"></span></a> will let you know that you need the color Magenta to progress. Magenta is made by mixing Red and Blue, so interact with those to colors then interact with the console in the back. Stairs should appear when you successfully complete the puzzle.
+        <br><br>
+        The second room has two trainers, and you'll need get two colors in a certain order to progress. Defeat <a href="javascript:void(0)" class="normalTrainerName" id="HardcoreTrainerReinaName">Hardcore Trainer Reina<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/HardcoreTrainerReina.png"></span></a> to learn that the first color is Orange, and then defeat <a href="javascript:void(0)" class="normalTrainerName" id="HardcoreTrainerLennyName">Hardcore Trainer Lenny<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/HardcoreTrainerLenny.png"></span></a> to learn that the second color is Green. That would be Yellow + Red and Yellow + Blue respectively.
+        <br><br>
+        The final room has only one trainer, who will give you the three colors needed to progress, so go ahead and battle <a href="javascript:void(0)" class="normalTrainerName" id="GuitaristNataliaName">Guitarist Natalia.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/PoisonGym/GuitaristNatalia.png"></span></a> She'll let you know that the three colors in order are Orange, White, and Teal. That would be Red + Yellow, Red + Blue + Green, and then Green + Blue. Before you move on though, there's a secret in this room if you mix three other colors. If you talk to the person in the lobby, you'll learn that the first color needed is Brown. There's two more hidden instructions in the city, but if you just want to know the secret then its <span class="textSpoilers">Brown (Red + Green), White (Red + Green + Blue), and Orange (Red + Yellow)</span>. Upon finding the secret combination, a door will open beside the computer, and if you follow it you'll reach a secret area. Venam will come explain the area to you, and you'll be able to pick up the <span class="hiddenItemText">Seviper Egg<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/PoisonGym/SeviperEgg.png"></span></span> in the area.
+        <br><br>
+        With that done, step back into the final puzzle room, and head upstairs. You can use the warp panel to warp back and forth between the entrance and here. Once you're ready, head inside to battle Venam.
+        <p class="subsectionHeader">VS - Gym Leader Venam</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/PoisonGym/VSVenam.png">
+        <br>
+        <div class="eventTrainerName">
+          Punk Girl Venam
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/568.png">
+              <br>
+              Trubbish, Level 13 - Oran Berry
+            </th>
+            <td rowspan="4">Poison</td>
+            <td>Venam's Kiss</td>
+          </tr>
+          <tr><td>Rock Blast</td></tr>
+          <tr><td>Thief</td></tr>
+          <tr><td>Poison Gas</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/747.png">
+              <br>
+              Mareanie, Level 14
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Water Pulse</td>
+          </tr>
+          <tr><td>Venoshock</td></tr>
+          <tr><td rowspan="2">Water</td><td>Recover</td></tr>
+          <tr><td>Toxic Spikes</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/088_1.png">
+              <br>
+              Alolan Grimer, Level 14 - Oran Berry
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Poison Fang</td>
+          </tr>
+          <tr><td>Shadow Sneak</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Bite</td></tr>
+          <tr><td>Acid Armor</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/544.png">
+              <br>
+              Whirlipede, Level 15
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Twineedle</td>
+          </tr>
+          <tr><td>Venoshock</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Bulldoze</td></tr>
+          <tr><td>Venom Drench</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/002.png">
+              <br>
+              Ivysaur, Level 15 - Berry Juice
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Venam's Kiss</td>
+          </tr>
+          <tr><td>Razor Leaf</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Leech Seed</td></tr>
+          <tr><td>Poison Powder</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/336.png">
+              <br>
+              Seviper, Level 16 - Sitrus Berry
+            </th>
+            <td rowspan="4">Poison</td>
+            <td>Venam's Kiss</td>
+          </tr>
+          <tr><td>Bulldoze</td></tr>
+          <tr><td>Bite</td></tr>
+          <tr><td>Glare</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">304
+            </td>
+          </tr>
+        </table>
+        <br>
+        Gym battles in this game will always have two things. First, each gym leader has their own, unique move that a lot of their Pokemon learn. For Venam, this comes in the form of Venam's Kiss, a basic 75-base damage move without any other special effects. The second is that the field is always in favor of the gym leader. Venam fights in a <a href="../Information/FieldEffects-Telluric.html#CorrosiveField" class="continueElsewhere" target=_blank>Corrosive Field,</a> which will damage all your non-grounded non-Poison type Pokemon upon switching in. In addition, a lot of Ground type moves will turn into Poison type moves, such as Mud-Slap, Mud Shot, or Mud Bomb. Poison type moves and Pokemon in general become more effective, for example Venoshock always treats the opposing Pokemon as poisoned, thus dealing double damage.
+        <br><br>
+        That being said, the game eases you into the battles. Venam's team can definitely rough you up. All of her Pokemon aside from Whirlipede can set up or debuff you in some way, and a lot of her Pokemon also carry Bulldoze to make up for the team's relatively low speed. Ivysaur and Whirlipede are pretty bulky at this stage in the game, and Seviper, as a fully evolved Pokemon, has really good base stats out of the gate. If you've been battling and doing sidequests though, then your Pokemon should overlevel her at this point. Psychic types are very helpful in this fight, so, like Jan advised, catching a Woobat in the Sewers or getting a Spoink from the Casino could be good options. A lot of Bug Pokemon also learn moves such as Confusion or Psybeam, which can work wonders against Venam's team as they don't really have much to hit Bug types super effectively. As long as you come in with a strategy, whether its Psychic types or just plain outmuscling Venam, you should be fine.
+        <br><br>
+        Once the battle is over, Venam will give you the PoisonHeart Badge, raising your level limit to level 25. Venam lets you know that her and Ren will be heading over to Route 2, and that you can join them if you want. As Venam leaves, the title card for Chapter 2 will play.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter1/EastGearenCitySidequests.html">&lt&lt East Gearen City - Sidequests</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter2/AfterVenam.html">After the First Badge &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="GymEvents" class="EncounterPopup">
+        <span class="close" id="GymEventsClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Event Pokemon - Gained through Other Means
+        </p>
+        <table class="encounterPopupContent">
+          <tr>
+            <th>Pokemon Name</th>
+            <td>Location</td>
+            <td>Other Requirements</td>
+          </tr>
+
+          <tr>
+            <th class="wildPokemonTooltipPosition">
+              <span class="wildPokemonName">
+                <span class="type1" style="background-color: var(--typePoison);"></span>
+                <img class="encounterPokemonImage" src="../../images/PokemonSprites/336.png">
+                <br>
+                #336 Seviper
+                <span class="wildPokemonTooltip">
+                  Seviper, like many other no evolution Pokemon, comes out of the gate swinging with 100 base Attack and Special Attack. It's movepool is decent, leaning Glare and Poison Fang at levels 19 and 21 respectively. At level 26, it gets Night Slash which lets it deal with Psychic types well. It has a decent defensive stats as well, but a lower speed compared to other Pokemon with its stat spread. This means that, despite its decent bulk, it'll take hits before being able to dish out any. It also doesn't have any natural recovery, so you'll be relying on items to bring its health back up once it goes low. Ultimately, it's definitely a viable Pokemon, especially if you need an early Poison type as it outclasses the rest of the field right now.
+                </span>
+              </span>
+            </th>
+            <td>Venam's Gym - Secret Room</td>
+            <td>Solve the extra gym puzzle</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

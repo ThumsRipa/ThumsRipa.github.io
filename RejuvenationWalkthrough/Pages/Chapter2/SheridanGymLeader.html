@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Gym Battle</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="encountersCreate([['Amethyst Cave', ['Cave', 'Fishing', 'Events']], ['Amethyst Grotto', ['Grass']]], [2]);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveOneMapTxT">Amethyst Cave<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoMapTxT">Amethyst Grotto</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveEncountersTxT">Amethyst Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystOthersTxT">Amethyst Cave - Other Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystEventsTxT">Amethyst Cave - Events</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoEncountersTxT">Amethyst Grotto</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank" class="encounterDetailsSidebar">Crystal Cavern<br>Location: Amethyst Cave</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#BlessedField" target="_blank" class="encounterDetailsSidebar">Blessed Field<br>Location: Amethyst Grotto<br>VS Sensei Keta</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Amethyst Grotto - The Second Badge
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">VS Sensei Keta</p>
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/VSSenseiKeta.png">
+        <br>
+        Once you're ready, head on over to Amethyst Grotto and talk to Keta's spirit. The battle will then begin.
+        <br><br>
+        <div class="eventTrainerName">
+          Sensei Keta
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/232.png">
+              <br>
+              Donphan, Level 22
+            </th>
+            <td rowspan="4">Ground</td>
+            <td>Bulldoze</td>
+          </tr>
+          <tr><td>Rock Tomb</td></tr>
+          <tr><td>Poison Sweep</td></tr>
+          <tr><td>Ice Shard</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/315.png">
+              <br>
+              Roselia, Level 23 - Occa Berry
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Magical Leaf</td>
+          </tr>
+          <tr><td>Venoshock</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Hidden Power (Water)</td></tr>
+          <tr><td>Leech Seed</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/038.png">
+              <br>
+              Ninetales, Level 23 - Charcoal
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Flame Burst</td>
+          </tr>
+          <tr><td>Extrasensory</td></tr>
+          <tr><td>Feint Attack</td></tr>
+          <tr><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/552.png">
+              <br>
+              Krokorok, Level 23 - Sitrus Berry
+            </th>
+            <td rowspan="2">Ground</td>
+            <td>Bulldoze</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Poison Sweep</td></tr>
+          <tr><td>Hone Claws</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/131.png">
+              <br>
+              Lapras, Level 24 - Sitrus Berry
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Frost Breath</td>
+          </tr>
+          <tr><td>Freeze Dry</td></tr>
+          <tr><td rowspan="2">Ice</td><td>Water Pulse</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/475.png">
+              <br>
+              Gallade, Level 25 - Leftovers
+            </th>
+            <td rowspan="2">Fighting</td>
+            <td>Drain Punch</td>
+          </tr>
+          <tr><td>Psycho Cut</td></tr>
+          <tr><td rowspan="2">Psychic</td><td>Poison Sweep</td></tr>
+          <tr><td>Rock Tomb</td></tr>
+        </table>
+        <br>
+        This battle can surprise you, as he does not have a full Fighting-type team. The battle is fought on the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#BlessedField" target="_blank">Blessed Field,</a> which doesn't necessarily give him the full advantage. If you have Psychic-type moves like Psybeam, those will be boosted by the field and hit his Pokemon at least neutrally with the exception of Krokorok. Another Pokemon you can consider using is Nuzleaf, or even Shiftry if you used the Leaf Stone. At level 16 it will learn Nature Power, which not only turns into Judgement in this field, but is also additionally boosted by 3x. None of his Pokemon resists Normal, so this can hit his whole team pretty hard. His Pokemon do have large amounts of coverage move, but thankfully most don't have a large Attack or Special Attack stat. Roselia is a good Pokemon to take a breather and heal up your Pokemon. Krokorok is also a good rest point as long as it doesn't start setting up Hone Claws.
+        <br><br>
+        His main threats are Ninetales, Lapras, and Gallade. Ninetales is really fast and can hit hard with its Sun-boosted Flame Burst and field-boosted Extrasensory, but its also very frail so if you have a strong Rock-type or Ground-type you can potentially one shot it. Lapras is the tankiest member of his team, and will always get crits with Frost Breath and stops Water-type Pokemon from stalling it with Freeze-Dry. Fighting-type Pokemon can be very good here, as long as you take take one or two hits you can get rid of it. Gallade is very fast, and can quickly sweep your team with its coverage if you're not careful. Thanks to the field, it's Ghost-type weakness is essentially nullified, so its really only weak to Flying-type and Fairy-type moves. You can try to outspeed and damage it, but it will most likely Rock Tomb then outspeed you next turn. Status effects can work here, as if you can Paralyze or Burn it, Gallade's threat level will be reduced significantly. As long as you have a full team with good type coverage overall, you should be able to beat him.
+        <br><br>
+        After the battle ends, the title for Chapter 3 will appear. Before you leave the area, walk forward and grab <span class="ImportantName">TM103 - Stacking Shot.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/TM103.png"></span></span> This is a new move that functions similarly to Round, where the more you use it the more powerful it becomes. As you try to leave, the grotto will shake, and a statue of Keta will appear in Amethyst Grotto. Now, we can head back to Sheridan Village to continue our journey.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/SheridanSidequests.html">&lt&lt Sheridan Sidequests</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter3/AfterKeta.html">After the Second Gym &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      <div id="AmethystGrottoMap" class="EncounterPopup">
+        <span class="close" id="AmethystGrottoMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Grotto
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Grotto.png">
+      </div>
+
+      <div id="AmethystCaveOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - First Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-Entrance.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

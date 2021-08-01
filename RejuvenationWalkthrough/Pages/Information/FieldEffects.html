@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Field Effects - Overview</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+<link rel="stylesheet" href="../../styles/FieldEffects.css">
+
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="globalrunOnLoad('','Elemental');">
+  <!--Old Sidenav
+  <div>
+    <table class="FieldEffectList">
+      <tr><th class="FieldEffectListTitle"><a class="FieldSideNavigation" href="FieldEffects.html">List of Field Effects</a></th></tr>
+      <tr><th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Elemental.html">Elemental Fields</a></th></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#ElecTerrain">Electric Terrain</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#GrassyTerrain">Grassy Terrain</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#MistyTerrain">Misty Terrain</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#CorrosiveField">Corrosive Mist Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#IcyField">Icy Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#WaterSurface">Water Surface</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#Underwater">Underwater</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#MurkwaterSurface">Murkwater Surface</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#SkyField">Sky Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#VolcanicField">Volcanic Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#DragonsDen">Dragon's Den</a></td></tr>
+      <tr><th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Telluric.html">Telluric Fields</a></th></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#Cave">Cave</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#RockyField">Rocky Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#MountainField">Mountain Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#SnowyMountainField">Snowy Mountain Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#VolcanicTopField">Volcanic Top Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#DesertField">Desert Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#AshenBeach">Ashen Beach</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#ForestField">Forest Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#SwampField">Swamp Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#CorrosiveField">Corrosive Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#Wasteland">Wasteland</a></td></tr>
+      <tr><th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Synthetic.html">Synthetic Fields</a></th></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#CorruptedCave">Corrupted Cave</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#FactoryField">Factory Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#ShortCircuitField">Short-Circuit Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#GlitchField">Glitch Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#BigTopArena">Big Top Arena</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#MirroArena">Mirror Arena</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#ChessBoard">Chess Board</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#FlowerGardenField">Flower Garden Field</a></td></tr>
+      <tr><th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Magical.html">Magical Fields</a></th></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#PsychicTerrain">Psychic Terrain</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#RainbowField">Rainbow Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#DimensionalField">Dimensional Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#FrozenDimensionalField">Frozen Dimensional Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#BlessedField">Blessed Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#HauntedField">Haunted Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#InverseField">Inverse Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#BewitchedWoods">Bewitched Woods</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#CrystalCavern">Crystal Cavern</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#DarkCrystalCavern">Dark Crystal Cavern</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#FairyTaleField">Fairy Tale Field</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#StarlightArena">Starlight Arena</a></td></tr>
+      <tr><td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#NewWorld">New World</a></td></tr>
+    </table>
+  </div>
+  -->
+
+  <!--LeftSideBar-->
+  <div class="trainerSidebar" id="ElementalFields">
+    <a href="FieldEffects-Elemental.html#ElectricTerrain" class="encounterDetailsSidebar">Electric Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#GrassyTerrain" class="encounterDetailsSidebar">Grassy Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#MistyTerrain" class="encounterDetailsSidebar">Misty Terrain</a><br><br>
+    <a href="FieldEffects-Elemental.html#CorrosiveMistField" class="encounterDetailsSidebar">Corrosive Mist Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#IcyField" class="encounterDetailsSidebar">Icy Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#WaterSurface" class="encounterDetailsSidebar">Water Surface</a><br><br>
+    <a href="FieldEffects-Elemental.html#Underwater" class="encounterDetailsSidebar">Underwater</a><br><br>
+    <a href="FieldEffects-Elemental.html#MurkwaterSurface" class="encounterDetailsSidebar">Murkwater Surface</a><br><br>
+    <a href="FieldEffects-Elemental.html#SkyField" class="encounterDetailsSidebar">Sky Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#VolcanicField" class="encounterDetailsSidebar">Volcanic Field</a><br><br>
+    <a href="FieldEffects-Elemental.html#DragonsDen" class="encounterDetailsSidebar">Dragon's Den</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="TelluricFields">
+    <a href="FieldEffects-Telluric.html#Cave" class="encounterDetailsSidebar">Cave</a><br><br>
+    <a href="FieldEffects-Telluric.html#RockyField" class="encounterDetailsSidebar">Rocky Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#MountainField" class="encounterDetailsSidebar">Mountain</a><br><br>
+    <a href="FieldEffects-Telluric.html#SnowyMountainField" class="encounterDetailsSidebar">Snowy Mountain Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#VolcanicTopField" class="encounterDetailsSidebar">Volcanic Top Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#DesertField" class="encounterDetailsSidebar">Desert Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#AshenBeach" class="encounterDetailsSidebar">Ashen Beach</a><br><br>
+    <a href="FieldEffects-Telluric.html#ForestField" class="encounterDetailsSidebar">Forest Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#SwampField" class="encounterDetailsSidebar">Swamp Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#CorrosiveField" class="encounterDetailsSidebar">Corrosive Field</a><br><br>
+    <a href="FieldEffects-Telluric.html#Wasteland" class="encounterDetailsSidebar">Wasteland</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="SyntheticFields">
+    <a href="FieldEffects-Synthetic.html#CorruptedCave" class="encounterDetailsSidebar">Corrupted Cave</a><br><br>
+    <a href="FieldEffects-Synthetic.html#FactoryField" class="encounterDetailsSidebar">Factory Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ShortCircuitField" class="encounterDetailsSidebar">Short-Circuit Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#GlitchField" class="encounterDetailsSidebar">Glitch Field</a><br><br>
+    <a href="FieldEffects-Synthetic.html#BigTopArena" class="encounterDetailsSidebar">Big Top Arena</a><br><br>
+    <a href="FieldEffects-Synthetic.html#MirrorArena" class="encounterDetailsSidebar">Mirror Arena</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ChessBoard" class="encounterDetailsSidebar">Chess Board</a><br><br>
+    <a href="FieldEffects-Synthetic.html#FlowerGardenField" class="encounterDetailsSidebar">Flower Garden Field</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="MagicalFields">
+    <a href="FieldEffects-Magical.html#PsychicTerrain" class="encounterDetailsSidebar">Psychic Terrain</a><br><br>
+    <a href="FieldEffects-Magical.html#RainbowField" class="encounterDetailsSidebar">Rainbow Field</a><br><br>
+    <a href="FieldEffects-Magical.html#DimensionalField" class="encounterDetailsSidebar">Dimensional Field</a><br><br>
+    <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="encounterDetailsSidebar">Frozen Dimensional Field</a><br><br>
+    <a href="FieldEffects-Magical.html#BlessedField" class="encounterDetailsSidebar">Blessed Field</a><br><br>
+    <a href="FieldEffects-Magical.html#HauntedField" class="encounterDetailsSidebar">Haunted Field</a><br><br>
+    <a href="FieldEffects-Magical.html#InverseField" class="encounterDetailsSidebar">Inverse Field</a><br><br>
+    <a href="FieldEffects-Magical.html#BewitchedWoods" class="encounterDetailsSidebar">Bewitched Woods</a><br><br>
+    <a href="FieldEffects-Magical.html#CrystalCavern" class="encounterDetailsSidebar">Crystal Cavern</a><br><br>
+    <a href="FieldEffects-Magical.html#DarkCrystalCavern" class="encounterDetailsSidebar">Dark Crystal Cavern</a><br><br>
+    <a href="FieldEffects-Magical.html#FairyTaleField" class="encounterDetailsSidebar">Fairy Tale Field</a><br><br>
+    <a href="FieldEffects-Magical.html#StarlightArena" class="encounterDetailsSidebar">Starlight Arena</a><br><br>
+    <a href="FieldEffects-Magical.html#NewWorld" class="encounterDetailsSidebar">New World</a><br><br>
+  </div>
+
+  <!--Main Content-->
+
+  <div class="maincontent">
+    <div class="FieldEffectHeader" id="FieldEffectHeaderID">
+      Field Effects
+    </div>
+
+    <div class="FieldEffectsTopNavigation">
+      <table class="FieldEffectTextTable">
+        <tr>
+          <th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Elemental.html">Elemental Fields</a></th>
+          <th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Telluric.html">Telluric Fields</a></th>
+          <th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Synthetic.html">Synthetic Fields</a></th>
+          <th class="FieldEffectListSubheader"><a class="FieldSideNavigation" href="FieldEffects-Magical.html">Magical Fields</a></th>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#ElecTerrain">Electric Terrain</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#Cave">Cave</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#CorruptedCave">Corrupted Cave</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#PsychicTerrain">Psychic Terrain</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#GrassyTerrain">Grassy Terrain</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#RockyField">Rocky Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#FactoryField">Factory Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#RainbowField">Rainbow Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#MistyTerrain">Misty Terrain</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#MountainField">Mountain</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#ShortCircuitField">Short-Circuit Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#Dimensional Field">Dimensional Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#CorrosiveMistField">Corrosive Mist Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#SnowyMountainField">Snowy Mountain Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#GlitchField">Glitch Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#FrozenDimensionalField">Frozen Dimensional Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#IcyField">Icy Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#VolcanicTopField">Volcanic Top Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#BitTopArena">Big Top Arena</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#BlessedField">Blessed Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#WaterSurface">Water Surface</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#DesertField">Desert Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#MirrorArena">Mirror Arena</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#HauntedField">Haunted Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#Underwater">Underwater</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#AshenBeach">Ashen Beach</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#ChessBoard">Chess Board</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#InverseField">Inverse Field</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#MurkwaterSurface">Murkwater Surface</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#ForestField">Forest Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Synthetic.html#FlowerGardenField">Flower Garden Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#BewitchedWoods">Bewitched Woods</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#SkyField">Sky Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#SwampField">Swamp Field</a></td>
+          <td></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#CrystalCavern">Crystal Cavern</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#VolcanicField">Volcanic Field</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#CorrosiveField">Corrosive Field</a></td>
+          <td></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#DarkCrystalCavern">Dark Crystal Cavern</a></td>
+        </tr>
+        <tr>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Elemental.html#DragonsDen">Dragon's Den</a></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Telluric.html#Wasteland">Wasteland</a></td>
+          <td></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#FairyTaleField">Fairy Tale Field</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#StarlightArena">Starlight Arena</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><a class="FieldSideNavgation" href="FieldEffects-Magical.html#NewWorld">New World</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="FieldEffects">
+      <p class="FieldEffectTitle">Field Effect Overview</p>
+      <p class="FieldEffectExplanation">Field Effects are the effects that the environment has on the battle. In the main series, the closest comparison would be the terrains introduced in Generation 7, but Pokemon Reborn and Rejuvenation take this idea even further. Fields are usually determined by the location of your battle, for example the Forest Field takes place in a forest, but fields can also be created or destroyed by using certain moves. <span style="font-weight: bolder">Using moves that create or destroy fields will boost the power of those moves by 1.3x.</span> Fields created by moves such as Grassy Terrain or abilities such as Grassy Surge will not replace existing fields unless there is no field currently.
+      <br><br>
+      These fields have a wide array of effects on moves, abilities, and even the type chart, and are catagorized into four different types: Elemental, Telluric, Magical, or Synthetic. Generally speaking, Elemental Fields are those that are detemined by the elements, such as Grassy Terrain or Volcanic Fields. Telluric Fields are determined by the surroundings, such as Forests or Caves. Synthetic Fields are those created by the actions of humans, such as the Factory Field or the Big Top Arena. Finally, Magical Fields are created by other, otherworldly means such as the Dimensional Field or the Haunted Field.
+      <br><br>
+      There are four different seeds for each of the types of fields that can be used as help items to boost your Pokemon, and these seeds will be consumed after its use. For most basic fields, the seeds will give a simple stat boost and/or an effect of a move. For example, holding an Elemental Seed in the <a href="FieldEffects-Elemental.html#ElecTerrain" class="FieldChanged">Electric Terrain</a> will boost your Defense stat and give you effects of using the move Charge. For some fields though, this boost is magnified at a cost. An example of this is holding a Magical Seed in the <a href="FieldEffects-Magical.html#PsychicTerrain" class="FieldChanged">Psychic Terrain</a> will boost your Pokemon's Special Attack and Special Defense, but will also cause your Pokemon to become confused.
+      <br><br>
+      Many fields will add an additional typing to moves, causing it to deal two different type damages. This can lead to much more effective or much more resisted moves. For example, in the <a href="FieldEffects-Elemental.html#DragonsDen" class="FieldChanged">Dragon's Den</a>, the move Smack Down gains Fire type damage. This causes it to have a 8x effectiveness against something that is Bug/Flying like a Butterfree. On the other hand, using Surf in the <a href="FieldEffects-Elemental.html#ElecTerrain" class="FieldChanged">Electric Terrain</a> will cause it to pick up electricity, making the move part Electric-type. Thus, ground types will be immune to the move.
+      <br><br>
+      Below are some terminology that may be helpful when reading about the Fields.
+      <br><br>
+      Field Damage: Damage caused by the field. Often, this damage will be scaled by typed, explained below:
+      <br><br>
+      Type Scaling: Damage dealt depends on typing. 4x Weakness = 1/2 Max HP damage. 2x Weakness = 1/4 Max HP damage. No Weakness/Resistance = 1/8 Max HP damage. 2x Resistance = 1/16 Max HP damage. 4x Resistance = 1/32 Max HP damage.
+      <br><br>
+      Grounded: Non-airborne Pokemon. Generally this means that the Pokemon is not a Flying-type, does not have Levitate as its ability, and is not holding an Air Balloon
+      </p>
+    </div>
+    <br>
+
+
+  </div>
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <div class="backToTop">
+    <a href="#" class="backToTopText" onclick="scrollTop();">Back To Top</a>
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

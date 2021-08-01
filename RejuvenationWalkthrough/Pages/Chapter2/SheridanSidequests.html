@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Sheridan Sidequests</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="encountersCreate([['Sheridan Village and Sheridan Arena', ['Grass', 'Events']], ['Spring of Purification', ['Grass']], ['Route 2', ['Grass', 'Fishing', 'Others']], ['Amethyst Cave', ['Cave', 'Fishing', 'Events']], ['Amethyst Grotto', ['Grass']], ['Hidden Library', ['Cave', 'Events']]], [1, 2, 0]);shopsSet([[10,2],[12,2]],['Sheridan Village']);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanVillageMapTxT">Sheridan Village</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanArenaMapTxT">Sheridan Arena</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2MapTxT">Route 2</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoMapTxT">Amethyst Grotto</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveOneMapTxT">Amethyst Cave<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveTwoMapTxT">Amethyst Cave<br>Second Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveThreeMapTxT">Amethyst Cave<br>Third Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthOneMapTxT">Amethyst Depths<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystDepthTwoMapTxT">Amethyst Depths<br>Second Room</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanVillageArenaGrassTxT">Sheridan Village & Arena Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanEventsTxT">Sheridan Village - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SpringPurificationTxT">Spring of Purification</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2GrassTxT">Route 2 Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route2OthersTxT">Route 2 - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystCaveEncountersTxT">Amethyst Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystOthersTxT">Amethyst Cave - Other Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystEventsTxT">Amethyst Cave - Events</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="AmethystGrottoEncountersTxT">Amethyst Grotto</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="HiddenLibraryEncountersTxT">Hidden Library</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="KecleonShopTxT">Kecleon Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SheridanShopTxT">Sheridan Village Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="VillageDrinksTxT">Sheridan Village Drinks<br>Inside Sheridan Village Shop</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank" class="encounterDetailsSidebar">Crystal Cavern<br>Location: Amethyst Cave</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#BlessedField" target="_blank" class="encounterDetailsSidebar">Blessed Field<br>Location: Amethyst Grotto</a><br><br>
+    <a href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Location: Sheridan Village, Sheridan Arena</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Location
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Sheridan Sidequests</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/HelpCenter.png">
+        <br><br>
+        <table class="SidequestTable">
+          <tr class="heading">
+            <td>Quest</td>
+            <td>Reward</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterOne">Help Plaza Quest 1: The Hidden Library 2</a></td>
+            <td><img src=../../images/PokeDollar.png>550, Water Stone, Good Rod, Ancient Book/Blue Moon Ice Cream</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterTwo">Help Plaza Quest 2: Stolen Cargo!</a></td>
+            <td><img src=../../images/PokeDollar.png>800, 10 Gourmet Treats</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterThree">Help Plaza Quest 3: Cute Pokemon!</a></td>
+            <td>Rare Candy, Pancham</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterFour">Help Plaza Quest 4: Get an Item!</a></td>
+            <td><img src=../../images/PokeDollar.png>850, Castelia Cone, (Blue Moon Ice Cream)</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterFive">Help Plaza Quest 5: Battle Me Again?</a></td>
+            <td><img src=../../images/PokeDollar.png>1600, Eevee</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#KarrinaGang">Karrina's Gang Wars</a></td>
+            <td>Houndour</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#DittoStart">Ditto Hunt - Start</a></td>
+            <td>Herbal Team, Carbos, and start a long-term sidequest for Ditto</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#ZumiSidequest">Zumi's Sidequest</a></td>
+            <td>Nothing yet, just a Pokemon Check</td>
+          </tr>
+        </table>
+        <br>
+        <p class="subsectionHeader" id="HelpCenterOne">Help Plaza Quest 1: The Hidden Library 2</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Library1.png">
+        <br>
+        To accept this request, you would have needed to complete the first part from the Help Plaza in East Gearen City. Once you've accepted the request, the same backpacker we helped back in East Gearen City will be right outside the Help Plaza, so go ahead and talk to him. He'll let us know the three possible locations for the library: Under Chrisola Hotel, near Dr. Jenkel's Lab, and in Gearen Park. We'll have to investigate the three locations in this order, so go ahead and take TRUCKGUY back to East Gearen City and go over to Chrisola Hotel.
+        <br><br>
+        In front of Chrisola Hotel, you'll met Karen from the Save Starly request back in East Gearen City. She's also looking for the Hidden Library, so after you let her know the other locations she'll head off to Dr. Jenkel's Lab. Go ahead and follow her there, and after cutscene head over to Gearen Park. Talk to Karen in front of the fountain, and after a little while you'll finally get access to the Hidden Library.
+        <br><br>
+        There are wild Pokemon here, but its only Unown. This is actually a decent place to train up your weaker Pokemon, since Unown will only have Hidden Power and the higher level ones give a decent amount of Exp. Anyways, you can pick up the bright green book behind the pillar. You should be picking up any colored books along the way, but there'll be a list of them later. For now, head into the library proper. Ignore everything else and head upstairs. Before you go into the large gate, pick up a <span class="hiddenItemText">Charcoal<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 2/Sidequests/Charcoal.png"></span></span> on the right side. Enter the gate, and head straight through to talk to Karen. Watch the scene play out, and she'll give you an Ancient Book for your troubles. At this point, we can go back to the backpacker to complete the quest, but we can explore the library a little more.
+        <br><br>
+        First, with the Ancient Book you can now read the Garufan prophecies that was behind Karen, so do so if you're interested. In the same room, you can find a Good Rod on the left side of the area. Back in the main room, on the first floor near the right set of stairs is a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell10.png"></span></span> There's another room on the bottom right side that leads to <span class="ImportantName">TM77 - Psych Up.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Sidequests/TM77.png"></span></span> The final thing we can do here is help the floating Elgyem pick up the scattered books. Near the Elgyem is an <span class="hiddenItemText">Ether<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 2/Sidequests/Ether.png"></span></span>
+        <br><br>
+        <table class="SidequestTable">
+          <tr class="heading">
+            <td>Book</td>
+            <td>Location</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 1<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book1.png"></span></span></td>
+            <td>Library Entrance</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 2<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book2.png"></span></span></td>
+            <td>Main Lobby - First Floor</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 3<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book3.png"></span></span></td>
+            <td>Main Lobby - First Floor</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 4<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book4.png"></span></span></td>
+            <td>Main Lobby - First Floor</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 5<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book5.png"></span></span></td>
+            <td>Main Lobby - First Floor</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 6<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book6.png"></span></span></td>
+            <td>Main Lobby - Second Floor</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 7<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book7.png"></span></span></td>
+            <td>Prophecy Room - Left Side</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 8<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book8.png"></span></span></td>
+            <td>Prophecy Room - Right Side</td>
+          </tr>
+          <tr class="quests">
+            <td><span class="ImportantName">Book 9<span class="normalTrainerImage"><img class="normalTrainerMap" src="../../images/Screenshots/Chapter 2/Sidequests/Books/Book9.png"></span></span></td>
+            <td>Bottom Left Room</td>
+          </tr>
+        </table>
+        <br>
+        Once you've found all the books, be sure to save. Interact with the colored section of the bookshelf and put the books back in its place. Elgyem will be happy with you, and force you into a battle. It will be at level 1, so be very careful if you want to catch it.
+        <br><br>
+        With all that done, we can head back to Sheridan and talk to the backpacker out front. He'll see you have the Ancient Book and ask you to give it to him. I would recommend not giving it to him as having it on us will allow us to get an extra Pokemon later, but if you do you can get a Blue Moon Ice Cream. Either way, he'll run off to the library and our job will be done. Claim your reward at the Help Plaza.
+        <br><br>
+        <div class="ingameExplanation">
+          As a sidenote, now that we have a Good Rod we can fish for Skrelp at Gearen Sewers. This is one of the Pokemon Zumi needs for her PokeDex sidequest. Since you're in the area, you can go ahead and fish it now but we'll also cover Zumi's sidequest later in this section
+        </div>
+        <br>
+        <p class="subsectionHeader" id="HelpCenterTwo">Help Plaza Quest 2: Stolen Cargo</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Cargo1.png">
+        <br>
+        There's no particular requester for this one, so just head on over to Oceana Pier. Make sure you have a strong team with you. In Oceana Pier, talk to the guy in front of the warehouse on the bottom right. He'll let you into the warehouse, and you'll have to find a way to get deeper into the warehouse. If you stepped on the center platform, your Pokemon will be electrocuted and most will get KO'd, so I wouldn't recommend doing that. Instead, go over to the right and talk to <span class="ImportantName">Gang Member Usain,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Sidequests/Cargo2.png"></span></span> who has an Electrike with Discharge, which can swich the field between the <a class="continueElsewhere" href="../Information/FieldEffects-Synthetic.html#FactoryField" target="_blank">Factory Field</a> and a <a class="continueElsewhere" href="../Information/FieldEffects-Synthetic.html#ShortCircuitField" target="_blank">Short-Circuit Field.</a> Once you've shut down the factory, you can get over deeper into the warehouse without losing your Pokemon's health.
+        <br><br>
+        Once inside, the gang members will start to battle you. Venam will appear and help you out with this battle.
+        <br><br>
+        <div class="eventTrainerName">
+          Gang Member Samwell and Gang Member Jacksin
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/122.png">
+              <br>
+              Mr. Mime, Level 23
+            </th>
+            <td rowspan="2">Psychic</td>
+            <td>Dazzling Gleam</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/137.png">
+              <br>
+              Porygon, Level 24
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Discharge</td>
+          </tr>
+          <tr><td>Psybeam</td><td>Signal Beam/td></tr>
+          <tr>
+            <td rowspan="2">Fairy</td><td>---</td>
+            <td>---</td>
+          </tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/075_1.png">
+              <br>
+              Alolan Graveler, Level 24
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Discharge</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/119.png">
+              <br>
+              Seaking, Level 24
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Water Pulse</td>
+          </tr>
+          <tr><td>Smack Down</td><td>Signal Beam</td></tr>
+          <tr>
+            <td rowspan="2">Electric</td><td>Self-Destruct</td>
+            <td>Protect</td>
+          </tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/180.png">
+              <br>
+              Flaffy, Level 24
+            </th>
+            <td rowspan="4">Electric</td>
+            <td>Discharge</td>
+            <th rowspan="4">
+              ---
+            </th>
+            <td rowspan="4">---</td>
+            <td>---</td>
+          </tr>
+          <tr><td>Power Gem</td><td>---</td></tr>
+          <tr>
+            <td>Fury Swipes</td>
+            <td>---</td>
+          </tr>
+          <tr><td>---</td><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">480
+            </td>
+          </tr>
+        </table>
+        <br>
+        This will probably be your first experience with changeable fields. Many fields in this game can be created, destroyed, or changed by moves. In this case, Discharge will cause the field to alternate between a <a class="continueElsewhere" href="../Information/FieldEffects-Synthetic.html#FactoryField" target="_blank">Factory Field</a> and a <a class="continueElsewhere" href="../Information/FieldEffects-Synthetic.html#ShortCircuitField" target="_blank">Short-Circuit Field.</a> Both these fields have similar effects, but there are some differences. For example, while the field is Short-Circuit, Dark-type moves will be stronger. If the Factory Field is active, Steel-type moves will get a boost. Either way, this battle won't be too hard as its effectively a 12v5, and their Pokemon will often knock out their partner with Discharge.
+        <br><br>
+        Once the battle is complete, head out to the left side. Change the direction of the electrified panel with the terminal, and then go pick up <span class="ImportantName">TM09 - Venoshock.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/Sidequests/TM09.png"></span></span> With that, you can go back to the Help Plaza and collect your reward.
+        <br>
+        <p class="subsectionHeader" id="HelpCenterThree">Help Plaza Quest 3: Cute Pokemon</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/PokemonTrade.png">
+        <br>
+        For this request, we will need to have an Aipom in our party to traded away. If you don't have one or don't want to trade yours, you can catch on on Route 2. They will be static encounters during the mornings and daytime, or you can also find them by using Headbutt on the available trees. Either way, once you have one, talk to the blue-haired lady just south of the battlefield in Sheridan Arena. She'll ask you to trade your Aipom, and in return you'll get a Pancham. With that, the quest is complete so you can grab the money reward at the Help Plaza.
+        <br>
+        <p class="subsectionHeader" id="HelpCenterFour">Help Plaza Quest 4: Get an Item!</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Kecleon1.png">
+        <br>
+        Before you do this request, I would recommend you first complete the <a class="questsLink" href="#DittoStart">Ditto Hunt Sidequest</a> first, as you won't have to backtrack twice.
+        Regardless, for this quest you would need to head over to Route 2, specifically to the Kecleon Shop. If you have started the Ditto Hunt sidequest, you'll can talk to the second Kecleon on top, and it will run away. We'll catch up to it again later. Save the game, and then interact with the item in the green Pokeball. If you have the money, feel free to pay for it. But if you don't, you'll be transported to Kecleon's Dungeon.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Kecleon2.png">
+        <br>
+        You'll be able to break out, but make sure to look at the map. You'll have to memorize the path to get to the green or yellow square on top. In the map above, you would need to take the middle door then the right most door. This map will change, so if you get an impossible map you can reset the game and try again. If you manage to get to the yellow door, you'll be able to get either a Shiny Stone, Ice Stone, or Dusk Stone randomly. To complete the quest, you don't actually need to survive the dungeon, but doing so will let you get an extra reward.
+        <br><br>
+        Once you've broken out, you'll find yourself in Sheridan Village. The requester is waiting in front of the Help Plaza. If you made it out of the dungeon alive, you'll get a Blue Moon Ice Cream. If not, the requester will simply thank you for trying. You'll get a Casteliacone and some cash as a reward from the Help Plaza.
+        <br>
+        <p class="subsectionHeader" id="HelpCenterFive">Help Plaza Quest 5: Battle Me Again?</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/NovaeBattle.png">
+        <br>
+        When you accept this request, Novae will approach you. She'll let you know that she couldn't reserve Sheridan Arena, so you'll be battling in the last room of Amethyst Cave. Set up your best team, and head on over to battle Novae. This battle will be fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#CrystalCavern" target="_blank">Crystal Cavern.</a>
+        <br>
+        <div class="eventTrainerName">
+          Wanderer Novae
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/732.png">
+              <br>
+              Trumbeak, Level 27
+            </th>
+            <td rowspan="2">Normal</td>
+            <td>Pluck</td>
+          </tr>
+          <tr><td>Fury Attack</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Rock Smash</td></tr>
+          <tr><td>Rock Blast</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/737.png">
+              <br>
+              Charjabug, Level 27
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Spark</td>
+          </tr>
+          <tr><td>Acrobatics</td></tr>
+          <tr><td rowspan="2">Electric</td><td>Crunch</td></tr>
+          <tr><td>Dig</td></tr>
+          
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/769.png">
+              <br>
+              Sandygast, Level 27
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Bulldoze</td>
+          </tr>
+          <tr><td>Giga Drain</td></tr>
+          <tr><td rowspan="2">Ground</td><td>Rock Tomb</td></tr>
+          <tr><td>Hypnosis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/745.png">
+              <br>
+              Lycanroc (Day Form), Level 28
+            </th>
+            <td rowspan="4">Rock</td>
+            <td>Accelerock</td>
+          </tr>
+          <tr><td>Rock Tomb</td></tr>
+          <tr><td>Rock Climb</td></tr>
+          <tr><td>Bite</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/763.png">
+              <br>
+              Tsareena, Level 28
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Trop Kick</td>
+          </tr>
+          <tr><td>Stomp</td></tr>
+          <tr><td>Teeter Dance</td></tr>
+          <tr><td>Attract</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/766.png">
+              <br>
+              Passimian, Level 29
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Bulldoze</td>
+          </tr>
+          <tr><td>Rock Smash</td></tr>
+          <tr><td>Brutal Swing</td></tr>
+          <tr><td>Work Up</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">1044
+            </td>
+          </tr>
+        </table>
+        <br>
+        At this point in the game, this is a very, very hard battle. All her Pokemon out-level you at this stage, and she has two fully evolved Pokemon. The field is a double-edged sword for both you and Novae. On one hand, boosted Rock-type moves will allow you to virtually one-shot Trumbeak and Charjabug without much trouble. On the other hand, Sandygast and especially Lycanroc will hit incredibly hard with their Rock-type moves. A strong Water-type Pokemon can help get rid of both of them, but be careful of Sandygast's Water Compaction if you're using physical Pokemon.
+        <br><br>
+        Tsareena can hit hard, but it is quite slow and doesn't have a lot of coverage. If you have something that resists Grass, Tsareena could be used to heal up your Pokemon. Novae's Passimian is still the biggest threat on her team. Flying-type moves are weakened in the field, and it has Brutal Swing to counter Psychic-type Pokemon. A saving grace is that it does not carry Rock Tomb, so it actually can't hit your Flying-type Pokemon supereffectively. As with most aces, inflicting a status effect can help a lot. A Burn would effectively cripple it, and Paralysis helps you chip away as it will almost always be slower. Either way, this is a hard battle, but it is winnable with the right team. If you're struggling, you can always come back after the level limit is increased.
+        <br><br>
+        Once you defeat Novae, you can recieve an Eevee at the Help Plaza. Importantly, you can save before recieving the Eevee and reload until you get the one you want. If you get a female Eevee, you can breed it in Sheridan Village to get different Eeveelutions if you so choose.
+        <br>
+        <p class="subsectionHeader" id="KarrinaGang">Karrina Gang Wars</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Karrina1.png">
+        <br>
+        Head over to Karrina's base near the sewers in East Gearen City to start the sidequest. Talk to Karrina, and she'll tell you to meet up with the gang at Amethyst Cave. Head over to Amethyst Cave, and in the first room from Route 2 you'll find battles taking place all over the map. Head upstairs, then go across the waterfall and meet up with Karrina. You'll have to battle the gang leader in her stead.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/Sidequests/Karrina2.png">
+        <br>
+        <div class="eventTrainerName">
+          Gang Member Charly
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/067.png">
+              <br>
+              Machoke, Level 23
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Knock Off</td>
+          </tr>
+          <tr><td>Low Sweep</td></tr>
+          <tr><td>Revenge</td></tr>
+          <tr><td>Seismic Toss</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/056.png">
+              <br>
+              Mankey, Level 24
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Cross Chop</td>
+          </tr>
+          <tr><td>Pursuit</td></tr>
+          <tr><td>Swagger</td></tr>
+          <tr><td>Seismic Toss</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/288.png">
+              <br>
+              Vigoroth, Level 24
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Slash</td>
+          </tr>
+          <tr><td>Uproar</td></tr>
+          <tr><td>Fury Swipes</td></tr>
+          <tr><td>Endure</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">240
+            </td>
+          </tr>
+        </table>
+        <br>
+        After the battle, Karrina will thank you and give you a Houndour.
+        <br>
+        <p class="subsectionHeader" id="DittoStart">Ditto Hunt - Start</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/SheridanVillageArena/DittoQuestStart.png">
+        <br>
+        This sidequest was already covered in the main guide, but to recap:<br>
+        <ol>
+          <li>Enter the hours below Eldest's home and talk to the girlfriend there. Agree to rescue her boyfriend</li>
+          <li>Head over to room before last in Amethyst Cave, interact with the vegetable box</li>
+          <li>Catch the Solrock and save the boyfriend</li>
+          <li>Head back to the house and watch the cutscene. You'll get a few items here.</li>
+          <li>Head over to Route 2 and interact with the second Kecleon</li>
+        </ol>
+        That's all we can do for now with this quest. This sidequest will be reoccuring for a bit until we manage to catch up to the Ditto.
+        <br>
+        <p class="subsectionHeader" id="ZumiSidequest">Zumi's Sidequest</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/PreRoute2/Library1.png">
+        <br>
+        This is another recurring sidequest as we get access to more Pokemon. There's no new reward here just yet, but here's a list of the Pokemon we have access to so far:<br>
+        <ol>
+          <li>Dedenne - Grass in Route 2 during the mornings and daytime</li>
+          <li>Carbink - Amethyst Cave random encounters</li>
+          <li>Ledyba - Grass in Sheridan Village and Sheridan Arena during the mornings and daytime</li>
+          <li>Skrelp - Fish in Gearen Sewers using a Good Rod. You'll be able to get a Good Rod while doing the <a class="continueElsewhere" href="#HelpCenterOne">The Hidden Library 2</a> Help Plaza Quest above.</li>
+        </ol>
+        Our next target is Zangoose, which will be available in the next route.
+        <br>
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/CaratosMountain.html">&lt&lt Caratos Mountain</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter2/SheridanGymLeader.html">Sheridan Gym Battle &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="SheridanVillageMap" class="EncounterPopup">
+        <span class="close" id="SheridanVillageMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Sheridan Village
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Sheridan/Sheridan Village.png">
+      </div>
+
+      <div id="SheridanArenaMap" class="EncounterPopup">
+        <span class="close" id="SheridanArenaMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Sheridan Arena
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Sheridan/Sheridan Arena.png">
+      </div>
+
+      <div id="AmethystGrottoMap" class="EncounterPopup">
+        <span class="close" id="AmethystGrottoMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Grotto
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Grotto.png">
+      </div>
+
+      <div id="Route2Map" class="EncounterPopup">
+        <span class="close" id="Route2MapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Route 2
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Route 2.png">
+      </div>
+
+      <div id="AmethystCaveOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - First Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-Entrance.png">
+      </div>
+      
+      <div id="AmethystCaveTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Second Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-2.png">
+      </div>
+
+      <div id="AmethystCaveThreeMap" class="EncounterPopup">
+        <span class="close" id="AmethystCaveThreeClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Cave - Third Room
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Cave-3.png">
+      </div>
+
+      <div id="AmethystDepthOneMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement One
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-1.png">
+      </div>
+
+      <div id="AmethystDepthTwoMap" class="EncounterPopup">
+        <span class="close" id="AmethystDepthTwoClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Amethyst Depths - Basement Two
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/Route 2-Amythyst Cave/Amethyst Depths-Zetta.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

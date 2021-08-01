@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Three - Mirage Woods</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([12], ['MirageWoodsTrainers']);encountersCreate([['Mirage Woods', ['Grass', 'Fishing', 'Events']]],[]);globalrunOnLoad('Third','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MirageWoodsEncountersTxT">Mirage Woods Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MirageWoodEventEncountersTxT">Mirage Woods Event Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route3OthersTxT">Mirage Woods Fishing</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#ForstField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Location: Mirage Woods</a><br><br>
+    <a href="../Information/FieldEffects-Telluric.html#Cave" target="_blank" class="encounterDetailsSidebar">Cave Field<br>VS Pokegang Crobat</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Mirage Woods
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Mirage Woods<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="MirageWoodsTrainersButton" onclick="showTrainerTable('MirageWoodsTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="MirageWoodsHiddenButton" onclick="showHiddenTable('MirageWoodsHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 3/MirageWoods/MirageWoods.png">
+        <br>
+        <table class="TrainerTable" id="MirageWoodsTrainers">
+        </table>
+        <br>
+        <table class="TrainerTable" id="MirageWoodsHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Moomoo Milk<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/MoomooMilk.png"></span></a></td>
+            <td>Along the path, left side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Pretty Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/PrettyWing.png"></span></a></td>
+            <td>Along the path, right side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Zinc<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/Zinc.png"></span></a></td>
+            <td>Along the path, left side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Ether<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/Ether.png"></span></a></td>
+            <td>Bottom left of the Kingdra statue</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/GreenShard.png"></span></a></td>
+            <td>Top right of the Kingdra statue</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/Repel.png"></span></a></td>
+            <td>Left side of the entrance to the research area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Clever Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/CleverWing.png"></span></a></td>
+            <td>Near the rock in the bottom left of the research area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Black Flute<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/BlackFlute.png"></span></a></td>
+            <td>In a patch of grass near the waterfall in the research area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Genius Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/HiddenItems/GeniusWing.png"></span></a></td>
+            <td>In the grass, right side of the golden forest area</td>
+          </tr>
+        </table>
+        <br>
+        Mirage Woods is straightforward path with hidden items along the way. Battles here are fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank">Forest Field</a> There are only two trainers here that will battle you, <a href="javascript:void(0)" class="normalTrainerName" id="FragrantLadyFennelName">Fragrant Lady Fennel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/Trainers/FragrantLadyFennel.png"></span></a> and <a href="javascript:void(0)" class="normalTrainerName" id="SchoolboyTommyName">Schoolboy Tommy.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/Trainers/SchoolboyTommy.png"></span></a> At the end of the path, you'll find a statue of a Kingdra. Make sure you're healed up, and then place the Ancient Wing we found earlier onto the Kingdra. The statue will activate, then challenge you to a battle.
+        <br><br>
+        <div class="eventTrainerName">
+          Ancient Kingdra
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/230.png">
+              <br>
+              Kingdra, Level 48
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Surf</td>
+          </tr>
+          <tr><td>Thunder</td></tr>
+          <tr><td rowspan="2">Dragon</td><td>Icy Wind</td></tr>
+          <tr><td>Rain Dance</td></tr>
+        </table>
+        <br>
+        The Kingdra is over 10 levels above you at this point, so this can definitely be a difficult battle. The good news is that in the Forest Field, Surf's damage is lowered so it won't hit as hard with its only STAB move. A strategy that generally works is to inflict Paralysis onto it, as that would even out the speed boost it will get with Swift Swim once the rain is up. Thunder will have 100% accuracy once it gets its Rain up, so be careful with that. Even though its level is much higher, this is still effectively a 6v1 so as long as you have the opportunity to chip away at it you should be ok.
+        <br><br>
+        Once you beat the Kingdra, you'll be allowed to proceed with the newly created bridge. Enter the first house and you'll find an <span class="ImportantName">Itemfinder.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/ItemFinder.png"></span></span> I would recommend registering the Itemfinder on F5, and so can also trigger it with the Shift key that way. One of the other houses is blocked, so enter the house on the left side and pick up the Steam Ball, then talk to the scientist in the top right corner. He'll ask for your help with a research project, and then you'll have access to the last house. From the middle building, head upstairs, outside, then into the cave.
+        <br><br>
+        Inside the cave you'll find <span class="ImportantName">TM66 Payback<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 3/MirageWoods/TMPayback.png"></span></span> and a <span class="ZygardeCell">Zygarde Cell.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/ZygradeCells/ZyCell11.png"></span></span> If you walk in deeper, you'll find that you need to figure out a way to disturb the Zubats. We'll need the move Flash, which you can buy at the Chrisola Casino for 1000 Coins. Once you use Flash, the Zubats will wake up and an angry Crobat will attack you.
+        <br><br>
+        <div class="eventTrainerName">
+          Pokegang Crobat
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/041.png">
+              <br>
+              Zubat, Level 33
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Acrobatics</td>
+          </tr>
+          <tr><td>Air Cutter</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Swift</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/041.png">
+              <br>
+              Zubat, Level 33
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Acrobatics</td>
+          </tr>
+          <tr><td>Air Cutter</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Swift</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/041.png">
+              <br>
+              Zubat, Level 33
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Acrobatics</td>
+          </tr>
+          <tr><td>Air Cutter</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Swift</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/041.png">
+              <br>
+              Zubat, Level 33
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Acrobatics</td>
+          </tr>
+          <tr><td>Air Cutter</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Swift</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/169.png">
+              <br>
+              Crobat, Level 48
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Acrobatics</td>
+          </tr>
+          <tr><td>Poison Fang</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Toxic</td></tr>
+          <tr><td>Confuse Ray</td></tr>
+        </table>
+        <br>
+        Level-wise, you are at a disadvantage for this battle. That being said, the environment is in your favor. This battle is fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#Cave" target="_blank">Cave,</a> which boosts the power of almost all Rock-type moves while weakening Air Cutter. A high Defense Rock-type or Steel-type Pokemon can take anything any of the Pokemon can throw at it during this battle. If you have any Pokemon with Stealth Rocks, the entry hazard damage is doubled taking 50% all the Zubats and Crobat's HP. Like Kingdra, you can also cripple it with either Paralysis or, since it is a physical attacker, Burn will also work fine. However you choose to defeat it, once you do you'll also optain a Zubat as a reward.
+        <br><br>
+        That's everything we can do in Mirage Woods, so we can now head over to East Gearen City to find Venam so she can melt the steel bars Ren put up.        
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter3/Route3PhasialCave.html">&lt&lt Route 3 and Phasial Cave</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter3/Courtyard.html">Chrysalis Courtyard &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - East Gearen City Sidequests</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="encountersCreate([['East Gearen City', ['Grass', 'Events']], ['Oceana Pier', ['Events']], ['Chrisola Hotel Rooftop', ['Grass']], ['Chrisola Hotel', ['Events']], ['Gearen Park', ['Grass']]], [4,1,1]);shopsSet([[5,2],[6,2]],['East Gearen City']);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="EastGearenCityLeftMapTxT">East Gearen City (Left)</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="EastGearenCityRightMapTxT">East Gearen City (Right)</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="OceanaPierMapTxT">Oceana Pier</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenParkMapTxT">Gearen Park</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenGrassTxT">East Gearen City Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenEventsTxT">East Gearen City - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="OceanaPierTxT">Oceana Pier</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenParkTxT">Gearen Park</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="HotelEncountersTxT">Chrisola Hotel Rooftop Pokemon</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="HotelEventsTxT">Chrisola Hotel Casino and Event Pokemon</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenLabShopTxT">Gearen Lab Mart</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketTopLeftTxT">Gearen Market<br>Top Left Vendor</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomLeftTxT">Gearen Market<br>Bottom Left Vendor</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomMiddleTxT">Gearen Market<br>Bottom Middle Vendor<br>Weekdays, 11:00am-8:00pm</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomRightTxT">Gearen Market<br>Bottom Right Vendor<br>Weekdays, 11:00am-8:00pm</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="BerryEmporiumTxT">Shopping Emporium<br>Berry Emporium</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="PokeballShopTxT">Shopping Emporium<br>Pokeball Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CasinoShopTxT">Chrisola Hotel<br>Casino Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="APShopTxT">Chrisola Hotel<br>AP Shop</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Elemental.html#GrassyTerrain" target="_blank" class="encounterDetailsSidebar">Grassy Terrain<br>Location: Gearen Park</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      East Gearen City - Sidequests
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">About Sidequests</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/HelpPlaza.png">
+        <br>
+        There are a lot of optional side content that can be done before battling the Gym proper. Most of these will reward you with some cash, items, or even rare Pokemon. Most of the sidequests will be done through the Help Plaza, pictured above. You'll see these buildings pretty often, and they'll usually have a plethora of quests for you to do. For ease of access, the quests and their reward will be listed here first. If nothing interests you, continue from where you left off. These quests will be available for a long time, so you can always come back whenever you want.
+        <br><br>
+        <table class="SidequestTable">
+          <tr class="heading">
+            <td>Quest</td>
+            <td>Reward</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterOne">Help Plaza Quest 1: Help Starly</a></td>
+            <td><img src=../../images/PokeDollar.png>300</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterTwo">Help Plaza Quest 2: Missing Mother</a></td>
+            <td><img src=../../images/PokeDollar.png>500, Full Heal, One Free Haircut</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterThree">Help Plaza Quest 3: Hidden Library</a></td>
+            <td>5 Great Balls</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterFour">Help Plaza Quest 4: Love Letter</a></td>
+            <td><img src=../../images/PokeDollar.png>350, Nugget</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterFive">Help Plaza Quest 5: Dangerous Pokemon</a></td>
+            <td><img src=../../images/PokeDollar.png>350, Super Potion, Litleo</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#HelpCenterSix">Help Plaza Quest 6: Battle Me</a></td>
+            <td><img src=../../images/PokeDollar.png>600, Pichu</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#NidoranF">Nidoran (F) Chase</a></td>
+            <td>Nidoran (F)</td>
+          </tr>
+          <tr class="quests">
+            <td><a class="questsLink" href="#Minccino">Minccino Chase</a></td>
+            <td>Minccino</td>
+          </tr>
+        </table>
+        <br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/HelpPlaza2.png">
+        <br>
+        Inside the Help Plaza, there'll are two places of note. The bullitin board in the back is where you can accept requests, and the ranger beside the board will give you a clue on where to go next if you're stuck on a request. The lady at the counter on the left side will give you your rewards when you talk with her after finishing a quest. You can only accept one request at a time, but your rewards will always be there, so you can collect them all at once if you want.
+
+        <br>
+        <p class="subsectionHeader" id="HelpCenterOne">Help Plaza Quest 1: Help Starly</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Starly/SaveStarly1.png">
+        <br>
+        For this request, we will need to head to Gearen Lab to talk with the requester. <span class="ImportantName">She'll be right by Nurse Joy on the very top.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Starly/Starly2.png"></span></span> Talk to her, and she'll explain that she believes the Starly kidnappers are in Oceana Pier. Follow her lead, and go to Oceana Pier. Specifically, the bottom left corner, where you'll see three thugs cornering a Starly. Approach them, and you'll get into a battle.
+        <br><br>
+        <div class="eventTrainerName">
+          Gang Member Den
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/767.png">
+              <br>
+              Wimpod, Level 8
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Struggle Bug</td>
+          </tr>
+          <tr><td>Sand Attack</td></tr>
+          <tr><td rowspan="2">Water</td><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/736.png">
+              <br>
+              Grubbin, Level 9
+            </th>
+            <td rowspan="4">Bug</td>
+            <td>Vice Grip</td>
+          </tr>
+          <tr><td>Mud-Slap</td></tr>
+          <tr><td>String Shot</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">45
+            </td>
+          </tr>
+        </table>
+        <br>
+        After the battle, you'll see a cutscene and be introduced to Karen. She'll deal with the thugs, and the Starly will return to its owner. Go back and talk to the girl in Gearen Lab, and then you can collect your <img src="../../images/PokeDollar.png">300 reward at the Help Plaza.
+        <br>
+
+        <p class="subsectionHeader" id="HelpCenterTwo">Help Plaza Quest 2: Missing Mother</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother1.png">
+        <br>
+        Once you accepted this request, you'll need to head over to the <span class="ImportantName">Salon in the Shopping Emporium<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother2.png"></span></span> and talk to Sasha inside. She'll explain that her mom has been missing for a while now, and wants you to track down her clients to see if they know where her mom, Rosa, went. The first client is <span class="ImportantName">on the second floor of Aqua Building,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother3.png"></span></span> which is just below the Shopping Emporium. Go back and report to Sasha, and she'll send you to <span class="ImportantName">the third floor of Velvet Building<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother4.png"></span></span> near Gearen Lab. Go back once more to Sasha, and then head over to <span class="ImportantName">the ground floor of Violet Building<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother5.png"></span></span> all the way on the left. After you leave Violet building, take to the <span class="ImportantName">woman right next to the entrance,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Mother/Mother6.png"></span></span> who will let you know that they saw Rosa by Oceana Pier. Go back to Sasha one last time, and then the two of you will go to Oceana Pier. Follow Sasha in, watch the cutscene, and the request will be complete. You can get your rewards from the Help Plaza, and head to the Salon for the other reward.
+        <br><br>
+        As a result of this request, you'll be able to give haircuts once a day to your Pokemon, which will raise their friendship. The first one is free, after which you will need to pay <img src="../../images/PokeDollar.png">1500. The lady on the bottom right of the Salon will also let you know your Pokemon's friendship levels.
+        <br>
+
+        <p class="subsectionHeader" id="HelpCenterThree">Help Plaza Quest 3: Hidden Library</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Library/Library1.png">
+        <br>
+        The requester for this sidequest can be found in Gearen Lab. Head to the small reading area on the left side, and talk to <span class="ImportantName">this backpacker<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Library/Library2.png"></span></span>. He'll talk a little about the Hidden Library, and asks you to find more information from three individuals. The first is <span class="ImportantName">the woman with her child in leaflet park,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Library/Library3.png"></span></span> then the <span class="ImportantName">receptionist in Chrisola Hotel,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Library/Library3.png"></span></span> and finally <span class="ImportantName">Karrina, the local gang leader.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Library/Library3.png"></span></span> Karrina can be found at the end of the pathway near the sewers.
+        <br><br>
+        Once you're done, head back to the backpacker in Gearen Lab. He'll ask you what you found, so let him know that:
+        <br>
+        The library is intact.
+        <br>
+        The library is closed off.
+        <br>
+        Gearen Sewers.
+        <br>
+        Once all the information is relayed, the request will be complete, so you can get your reward of Great Balls from the Help Plaza.
+
+        <br>
+        <p class="subsectionHeader" id="HelpCenterFour">Help Plaza Quest 4: Love Letter</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Letter/Letter1.png">
+        <br>
+        Once you've accepted the request, head over to Oceana Pier Gate where you had your Trainer Card verified. In there, head up to the <span class="ImportantName">second floor<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Letter/Letter2.png"></span></span> to meet with the requester. He'll show you <span class="ImportantName">Cameron,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Letter/Letter3.png"></span></span> who you'll need to deliver the letter too. He'll also ask you to buy an item to give to Cameron, something that will help against Fire types. Head over to Gearen Market, and buy a Burn Heal from the bottom left stall. You can find Cameron <span class="ImportantName">just around the corner.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Letter/Letter4.png"></span></span> Once you've given him the item, head back to Oceana Pier Gate to report your success, then go get your monetary reward along with a Nugget, which you can sell for even more money.
+        
+        <br>
+        <p class="subsectionHeader" id="HelpCenterFive">Help Plaza Quest 5: Dangerous Pokemon</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Litleo1.png">
+        <br>
+        This request doesn't have a requester, so you can immediately head over to Oceana Pier. Once you exited the gate, head over to the right side where you'll see a group of Litleos. As the Litleos approach you, something will happen and you'll be thrown into a battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Litleo2.png">
+        <br>
+        <div class="eventTrainerName">
+          Poke Gang Lion Troupe
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/667.png">
+              <br>
+              Litleo, Level 15
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Headbutt</td>
+          </tr>
+          <tr><td>Ember</td></tr>
+          <tr><td>Work Up</td></tr>
+          <tr><td>Noble Roar</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/667.png">
+              <br>
+              Litleo, Level 15
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Headbutt</td>
+          </tr>
+          <tr><td>Ember</td></tr>
+          <tr><td>Work Up</td></tr>
+          <tr><td>Noble Roar</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/668.png">
+              <br>
+              Pyroar, Level 25
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Fire Fang</td>
+          </tr>
+          <tr><td>Headbutt</td></tr>
+          <tr><td>Take Down</td></tr>
+          <tr><td>Noble Roar</td></tr>
+        </table>
+        <br>
+        While the Pyroar's level is higher than our current limit, the fact that it always rains in Oceana Pier makes this battle a bit easier. Water type moves are boosted, and Litleo/Pyroar's Fire moves have much lower effectiveness. Take down the two Litleos first to turn the fight into a 2v1, and from there whittle down the Pyroar. Once you defeat the group, one of the Litleo's will forcibly join you. The request will be complete, so you can get your reward at the Help Plaza.
+
+        <br>
+        <p class="subsectionHeader" id="HelpCenterSix">Help Plaza Quest 6: Battle Me</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Battle1.png">
+        <br>
+        This is a battle request, and it will take place in Chrisola Hotel. Head over to the Hotel and up to the third floor, where your opponent is waiting. Feel free to use the Healing Machine here if you need to, then talk to the person on the battlefield to start the battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Battle2.png">
+        <br>
+        <div class="eventTrainerName">
+          Wanderer Novae
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/732.png">
+              <br>
+              Trumbeak, Level 16
+            </th>
+            <td rowspan="2">Normal</td>
+            <td>Pluck</td>
+          </tr>
+          <tr><td>Fury Attack</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Rock Smash</td></tr>
+          <tr><td>Supersonic</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/737.png">
+              <br>
+              Charjabug, Level 17
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Spark</td>
+          </tr>
+          <tr><td>Bug Bite</td></tr>
+          <tr><td rowspan="2">Electric</td><td>Bite</td></tr>
+          <tr><td>Mud-Slap</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/744.png">
+              <br>
+              Rockruff, Level 17
+            </th>
+            <td rowspan="4">Rock</td>
+            <td>Rock Throw</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr><td>Leer</td></tr>
+          <tr><td>Sand Attack</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/762.png">
+              <br>
+              Steenee, Level 18
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Razor Leaf</td>
+          </tr>
+          <tr><td>Play Rough</td></tr>
+          <tr><td>Doubleslap</td></tr>
+          <tr><td>Synthesis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/769.png">
+              <br>
+              Sandygast, Level 18
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Sand Tomb</td>
+          </tr>
+          <tr><td>Mega Drain</td></tr>
+          <tr><td rowspan="2">Ground</td><td>Astonish</td></tr>
+          <tr><td>Sand Attack</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/766.png">
+              <br>
+              Passimian, Level 20
+            </th>
+            <td rowspan="4">Fighting</td>
+            <td>Rock Smash</td>
+          </tr>
+          <tr><td>Smack Down</td></tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">360
+            </td>
+          </tr>
+        </table>
+        At this point in the game, this battle can be a real challenge. Novae's Pokemon are very diverse in their typing and movesets, and she's not shy about switching out her Pokemon for better matchups. Her levels are also not much lower than yours, making this a close battle in terms of stats. Novae also has one Super Potion that she will use when her Pokemon are low. That being said, even with the diverses moves the power of those moves are not yet too high, so most of her Pokemon won't be doing much damage off the bat. As long as you yourself bring a diverse team to cover each of her Pokemon, this battle should go in your favor.
+        <br><br>
+        Once you beat her, Novae will give you her regards and will leave. You can go ahead and heal at the Healing Station, then go back to the Help Plaza to get the cash reward and also a Pichu.
+
+        <br>
+        <p class="subsectionHeader" id="NidoranF">Nidoran (F) Chase</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Nidoran/Nidoran1.png">
+        <br>
+        Once you interact with the Nidoran (F), it'll run away to a different location. You'll have to repeat this a few times. It'll first run off to <span class="ImportantName">the top left, by the station.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Nidoran/Nidoran2.png"></span></span> After that, you can find it on along <span class="ImportantName">the right side road, hiding behind a dumpster.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Nidoran/Nidoran3.png"></span></span> Finally, it'll run over to <span class="ImportantName">the platform leading to the Help Plaza.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Nidoran/Nidoran4.png"></span></span> Once you get it there, it will be cornered and will battle you once you interact with it.
+
+        <br>
+        <p class="subsectionHeader" id="Minccino">Minccino Chase</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Minccino/Minccino1.png">
+        <br>
+        To start this chase, you'll need to start at Chrisola Hotel, at the second room in the right hallway. As you enter it, Mincinno will bump into you as it runs out of the room. The old lady will ask you to help her capture it. You'll first find it in <span class="ImportantName">the lobby, by the elevators.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Minccino/Minccino2.png"></span></span> It'll then run off to the <span class="ImportantName">left hallway,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/GearenSidequests/Minccino/Minccino3.png"></span></span> then chase after it up the hall. You'll see it get captured by two Xen Grunts. They'll run off to Gearen Park. So chase after them and find them in the top right corner of the park. They'll strike a pose, then challenge you to a double battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/GearenSidequests/Minccino/Minccino4.png">
+        <div class="eventTrainerName">
+          Team Xen Wilbur and Team Xen Hayleigh
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/400.png">
+              <br>
+              Bibarel, Level 17
+            </th>
+            <td rowspan="2">Normal</td>
+            <td>Headbutt</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/374.png">
+              <br>
+              Beldum, Level 17
+            </th>
+            <td rowspan="2">Steel</td>
+            <td>Take Down</td>
+          </tr>
+          <tr><td>Rollout</td><td>---</td></tr>
+          <tr>
+            <td rowspan="2">Water</td>
+            <td>Defense Curl</td>
+            <td rowspan="2">Psychic</td>
+            <td>---</td>
+          </tr>
+          <tr><td>Growl</td><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/570.png">
+              <br>
+              Zorua, Level 18
+            </th>
+            <td rowspan="4">Dark</td>
+            <td>Feint Attack</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/303.png">
+              <br>
+              Mawile, Level 18
+            </th>
+            <td rowspan="2">Steel</td>
+            <td>Vice Grip</td>
+          </tr>
+          <tr><td>Fury Swipes</td><td>Bite</td></tr>
+          <tr>
+            <td>Pursuit</td>
+            <td rowspan="2">Fairy</td>
+            <td>Sweet Scent</td>
+          </tr>
+          <tr><td>Fake Tears</td><td>Fake Tears</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">72
+            </td>
+          </tr>
+        </table>
+        <br>
+        They do have high leveled Pokemon, but this shouldn't be anything too threatening. Beldum and Bibarel won't do much, and neither will Zorua. Mawile is very tanky at this point, so it might take some time to end the battle. Each of them also have a Super Potion that they will use, extending the fight even more.
+        <br><br>
+        Once you defeat them, they'll release the Minccino and escape. The Minccino will go back to the old lady, and the old lady will give you permission to battle and catch it, so do that if you want.
+        <br><br>
+        <p class="subsectionHeader">Sidequests Complete</p>
+        We've done all the side activities available at this point in the game. Prepare your team to face Venam, you can go to Route 1 to grind if you want. Either way, when you're ready head on over to the gym.
+        <br>
+      </p>
+
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter1/EastGearenCity-3.html">&lt&lt East Gearen City - Second Visit</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter1/EastGearenCityGym.html">East Gearaen City Gym &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="OceanaPierMap" class="EncounterPopup">
+        <span class="close" id="OceanaPierMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Oceana Pier
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/OceanaPier.png">
+      </div>
+
+      <div id="EastGearenCityLeftMap" class="EncounterPopup">
+        <span class="close" id="EastGearenCityLeftMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen City (Left)
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/EastGearenCity-LeftNoEvents.png">
+      </div>
+
+      <div id="EastGearenCityRightMap" class="EncounterPopup">
+        <span class="close" id="EastGearenCityRightMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen City (Right)
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/EastGearenCity-RightNoEvents.png">
+      </div>
+
+      <div id="GearenParkMap" class="EncounterPopup">
+        <span class="close" id="GearenParkMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Gearen Park
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/GearenPark.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

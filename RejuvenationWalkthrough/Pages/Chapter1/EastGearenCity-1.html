@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - East Gearen City</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([0], ['OutsideTrainers']);encountersCreate([['East Gearen City', ['Grass', 'Events']],['Oceana Pier', ['Events']]], [0,0]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="EastGearenCityLeftMapTxT">East Gearen City (Left)</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="OceanaPierMapTxT">Oceana Pier</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenLabShopTxT">Gearen Lab Mart</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      East Gearen City (Left)
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">East Gearen City (Left) - Outside<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="OutsideTrainersButton" onclick="showTrainerTable('OutsideTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="LeftGearenOutsideHiddenButton" onclick="showHiddenTable('LeftGearenOutsideHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/GearenCity1.bmp">
+        <br>
+        <table class="TrainerTable" id="OutsideTrainers">
+        </table>
+        <table class="TrainerTable" id="LeftGearenOutsideHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Gourmet Treat<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/GourmetTreat.bmp"></span></a></td>
+            <td>Above Optimist Talia</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Oran Berry<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/OranBerry.bmp"></span></a></td>
+            <td>By Charmer Derek</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Oran Berry<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/OranBerry2.bmp"></span></a></td>
+            <td>Between Yukata Girl Shakotal and Enthusiast Lacey</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Elemental Seed<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/ElementalSeed.bmp"></span></a></td>
+            <td>Little alcove top left of Gearen Lab</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Resist Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/ResistWing.bmp"></span></a></td>
+            <td>Little alcove top left of Gearen Lab</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/SuperRepel.bmp"></span></a></td>
+            <td>Leaflet Park - Left Side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Escape Rope<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/EscapeRope.bmp"></span></a></td>
+            <td>Leaflet Park - Left of the building</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/BlueShard.bmp"></span></a></td>
+            <td>Leaflet Park - Right of the building</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Grass Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/GrassGem.bmp"></span></a></td>
+            <td>Leaflet Park - By the ranger's bench</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Grass Gem<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/GrassGem.bmp"></span></a></td>
+            <td>Leaflet Park - Right of Schoolgirl Zara</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Gourmet Treat<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/GourmetTreat2.bmp"></span></a></td>
+            <td>By the dumpsters up the first set of stairs</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Yellow Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/YellowShard.bmp"></span></a></td>
+            <td>By the dumpsters up the first set of stairs</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Yellow Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/YellowShard2.bmp"></span></a></td>
+            <td>By the dumpsters on the right side up the second set of stairs</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/RedShard.bmp"></span></a></td>
+            <td>Above the grandma in the Station Area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/SuperPotion.bmp"></span></a></td>
+            <td>Below the station in the Station Area</td>
+          </tr>
+        </table>
+        <br>
+        Welcome to East Gearen City, full of trainers to battle, Pokemon to catch, and items to get. Right along the sidewalk you'll find small patches of grass where wild Pokemon can appear. Directly to the left of the crossroads is Velvet Building. We will explore the aparment buildings later. If you choose to take the left path, you'll meet 
+        <a href="javascript:void(0)" class="normalTrainerName" id="OptimistTaliaName">Optimist Talia,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/OptimistTalia.bmp"></span></a> who will challenge you to a battle. Continuing along the left path will take you to
+        <a href="javascript:void(0)" class="normalTrainerName" id="YoungsterKalebName">Youngster Kaleb.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/YoungsterKaleb.bmp"></span></a> Crossing the bridge will result in battle with three Pokemon in the level 10+ range, so if you're not prepared, turn back and head over to the right side of the lab.
+        <br><br>
+        Going this way, you'll have to battle <a href="javascript:void(0)" class="normalTrainerName" id="CharmerDerekName">Charmer Derek.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/CharmerDerek.bmp"></span></a> From there, you'll find yourself at a three-way intersection. Going right will put you against
+        <a href="javascript:void(0)" class="normalTrainerName" id="EnthusiastLaceyName">Enthusiast Lacey,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/EnthusiastLacey.bmp"></span></a> while if you go north you'll battle <a href="javascript:void(0)" class="normalTrainerName" id="YukataGirlShakotalName">Yukata Girl Shakotal.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/YukataGirlShakotal.bmp"></span></a> From there, if you keep walking left and you'll soon find yourself in front of Leaflet Garden.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/LeafletGarden.bmp">
+        <br>
+        Right in front of the garden you can battle <a href="javascript:void(0)" class="normalTrainerName" id="MistressNadineName">Mistress Nadine,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/MistressNadine.bmp"></span></a> and inside the garden, <a href="javascript:void(0)" class="normalTrainerName" id="SchoolgirlZaraName">Schoolgirl Zara<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/SchoolgirlZara.bmp"></span></a> will challenge you to a battle. The Pokemon you can catch in Leaflet Park are the same as the rest of East Gearen City, but there are a few hidden items you can get. There's a few hidden items scattered around here.
+        <br><br>
+        There's not much left to do in the garden, so leave through the right exit and head up the stairs. There's a few hidden items and buildings up here. The brown building is Magnolia Library, which costs <img src="../../images/PokeDollar.png">300 to enter. To the left of the library is the Gearen Help Plaza, where we can accept sidequests. The sidequests will be covered 
+        <a class="continueElsewhere" href="EastGearenCitySidequests.html">here.</a> For now, we'll explore some of the other buildings in this side of the city.
+        <br><br>
+        <!--Emerald Building-->
+        <p class="subsectionHeader">Emerald Building</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/EmeraldBuilding.bmp">
+        <br>
+        There are three apartment buildings that are explorable in this area. The Emerald Building is directly to the right of Leaflet Park. You may find a Nidoran (F) next to the building, so if you want to you can <a class="continueElsewhere" href="EastGearenCitySidequests.html">start the sidequest.</a> Regardless of if you do, enter the Emerald Building.
+        <a href="javascript:void(0)" class="normalTrainerName" id="ClerkAndrewName">Clerk Andrew<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/ClerkAndrew.bmp"></span></a>
+        is blocking the elevator, but if you defeat him he'll move out of the way. The first floor is the office of the S.S. Oceana that you were on, and they are overwhelmed by the press at the moment. There's an Iron on the top right, which can be used or sold for a high price. The old lady strolling around will give you a <span class="hiddenItemText">Max Repel.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/MaxRepel.bmp"></span></span> You can also battle <a href="javascript:void(0)" class="normalTrainerName" id="ClerkHenryName">Clerk Henry.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/ClerkHenry.bmp"></span></a>
+        <br><br>
+        On the second floor of the Emerald Building, the red-haird woman on the top left will give you a <span class="hiddenItemText">Full Heal.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/FullHeal.bmp"></span></span> All the way on the bottom, there's a Red Shard. You can battle 
+        <a href="javascript:void(0)" class="normalTrainerName" id="HardcoreTrainerSalemName">Hardcore Trainer Salem <span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/HardcoreTrainerSalem.bmp"></span></a> if you so choose. On the third floor, if you enter the floor at night (8:00pm-4:00am), you will be forced into a battle with a level 5 Shuppet. This can be done as often as you want, so you can run from the battle, exit, and re-enter if you are looking for a shiny.
+        <br><br>
+        <!--Velvet Building-->
+        <p class="subsectionHeader">Velvet Building</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/VelvetBuilding.bmp">
+        <br>
+        The next building is the Velvet Building, which is located right below and to the left of Gearen Lab. The first floor is supposedly a Pokeball Research Lab. If you talk to the lady in the middle, you can choose a Mineral Ball (higher catch rate for Rock, Steel, or Ground types) if you choose left, or a Steam Ball (higher catch rate for Fire or Water types) if you choose right. On the bottom left is a free Great Ball. <a href="javascript:void(0)" class="normalTrainerName" id="ClerkSamsonName">Clerk Samson<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/ClerkSamson.bmp"></span></a> will let you battle him if you want.
+        <br><br>
+        The second floor seems empty, but there is a Blue Shard on the bottom right and a <span class="hiddenItemText">
+        Potion<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/Potion.bmp"></span></span> hidden in the bookshelf. If you enter this floor at night (again, 8:00pm-4:00am), you will also find a Pachirisu running around. Give it a Gourmet Treat, and it'll battle you at level 8. If you want to get a shiny, make sure to save beforehand as it will only appear once. Finally the third floor contains an Ether at the bottom left, as well as a <span class="hiddenItemText">Reverse Candy<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/ReverseCandy.bmp"></span></span> in the top right trash can.
+        <br><br>
+        <!--Violet Building-->
+        <p class="subsectionHeader">Violet Building</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/VioletBuilding.bmp">
+        <br>
+        The last building you can access for now is the Violet Building, located near Youngster Kaleb. On the ground floor, you can find the <span class="ImportantName">Name Rater,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/LeftSide/NameRater.bmp"></span></span> who will change the nicknames of your Pokemon for you. On the first floor, <a href="javascript:void(0)" class="normalTrainerName" id="TechnicianJonahName">Technician Jonah<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/TechnicianJonah.bmp"></span></a> will challenge you to a battle. If you talk to a scientist, he'll give you a <span class="hiddenItemText">Potion.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/Potion2.bmp"></span></span>
+        <br><br>
+        On the second floor, there's <a href="javascript:void(0)" class="normalTrainerName" id="ClerkAllisonName">Clerk Allison<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/LeftSide/ClerkAllison.bmp"></span></a> roaming around who may challenge you to a battle. Near the bottom of the map is a Repel, and the trash can on the right side contains another <span class="hiddenItemText">Potion.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/Potion3.bmp"></span></span> If you talk to the lady with the Lillipup, she'll express concern about her Pokemon. We'll be able to get her Lillipup when we progress a bit further in the story. The third floor of Velvet Building is pretty sparse. There's a Dusk Ball on the top right corner, and the Hiker in the middle will give you a <span class="hiddenItemText">Paralyze Heal.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/ParalyzeHeal.bmp"></span></span>
+
+        If you've been battling trainers, your Pokemon should reach level 10 right around now. If you feel up to is, you can step onto the bridge next to Velvet Building to fight what is basically a mini-boss for the area.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/ThugBattle.bmp">
+        <br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Tourist Kageyama
+          <span class="eventTrainerTooltip">If you weren't prepared for this fight, this will probably be the first big challenge of the game. His Torchic is guarenteed to have Speed Boost, and his Wingull and Hippopotas knows pretty strong moves at this point in the game. If you're having trouble, the Pachirisu in Velvet building can help with the Wingull, and with a full team you can whittle down the Hippopotas. Torchic's moves aren't too strong, so as long as you can hit it neutrally you can probably get by.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/255.png">
+              <br>
+              Torchic, Level 12
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Scratch</td>
+          </tr>
+          <tr><td>Ember</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/278.png">
+              <br>
+              Wingull, Level 12
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Water Pulse</td>    
+          </tr>
+          <tr><td>Wing Attack</td></tr>
+          <tr><td rowspan="2">Flying</td><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/449.png">
+              <br>
+              Hippopotas, Level 13
+            </th>
+            <td rowspan="4">Ground</td>
+            <td>Bite</td>
+          </tr>
+          <tr><td>Dig</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">273
+            </td>
+          </tr>
+        </table>
+        <br><br>
+        Once you beat him, you'll have access to the final section of this side of the city. If you talk to the police officer in front of the station, he'll inform you there's a power outage at the station, and that Melia hasn't come this way. That's all that we can do in this part of Gearen City. Before we head over to the right side, we can head down to Oceana Pier.
+        <br><br>
+        <p class="subsectionHeader">Oceana Pier</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/OceanaPier/OceanaPier.bmp">
+        <br>
+        There's not much to do here for now. You can feed a Gourmet Treat to the <span class="ImportantName">Nidoran (M)<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/OceanaPier/NidoranM.bmp"></span>
+        </span> to battle it at level 5. You can also interact with the Fletchlings in the gardens to the south, and among them is a <span class="hiddenItemText">X Accuracy.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/LeftSide/XAccuracy.bmp"></span></span> There's a lady to the left of the Fletchling garden that will trade a Rockruff, but we don't have access to those at the moment. Right above the lady is a place for ferry-riders to wait. <span class="ImportantName">Talk to one of the trainers<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/Buizel1.png"></span></span> to start a sidequest to get Buizel. If you talked to him, you'll see Buizel running away into the city, and we'll catch up to it later. For now, head back up to East Gearen City, cross the top right bridge, and head on to the right side.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/LeftSide/EastEastGearenCity.bmp">
+        <br>
+      </p>
+
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="OceanaPier-FirstPokemon.html">&lt&lt Oceana Pier and Gearen Lab</a>
+        <span class="nextWalkthroughPage">
+          <a href="EastGearenCity-2.html">East Gearen City (Continued) &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="OceanaPierMap" class="EncounterPopup">
+        <span class="close" id="OceanaPierMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Oceana Pier
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/OceanaPier.png">
+      </div>
+
+      <div id="EastGearenCityLeftMap" class="EncounterPopup">
+        <span class="close" id="EastGearenCityLeftMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen City (Left)
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/EastGearenCity-LeftNoEvents.png">
+      </div>
+
+      <div id="EastGearenCityRightMap" class="EncounterPopup">
+        <span class="close" id="EastGearenCityRightMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen City (Right)
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/EastGearenCity-RightNoEvents.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="GearenLabShop" class="EncounterPopup">
+        <span class="close" id="GearenLabShopClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Gearen Lab Mart
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">Item</td>
+            <td class="shopheader">Price</td>
+          </tr>
+
+          <tr><td>Potion</td><td><img src="../../images/PokeDollar.png">300</td></tr>
+          <tr><td>Antidote</td><td><img src="../../images/PokeDollar.png">100</td></tr>
+          <tr><td>Poke Ball</td><td><img src="../../images/PokeDollar.png">200</td></tr>
+        </table>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

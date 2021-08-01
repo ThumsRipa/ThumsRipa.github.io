@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Five - Blacksteeple Castle</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([21],['BlacksteepleTwoTrainers']);encountersCreate([['Secret Grove', ['Grass']]],[]);shopsSet([],[]);globalrunOnLoad('Fifth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Location
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Akuwa Aquarium</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/Aquarium.png">
+        <br>
+        Before we move on, once again we won't be able to return for a while. If you've been skipping sidequests, I would suggest glancing over each chapter's sidequest/side activities to see if there's anything you want. Additionally, there's an "impossible" battle coming up that you can actually win, so if you want to make sure you have one of these Pokemon with you: <span class="textSpoilers">A Pokemon with Quick Guard (Fletchling from Oceana Pier, Sawk, Meowstic, Zubat, or Mr. Mime). Some of them you may need a Heart Scale to relearn the move</span>. Once you're ready, head into the Aquarium and meet up with Aelita. Once you enter the computer room behind the pool, you'll find that something happened from a police on the screen. The power will cut out, and you and Aelita will find yourselves in the midst of hundreds of Team Xen members. You'll soon be transported away.
+        <p class="subsectionHeader">Blacksteeple Castle - Day 1<span class="showTrainersButtonAnchor">
+          <button class="showHiddenButton" id="BlacksteepleHiddenButton" onclick="showHiddenTable('BlacksteepleHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/Day1.png">
+        <table class="TrainerTable" id="BlacksteepleHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Heart Scale<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/HiddenItems/HeartScale.png"></span></a></td>
+            <td>Beneath the bed of the fourth cell from the left</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a class="normalTrainerNameTable">Ability Capsule<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/HiddenItems/AbilityCapsule.png"></span></a></td>
+            <td>Beneath the bed of the cell on the right</td>
+          </tr>
+        </table>
+        <br>
+        Blacksteeple is a very linear, very story-heavy section of the game. There's not much side activities to do here, so as long as you follow the story you'll be alright. You'll first be introduced to Saki, who we were looking for to repair our snag machine, but then Aelita is taken away. Once you have control pick up the Heart Scale from the fourth bed and the Ability Capsule from the bed all the way at the end. Once you're done, head up the stairs on the bottom left of the map then out the main gate. From here, this area will be called the Courtyard. To the right is the Quarry and to the left is the Garden. The door you came out leads to the cells, above it behind the broken throne is a door to the Library. Up the stairs from the broken throne are two doors that lead to the Office. For now, we only have access to the Courtyard areas and the Quarry.
+        <br><br>
+        Head over to the Quarry, then all the way to the right and down to the beach. You'll be introduced to Saki's friends, <span class="ImportantName">Valarie and Adam.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/ValAdamSaki.png"></span></span> Watch the cutscene, then we need to interact with Saki in the top side of the map near <span class="ImportantName">an antenna.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/Antenna.png"></span></span> After an alarm, you'll be taken to Nevad, the warden for this prison. He'll explain a little bit about what's going on, then send you away. Head back into the cells, but head straight instead of down the stairs. You'll explain to the trio what you learned, and the three of you will head back out to the Quarry to see if anyone's seen Aelita. You'll need to talk with a woman inside the quarry on top, and a man in the bottom side quarry. After that, head over to the beach and talk to Valarie. The three of you will reconvene in the Courtyard, where a <span class="ImportantName">mysterious person<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/Emma1.png"></span></span> will show up. She'll be taken to the warden, and after that scene the day will end.
+        <br>
+        <p class="subsectionHeader">Blacksteeple Castle - Day 2</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/Day2.png">
+        <br>
+        At the start of Day 2, you'll be assigned to the Garden for your work. Saki will tell you to visit the Library before hand, so head outside from the cells, up the stairs, and into the Library. The book with <span class="ImportantName">purple cover<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/RiddleBook.png"></span></span> is on the first floor on the top right shelf. Read it, then go to the Garden and find the Absol statue. From there, you can actually walk through the trees on the <span class="ImportantName">right side of the statue.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/AbsolSecret.png"></span></span> You'll meet up with <span class="ImportantName">Braixen,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/AbsolSecret.png"></span></span> who can talk thanks to Saki. Before you get too far, an alarm will ring calling for you and Saki, so you'll have to head back. In the area with Braixen though, you're able to catch Pokemon. I would strongly advise catching every Pokemon available here, but especially Abomasnow and Tangrowth and those two Pokemon are very helpful for an upcoming battle.
+        <br><br>
+        Once you're back in the Garden, Emma will walk up and stand by the Absol statue. You'll have to talk to her to progress the story, then talk to Valarie to the south of the statue. After that, the day will end for the player character.
+        <br><br>
+        <span class="ImportantName">Emma<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/EmmaLibrary.png"></span></span> will find herself in the Library, looking for clues. You can go around checking the bookshelves, but the one you need is on the first floor, the <span class="ImportantName">second bookshelf on the right.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/EmmaLibrary2.png"></span></span> After that, inspect the first floor bookshelf in the center, where Emma will find a <span class="ImportantName">hidden door.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/EmmaLibrary3.png"></span></span> After another cutscene, the day will end.
+        <br>
+        <p class="subsectionHeader">Blacksteeple Castle - Day 3<span class="showTrainersButtonAnchor">
+          <button class="showTrainersButton" id="BlacksteepleOneTrainersButton" onclick="showTrainerTable('BlacksteepleOneTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/Day3.png">
+        <br>
+        <table class="TrainerTable" id="BlacksteepleOneTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="PrisonGuardEmileTxT">Prison Guard Emile<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/Trainers/PrisonGuardEmile.png"></span></a></td>
+            <td>Secret Grove<br>Forced story battle</td>
+          </tr>
+        </table>
+        <br>
+        The third day will start the same way, except Valarie will let you know to meet by Braixen's shack. Go ahead and go over, and talk with Braixen. You'll hear Saki causing trouble, and a laser will shoot nearby and cause a lot of smoke. You, Valarie, and Braixen will find that the laser caused a gap in the trees, leading to a cave. Valarie will carve up some stairs, and we'll get a Mining Kit. We'll be able to use it in a bit. Head up the stairs, and eavesdrop onto the Xen Executive's conversation with your mom. After that, we'll need to head back to <span class="ImportantName">Saki<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/SakiAntenna2.png"></span></span> in her cell, then up on the right wall in the Courtyard to find the <span class="ImportantName">antenna Saki broke.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/Antenna.png"></span></span> You and Adam will lure the guard over to the secret grove, and then you'll be put into a battle with <a href="javascript:void(0)" class="normalTrainerName" id="PrisonGuardEmileName">Prison Guard Emile.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 5/Blacksteeple/Trainers/PrisonGuardEmile.png"></span></a> Not long after that though, an alarm will sound and all of you will be put back into your cell.
+        <br><br>
+        Break out of your cell by using the Mining Kit on the cracked wall behind you. Mining works the same way as it does in Diamond and Pearl, you'll be able to keep mining as long as the crack along the top doesn't reach the end. You can always save before you start mining to farm for the items that you want. Once you break the wall, you can go through the tunnel and find PIANOLADY from the SS Oceania. She'll let you know that there's an exit ahead, and exit out to the Quarry area. Here, you have to avoid being caught by the guards, and you can also mine the rocks around here. Slowly or quickly, make your way back to Braixen in the cave. Head over and cut all the "R" boxes, and then cut the wires attached to the wall. With the system disabled, Madelis and Nastasia will come investigate, and you'll be thrown into a battle against Madelis.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/VSMadelis.png">
+        <div class="eventTrainerName">
+          Xen Executive Madelis
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/573.png">
+              <br>
+              Cincinno, Level 36
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Tail Slap</td>
+          </tr>
+          <tr><td>Rock Blast</td></tr>
+          <tr><td>Bullet Seed</td></tr>
+          <tr><td>Encore</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/763.png">
+              <br>
+              Tsareena, Level 37
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Trop Kick</td>
+          </tr>
+          <tr><td>Low Sweep</td></tr>
+          <tr><td>Nature Power</td></tr>
+          <tr><td>Bounce</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/671.png">
+              <br>
+              Florges, Level 37
+            </th>
+            <td rowspan="4">Fairy</td>
+            <td>Dazzling Gleam</td>
+          </tr>
+          <tr><td>Giga Drain</td></tr>
+          <tr><td>Nature Power</td></tr>
+          <tr><td>Synthesis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/758.png">
+              <br>
+              Salazzle, Level 37
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Flamethrower</td>
+          </tr>
+          <tr><td>Sludge Bomb</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Foul Play</td></tr>
+          <tr><td>Toxic</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/319.png">
+              <br>
+              Sharpedo, Level 38 - Focus Sash
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Waterfall</td>
+          </tr>
+          <tr><td>Crunch</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Psychic Fangs</td></tr>
+          <tr><td>Bounce</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/229.png">
+              <br>
+              Houndoom, Level 39 - Wise Glasses
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Flamethrower</td>
+          </tr>
+          <tr><td>Dark Pulse</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Sludge Bomb</td></tr>
+          <tr><td>Nasty Plot</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">3744
+            </td>
+          </tr>
+        </table>
+        <br>
+        This can be a rough battle depending on your team. Her Pokemon are very speedy and can hit hard with a wide variety of coverage moves. The battle is fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#Cave" target="_blank">Cave Field,</a> so be careful of Cincinno's field-boosted Rock Blast and keep in mind that Nature Power will turn into a field-boosted Rock Tomb. Her Salazzle and Houndoom will hit very hard, but if you have a strong Rock-type a field-boosted move will take those two out pretty quickly. Sharpedo has Speed Boost and a Focus Sash, so it will survive a hit and get a speed boost, but is otherwise very frail. A strong move combined with some priority is solid. If you have Stealth Rocks, the field will double the damage of the entry hazard so Salazzle and Houndoom will be at 50% HP when they switch in, so take that into consideration. Once you defeat them, a full-scale prison break will happen.
+        <br>
+        <p class="subsectionHeader">Blacksteeple Castle - Breakout<span class="showTrainersButtonAnchor">
+          <button class="showTrainersButton" id="BlacksteepleTwoTrainersButton" onclick="showTrainerTable('BlacksteepleTwoTrainers')">Show Trainers</button></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/Breakout.png">
+        <br>
+        <table class="TrainerTable" id="BlacksteepleTwoTrainers">
+        </table>
+        <br>
+        Your mom will accompany you for the Garden area, and she has a level 65 Sylveon. You can take this opportunity to battle some Prison Guards for cash and exp, though most of them are avoidable. Once you get to the Courtyard, your mom will leave you and you'll need to head up to Nevad's office area. There's another Healing Spot and a PC here for you to use if you want. Head through the back door, and you'll have to battle Emma.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/VSEmma.png">
+        <div class="eventTrainerName">
+          Hooded Girl Emma
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/571.png">
+              <br>
+              Zoroark, Level 36
+            </th>
+            <td rowspan="4">Dark</td>
+            <td>Dark Pulse</td>
+          </tr>
+          <tr><td>Flamethrower</td></tr>
+          <tr><td>Shadow Ball</td></tr>
+          <tr><td>Grass Knot</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/282.png">
+              <br>
+              Gardevoir, Level 37
+            </th>
+            <td rowspan="2">Psychic</td>
+            <td>Psychic</td>
+          </tr>
+          <tr><td>Dazzling Gleam</td></tr>
+          <tr><td rowspan="2">Fairy</td><td>Shadow Ball</td></tr>
+          <tr><td>Calm Mind</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/154.png">
+              <br>
+              Meganium, Level 38
+            </th>
+            <td rowspan="4">Grass</td>
+            <td>Magical Leaf</td>
+          </tr>
+          <tr><td>Nature Power</td></tr>
+          <tr><td>Poison Powder</td></tr>
+          <tr><td>Leech Seed</td></tr>
+        </table>
+        <br>
+        Not a challenging battle, though Gardevoir and Zoroark can still hit really hard. She does lead with Zoroark disguised as Meganium, so be a bit careful about that one. Otherwise, beat her then go back and heal up. There's a battle coming up where you will need a Pokemon with Quick Guard for, so take it out of the PC and into your team. After that, head back through the battle with Emma, then out and up into a ruined hallway to meet up with Aelita. Nevad will be waiting, and after some conversation you and Aelita will battle him.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/VSNevad.png">
+        <div class="eventTrainerName">
+          Xen Executive Nevad
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/073.png">
+              <br>
+              Tentacruel, Level 41 - Sitrus Berry
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Scald</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/740.png">
+              <br>
+              Crabombinable, Level 41 - Occa Berry
+            </th>
+            <td rowspan="2">Ice</td>
+            <td>Ice Punch</td>
+          </tr>
+          <tr><td>Sludge Bomb</td><td>Drain Punch</td></tr>
+          <tr>
+            <td rowspan="2">Poison</td><td>Dazzling Gleam</td>
+            <td rowspan="2">Fighting</td><td>Rock Slide</td>
+          </tr>
+          <tr><td>Blizzard</td><td>Crabhammer</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/738.png">
+              <br>
+              Vikavolt, Level 42
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Bug Buzz</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/310.png">
+              <br>
+              Manectric, Level 43 - Magnet
+            </th>
+            <td rowspan="4">Electric</td>
+            <td>Volt Switch</td>
+          </tr>
+          <tr><td>Thunderbolt</td><td>Thunderbolt</td></tr>
+          <tr>
+            <td rowspan="2">Electric</td><td>Air Slash</td>
+            <td>Flamethrower</td>
+          </tr>
+          <tr><td>Thunder Wave</td><td>Hidden Power (Ice)</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/478.png">
+              <br>
+              Froslass, Level 44 - Never Melt Ice
+            </th>
+            <td rowspan="2">Ice</td>
+            <td>Ice Beam</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/689.png">
+              <br>
+              Barbaracle, Level 45 - Sitrus Berry
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Rock Slide</td>
+          </tr>
+          <tr><td>Thunderbolt</td><td>Night Slash</td></tr>
+          <tr>
+            <td rowspan="2">Ghost</td><td>Shadow Ball</td>
+            <td rowspan="2">Water</td><td>Razor Shell</td>
+          </tr>
+          <tr><td>Will-O-Wisp</td><td>X-Scissor</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">3960
+            </td>
+          </tr>
+        </table>
+        <br>
+        His Pokemon all outlevel your Pokemon, but this is also a 12v6 with Aelita as your partner. Aelita's Fighting-type team will struggle against Tentacruel, Vikavolt, and Froslass, so if you help her take out the threats to her team she should be able to contribute quite a bit. As long as you play the fight smart, you should be able to beat Nevad without much trouble.
+        <br><br>
+        After that battle and another cutscene, you'll be thrown into one more battle. This one is, under normal circumstances, an impossible battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 5/Blacksteeple/VSMadameX.png">
+        <div class="eventTrainerName">
+          Xen Dictator Madame X
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/717.png">
+              <br>
+              Yveltal, Level 100 - Sitrus Berry
+            </th>
+            <td rowspan="2">Dark</td>
+            <td>Decimation</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td rowspan="2">Flying</td><td>---</td></tr>
+          <tr><td>---</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">20000
+            </td>
+          </tr>
+        </table>
+        <br>
+        Decimation is a 100% accurate, 1-hit KO priority move. This means that it gets blocked by Quick Guard, so you can just spam Quick Guard until it starts struggling. It does have a Sitrus Berry, meaning it will take 5 turns for it to finally faint itself in the process. If you don't have anything to tank it, you may need a Revive or two to have one Pokemon survive. Of course, winning isn't necessary, but there is unique dialogue if you manage to defeat her. Plus, you also get 20000 Pokedollars, which is a good chunk.
+        <br><br>
+        Whether you win or lose, Madame X will still chase you down with a sword. After a few cutscenes, your mom will take the hit for you and Emma will reveal herself to be Melia, who was supposed to have died in Amethyst Cave. The whole group will be able to escape out into sea on Team Xen's Battleship, which we will explore in the next part.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter5/SideActivities.html">&lt&lt Side Activities</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter5/XenBattleship.html">The Battleship &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="PrisonGuardEmile" class="TrainerPopup">
+        <span class="close" id="PrisonGuardEmileClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+          Prison Guard Emile
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/460.png">
+              <br>
+              Abomasnow, Level 36
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Wood Hammer</td>
+          </tr>
+          <tr><td>Ice Shard</td></tr>
+          <tr><td rowspan="2">Ice</td><td>Mist</td></tr>
+          <tr><td>Ingrain</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/424.png">
+              <br>
+              Ambipom, Level 35
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Double Hit</td>
+          </tr>
+          <tr><td>Swift</td></tr>
+          <tr><td>Screech</td></tr>
+          <tr><td>Agility</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/340.png">
+              <br>
+              Whiscash, Level 37
+            </th>
+            <td rowspan="2">Water</td>
+            <td>Aqua Tail</td>
+          </tr>
+          <tr><td>Earthquake</td></tr>
+          <tr><td rowspan="2">Ground</td><td>Snore</td></tr>
+          <tr><td>Rest</td></tr>
+          
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">1776
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

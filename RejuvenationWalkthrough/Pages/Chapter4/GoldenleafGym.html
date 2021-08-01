@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Four - Goldenleaf Gym</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([18],['GoldenleafGymTrainers']);encountersCreate([['Backstage Theatre', ['Random Encounters']]],[]);globalrunOnLoad('Fourth','');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Magical.html#HauntedField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Location: Backstage Theatre, VS Actress Narcissa</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Goldenleaf Gym
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Goldenleaf Gym Puzzle<span class="showTrainersButtonAnchor">
+          <button class="showTrainersButton" id="GoldenleafGymTrainersButton" onclick="showTrainerTable('GoldenleafGymTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 4/GoldenleafGym/Entrance.png">
+        <br>
+        <table class="TrainerTable" id="GoldenleafGymTrainers">
+        </table>
+        <table class="TrainerTable" id="Hidden">
+        </table>
+        <br>
+        As you enter Goldenleaf Gym, Narcissa will greet you. Not too long after, you'll find that Ren has caught up with you and also wants to battle Narcissa. Narcissa agrees to battle whoever gets to her first after going through the gym puzzle, and Ren will rush off to the right side. Go ahead and enter the left side of the auditorium. Battles from here on will be fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#HauntedField" target="_blank">Haunted Field,</a> so be prepared for it.
+        <br><br>
+        This gym puzzle can be confusing at first, but there is a pattern to it. Go a ahead and enter the ground floor's left room and talk to the Mimikyu and notice the lamps lighting up. Here, you must follow where the light is lit. In the room on the right on the first floor, there's <a href="javascript:void(0)" class="normalTrainerName" id="OldLadyMargaretName">Old Lady Margaret,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 4/GoldenleafGym/Trainers/OldLadyMargaret.png"></span></a> and after you can go behind the painting you'll find <a href="javascript:void(0)" class="normalTrainerName" id="GhostGirlMarissaName">Ghost Girl Marissa.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 4/GoldenleafGym/Trainers/GhostGirlMarissa.png"></span></a> Keep going until you reach the PC Star and the Healing Star. Note that the Healing Star is red, so you'll only be able to heal using it once. You can use the PC Star to heal by depositing and withdrawing your Pokemon. Once your ready, step through the doors next to it and battle Ren.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 4/GoldenleafGym/VSRen.png">
+        <div class="eventTrainerName">
+          Pokemon Trainer Ren
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/302.png">
+              <br>
+              Sableye, Level 32 - Sitrus Berry
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Secret Power</td>
+          </tr>
+          <tr><td>Night Shade</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Confuse Ray</td></tr>
+          <tr><td>Recover</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/329.png">
+              <br>
+              Vibrava, Level 33 - Earth Plate
+            </th>
+            <td rowspan="2">Ground</td>
+            <td>Dragon Pulse</td>
+          </tr>
+          <tr><td>Earthquake</td></tr>
+          <tr><td rowspan="2">Dragon</td><td>Rock Slide</td></tr>
+          <tr><td>Ominous Wind</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/332.png">
+              <br>
+              Cacturne, Level 34 - Occa Berry
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Needle Arm</td>
+          </tr>
+          <tr><td>Secret Power</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Leech Seed</td></tr>
+          <tr><td>Spiky Shield</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/059.png">
+              <br>
+              Arcanine, Level 35 - Sitrus Berry
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Flame Burst</td>
+          </tr>
+          <tr><td>Thunder Fang</td></tr>
+          <tr><td>Double Kick</td></tr>
+          <tr><td>Howl</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/657.png">
+              <br>
+              Frogadier, Level 35 - Mystic Water
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Water Pledge</td>
+          </tr>
+          <tr><td>Icy Wind</td></tr>
+          <tr><td>Lick</td></tr>
+          <tr><td>Hidden Power (Electric)</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">735
+            </td>
+          </tr>
+        </table>
+        <br>
+        Ren's team has gotten much stronger in terms of stats, but his movepool can still be taken advantage of. Sableye is not much of a threat, though do note that Night Shade does 1.5x the user's level rather than just the user's level. Vibrava has strong moves, but its stats aren't too high at the moment. Arcanine, Cacturne, and Frogadier all have mediocre moves, so you shouldn't be taking too many strong hits from them. As long as you have a well crafted team that's at the level limit, this battle shouldn't be too difficult.
+        <br><br>
+        Once you beat him, answer "No" to his question to gain a relationship point with him. He'll offer you some advice, and then leave. Go back and heal up, then step through the mirror. DO NOT step onto the battlefield yet. You can actually sneak around the battlefield and head down to the audience to get some useful items: a Hyper Potion, a Max Potion, and a Max Revive. once you're ready, step onto the battlefield to battle Narcissa.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 4/GoldenleafGym/VSNarcissa.png">
+        <div class="eventTrainerName">
+          Actress Narcissa
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/426.png">
+              <br>
+              Drifblim, Level 32 - Magical Seed
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Spectral Scream</td>
+          </tr>
+          <tr><td>Icy Wind</td></tr>
+          <tr><td rowspan="2">Flying</td><td>Hidden Power (Fighting)</td></tr>
+          <tr><td>Hypnosis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/442.png">
+              <br>
+              Spiritomb, Level 33 - Leftovers
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Spectral Scream</td>
+          </tr>
+          <tr><td>Dream Eater</td></tr>
+          <tr><td rowspan="2">Dark</td><td>Nightmare</td></tr>
+          <tr><td>Hypnosis</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/778.png">
+              <br>
+              Mimikyu, Level 33 - Pixie Plate
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Play Rough</td>
+          </tr>
+          <tr><td>Shadow Claw</td></tr>
+          <tr><td rowspan="2">Fairy</td><td>Shadow Sneak</td></tr>
+          <tr><td>Hone Claws</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/479.png">
+              <br>
+              Rotom, Level 34 - Leftovers
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Spectral Scream</td>
+          </tr>
+          <tr><td>Hex</td></tr>
+          <tr><td rowspan="2">Electric</td><td>Discharge</td></tr>
+          <tr><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/609.png">
+              <br>
+              Chandelure, Level 34 - Passho Berry
+            </th>
+            <td rowspan="2">Ghost</td>
+            <td>Spectral Scream</td>
+          </tr>
+          <tr><td>Flame Burst</td></tr>
+          <tr><td rowspan="2">Fire</td><td>Night Shade</td></tr>
+          <tr><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/356.png">
+              <br>
+              Dusclops, Level 35 - Eviolite
+            </th>
+            <td rowspan="4">Ghost</td>
+            <td>Spectral Scream</td>
+          </tr>
+          <tr><td>Pain Split</td></tr>
+          <tr><td>Night Shade</td></tr>
+          <tr><td>Will-O-Wisp</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">2415
+            </td>
+          </tr>
+        </table>
+        <br>
+        It's difficult to see a world where Ren would win this battle with his current team. On this field, Ghost-type moves have their bast power boosted by 1.3x, and also hit Normal-type Pokemon supereffectively. Dark-type moves and special Fairy-type moves are slightly weakened, and Psychic-type moves have their power cut in half. Her signature move, Spectral Scream, is a special attack that has a chance of boosting her Pokemon's defense by one stage. Narcissa's team itself is a solid mixture of bulky tanks and fast sweepers, and every single one of her Pokemon is a threat on this field.
+        <br><br>
+        Her overall general strategy is to Burn and Sleep you to death. Here, Will-O-Wisp and Hypnosis have their accuracy increased to 90, meaning that it will most likely hit. If your Pokemon are inflicted by Sleep, it will also take 1/16 Max HP damage each turn, meanwhile Narcissa will continue to bulk up her Pokemon via Spectral Scream. If you don't have a way to deal with status effects, her Pokemon will wear you down very quickly while being virtually unstoppable themselves.
+        <br><br>
+        For her stall Pokemon, she starts of with her Drifblim with a Magical Seed equipped, meaning it will get a Defense and Special Defense boost in return for being Burned. Normally this would be a tradeoff but her Drifblim also has Flare Boost, which doubles its Special Attack while being burned. It'll always try to put you to sleep, so knock it out before it does too much damage to your team. Spiritomb is her staller. It will put you to sleep, inflict you with Nightmare, then also use Dream Eater to heal itself back up or boost its Defense with Spectral Scream. Her final stall Pokemon is her ace, Dusclops. This thing holds an Eviolite, and with Pain Split it can live for much longer than you would expect.
+        <br><br>
+        For her more offensive Pokemon, her Mimikyu is the only Pokemon that doesn't have Spectral Scream. It does, however, have Hone Claws and if it gets a stat boost it can quickly rip through teams with a combination of Play Rough and Shadow Claw. Since Play Rough is a physical move, it doesn't get weakened by the field either. Her Rotom and her Chandelure function effectively the same as each other, being very fast and hitting very hard with Spectral Scream or Discharge/Flame Burst respectively. Both of them can also Burn you, and Rotom has Hex to take advantage of that.
+        <br><br>
+        With all that said, not all hope is lost. A Pokemon that is immune to sleep, for example having Insomnia, Vital Spirit, or Sweet Viel, can effectively shut down Spiritomb while not letting Drifblim set up freely. Rotom's and Chandelure's defenses are pretty low, so if you manage to avoid being burned your physical attackers can actually take them down quickly. Mimikyu can pose an issue due to its ability letting it take a free hit, but after that it can also be taken down by a strong move or two. Finally her Dusclops relies on its Eviolite to be tanky, so a Knock Off will actually help a lot with it.
+        <br><br>
+        There are also ways to change the field to somewhere more advantageous. With Flash or Dazzling Gleam, you can turn the field into a <a class="continueElsewhere" href="../Information/FieldEffects-Magical.html#BlessedField" target="_blank">Blessed Field,</a> allowing your Normal-type Pokemon to hit her Ghost-type Pokemon supereffectively. Do note though, that she can turn the field back into a Haunted Field at any time even if your Pokemon is immune to the move. Another strategy is removing the field entirely using Mist, which turns the field into a Misty Terrain. Ghost-type moves aren't weakened on this field, but at least it won't be boosted. It will only last 3 turns, so you will need to keep reapplying the move, but this will allow you to be immune to whatever status Narcissa wants put on you as well as powering up your Fairy-type Pokemon. You can also survive until Mimikyu comes out, Charm or Burn it, then use the fact that it can't do much damage to set up your Pokemon.
+        <br><br>
+        Other options include Fire-type Pokemon. Moves such as Flame Burst, Flame Charge, and Fire Spin gains additional Ghost-typing, meaning it will hit her whole team except for Chandelure and Spiritomb supereffectively. You have the TM for Flame Charge at this point, so you can check to see who can learn the move. Other options include Nuzleaf, which you can evolve into Shiftry. Nuzleaf learns Nature Power naturally at level 16, and on this field Nature Power turns into the very powerful Phantom Force, meaning Shiftry can deal super effective damage to everything but Spiritomb. A Loudred with Soundproof is immune to Spectral Scream and can use Roar to rack up entry hazard damage if you have them set up, although its defenses are pretty low so you need to be careful of other moves such as Flame Burst, Discharge, and Play Rough/Shadow Claw. Finally, if you have any Pokemon that evolve at level 36 or 37, you can use Rare Candies to get that evolution before using a Reverse Candy to not exceed the level limit. The stat boost can mean a lot in a battle like this.
+        <br><br>
+        Regardless, when you beat her, she'll give you the Phantasm Badge, raising your level limit to level 40. She'll also give us our first powerful TM, TM30 Shadow Ball. With that done, exit the theatre and watch a scene from the Shadow Realm. Although the title screen hasn't shown up yet, we will continue next with Chapter 5.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter4/SideActivity-GoldenwoodForest.html">&lt&lt Side Activities - Goldenwood Forest Revisit</a>
+        <span class="nextWalkthroughPage">
+          <a href="../Chapter5/WispyRuins.html">Wispy Ruins &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      
+
+      <!-- Shops Start Here -->
+      <div id="shopsHere"></div>
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

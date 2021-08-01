@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge Two - Caratos Mountain</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([10]);encountersCreate([['Caratos Mountain', ['Cave', 'Others', 'Events', 'Shadows']], ['Spring of Purification', ['Grass', 'Fishing']]], [0]);globalrunOnLoad('Second');">
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CaratosMountainOneMapTxT">Caratos Mountain<br>First Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CaratosMountainTwoMapTxT">Caratos Mountain<br>Second Room</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MadelisPalaceOneMapTxT">Madelis Palace<br>Outside</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MadelisPalaceTwoMapTxT">Madelis Palace<br>Inside</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CaratosMountainTxT">Caratos Mountain Random Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CaratosMountainOthersTxT">Caratos Mountain Other Encounters</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="SpringPurificationTxT">Spring of Purification</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CaratosShadowsTxT">Shadow Pokemon</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Elemental.html#VolcanicField" target="_blank" class="encounterDetailsSidebar">Volcanic Field<br>Location: Caratos Mountain</a><br><br>
+    <a href="../Information/FieldEffects-Magical.html#DimensionalField" target="_blank" class="encounterDetailsSidebar">Dimensional Field<br>VS Dimensional Rift Volcanion</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Caratos Mountain
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">Caratos Mountain<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="CaratosTrainersButton" onclick="showTrainerTable('CaratosTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="CaratosHiddenButton" onclick="showHiddenTable('CaratosHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/CaratosMountain/CaratosMountain.png">
+        <br>
+        <table class="TrainerTable" id="CaratosTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenDanieTxT">Team Xen Danie<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDanie.png"></span></a></td>
+            <td>Caratos Mountain<br>Entering the second room</td>
+          </tr>
+          <tr class="innertrainer">
+            
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenZenethTxT">Team Xen Zeneth<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenZeneth.png"></span></a></td>
+            <td>Caratos Mountain<br>To the left of the entrace of the second room</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenTimothyTxT">Team Xen Timothy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenTimothy.png"></span></a></td>
+            <td>Caratos Mountain<br>Above Team Xen Zeneth</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenBenTxT">Team Xen Ben<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenBen.png"></span></a></td>
+            <td>Caratos Mountain<br>Bottom right corner, before the bridge on the right side</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenAlyssaTxT">Team Xen Alyssa<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenAlyssa.png"></span></a></td>
+            <td>Caratos Mountain<br>On the main path right after the second SEC battle</td>
+          </tr>
+        </table>
+        <table class="TrainerTable" id="CaratosHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Full Heal<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/HiddenItems/FullHeal.png"></span></a></td>
+            <td>Second room, barrel by the entrance</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/HiddenItems/RedShard.png"></span></a></td>
+            <td>Second room, southeast of the first SEC in the room</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Ultra Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/HiddenItems/UltraBall.png"></span></a></td>
+            <td>Second room, on the mining machine on the right after beating SEC the second time</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/HiddenItems/ReverseCandy.png"></span></a></td>
+            <td>Second room, in a room to the right and down after beating SEC the second time</td>
+          </tr>
+        </table>
+        <br>
+        Upon entering, you'll find yourself in the middle of a volcano. Aelita will accompany you, and battles here are fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Elemental.html#VolcanicField" target="_blank">Volcanic Field</a> and wild battles will be in a Doubles format while Aelita is with you. Like all partners, Aelita will heal you after every battle, so use this opportunity to train with the Exp Share if you need to. Go ahead and go straight through the area, on the top left there's Rock Smash rock that you can get a Carbos if you get past it. Head across the second bridge, and interact with the weird machine there. It'll introduce itself as SEC, a Team Xen invention. It'll also challenge you to a battle once it realizes you are not part of Team Xen.
+        <br><br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Security Component SEC
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/077_shadow.png">
+              <br>
+              Shadow Ponyta, Level 20
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Rush</td>
+          </tr>
+          <tr><td>Fell Stinger</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+        </table>
+        <br>
+        Feel free to catch the Shadow Ponyta if you want, we'll be able to purify them very soon. After the battle SEC will self-terminate its current body and you'll be free to continue deeper inside.<br><br>
+        Inside, you'll immediately face <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenDanieName">Team Xen Danie<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDanie.png"></span></a> in a Double Battle with Aelita as your partner. Once you beat her, there's a PC nearby if you need to change out your Pokemon. Head left to battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenZenethName">Team Xen Zeneth,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenZeneth.png"></span></a> then up to battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenTimothyName">Team Xen Timothy.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenTimothy.png"></span></a> Right above Timothy, there's a plaque that'll give you one of the passwords you'll need soon. You'll come across SEC again, so talk to SEC and battle him again.
+        <br><br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Security Component SEC
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/136.png">
+              <br>
+              Flareon, Level 23
+            </th>
+            <td rowspan="4">Fire</td>
+            <td>Fire Fang</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr><td>Quick Attack</td></tr>
+          <tr><td>Baby-Doll Eyes</td></tr>
+        </table>
+        <br>
+        He'll self-destruct again once you beat him, so move on forward. The left path will take you to a second password plaque, and the right side will take you to another intersection. Going right across the bridge will net you a Fire Stone. Heading down from the intersection will be <span class="ImportantName">TM43 - Flame Charge.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/TM43-FlameCharge.png"></span></span> This is a really good move at this point in the game, so teach it to anyone who can learn it. Beat <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenBenName">Team Xen Ben<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenBen.png"></span></a> to access the final password plaque. Go back to where you defeated SEC the second time, battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenAlyssaName">Team Xen Alyssa,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenAlyssa.png"></span></a> and you'll have access to SEC again. He'll ask for the three passwords, which are <span class="textSpoilers">"BEAUTY", "IDOL", "SHADOW", in that order with that capitalization</span>. Once you beat him, he'll challenge you to yet another battle.
+        <br><br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Security Component SEC
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/195_shadow.png">
+              <br>
+              Shadow Quagsire, Level 24
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Shadow Rush</td>
+          </tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+          <tr><td>---</td></tr>
+        </table>
+        <br>
+        You can catch this Quagsire if you want. He'll self-destruct a final time, and you and Aelita can access the elevator to reach the next area.
+        <p class="subsectionHeader">Madelis' Palace<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="XenLabTrainersButton" onclick="showTrainerTable('XenLabTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/CaratosMountain/MadelisInner.png">
+        <br>
+        <table class="TrainerTable" id="XenLabTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenAlisonTxT">Team Xen Alison<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenAlison.png"></span></a></td>
+            <td>Madelis' Palace<br>Bottom left room, first trainer</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="XenAnalystForrestXenAnalystJenslyTxT">Xen Analyst Forrest and Xen Analyst Jensly<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenJenslyXenForrest.png"></span></a></td>
+            <td>Madelis' Palace<br>Bottom left room, required paired trainer in the middle</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenDemilTeamXenAiselTxT">Team Xen Demil and Team Xen Aisel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDemilXenAisel.png"></span></a></td>
+            <td>Madelis' Palace<br>Bottom left room, optional paired trainer in the middle</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenMellyTeamXenSarahTxT">Team Xen Melly and Team Xen Sarah<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenMellyXenSarah.png"></span></a></td>
+            <td>Madelis' Palace<br>Bottom right room, near Mime Jr.</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="XenAnalystDonaldXenAnalystMariaTxT">Xen Analyst Donald and Xen Analyst Maria<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDonaldXenMaria.png"></span></a></td>
+            <td>Madelis' Palace<br>Top left room, required paired trainer in the middle</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="XenAnalystFernXenAnalystPrescillaTxT">Xen Analyst Fern and Xen Analyst Prescilla<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenFernXenPrescilla.png"></span></a></td>
+            <td>Madelis' Palace<br>Top right room, optional paired trainer on right path to Upgrade</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="TeamXenJessieTeamXenJasmineTxT">Team Xen Jessie and Team Xen Jasmine<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenJessieXenJasmine.png"></span></a></td>
+            <td>Madelis' Palace<br>Top right room, path to Blue Key</td>
+          </tr>
+        </table>
+        <br>
+        You and Aelita will appear outside a building, and once you get close enough Aelita will be kidnapped by SEC 2.0. Once you get inside, Keta will join you after Madelis explains to him what is going on. You'll have to find four keys, each in a corner of the laboratory. There aren't any wild Pokemon here, but trainer battles will be in a Doubles format, with no field in effect.
+        <br><br>
+        On the bottom left side, you'll first battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenAlisonName">Team Xen Alison,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenAlison.png"></span></a> then after grabbing the Hyper Potion head up to battle the duo of <a href="javascript:void(0)" class="normalTrainerName" id="XenAnalystForrestXenAnalystJenslyName">Xen Analyst Forrest and Xen Analyst Jensly.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenJenslyXenForrest.png"></span></a> You can grab the Revive on the left side and the Yellow Key near the top, and there's an option battle against <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenDemilTeamXenAiselName">Team Xen Demil and Team Xen Aisel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDemilXenAisel.png"></span></a> for extra EXP and gold if you want.
+        <br><br>
+        Head back out and into the bottom right room. Here, you can talk to Sharon, near the entrance, who will just give you the Green Key as she tries to rescue her partner. There's a Fresh Water in the top right corner of this room, and if you battle <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenMellyTeamXenSarahName">Team Xen Melly and Team Xen Sarah<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenMellyXenSarah.png"></span></a> you can get access to a Mime Jr.
+        <br><br>
+        Our next area is the top left room. There's only one battle here against <a href="javascript:void(0)" class="normalTrainerName" id="XenAnalystDonaldXenAnalystMariaName">Xen Analyst Donald and Xen Analyst Maria.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDonaldXenMaria.png"></span></a> Beat them and grab the Red Key.
+        <br><br>
+        The final area is in the top right room. At the intersection, the path upwards against <a href="javascript:void(0)" class="normalTrainerName" id="TeamXenJessieTeamXenJasmineName">Team Xen Jessie and Team Xen Jasmine<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenJessieXenJasmine.png"></span></a> leads to the Blue Key. The path on the left against <a href="javascript:void(0)" class="normalTrainerName" id="XenAnalystFernXenAnalystPrescillaName">Xen Analyst Fern and Xen Analyst Prescilla.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 2/CaratosMountain/Trainers/XenDonaldXenMaria.png"></span></a> lets you grab an Upgrade.
+        <br><br>
+        Now that you have all the keys, insert them into the keyholes around SEC 2.0. You can also talk to the SEC 2.0 for some fun lore bits. Head on deeper, and meet Madelis and Aelita inside. Watch the scene unfold, then follow Keta deeper into the building. Heal up with the healing machine if you need to. Be sure to save, then enter the back rooms. Madelis will be waiting, and after she realses Aelita, will show off her Shadow Mewtwo, destroy your Snag Machine, and challenge you to a battle.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/CaratosMountain/VSMadelis.png">
+        <br>
+        <div class="eventTrainerName">
+          Xen Executive Madelis
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/670.png">
+              <br>
+              Floette, Level 23
+            </th>
+            <td rowspan="4">Fairy</td>
+            <td>Dazzling Gleam</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/757.png">
+              <br>
+              Salandit, Level 23
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Flame Burst</td>
+          </tr>
+          <tr><td>Aromatherapy</td><td>Venoshock</td></tr>
+          <tr>
+            <td>Sunny Day</td>
+            <td rowspan="2">Poison</td><td>Fake Out</td>
+          </tr>
+          <tr><td>Protect</td><td>Poison Gas</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/042.png">
+              <br>
+              Golbat, Level 24
+            </th>
+            <td rowspan="2">Poison</td>
+            <td>Wing Attack</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/683.png">
+              <br>
+              Aromatisse, Level 24
+            </th>
+            <td rowspan="4">Fairy</td>
+            <td>Draining Kiss</td>
+          </tr>
+          <tr><td>Venoshock</td><td>Reflect</td></tr>
+          <tr>
+            <td rowspan="2">Flying</td><td>Light Screen</td>
+            <td>Confuse Ray</td>
+          </tr>
+          <tr><td>Double Team</td><td>Calm Mind</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/229.png">
+              <br>
+              Houndoom, Level 25
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Flamethrower</td>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/150_shadow.png">
+              <br>
+              Shadow Mewtwo, Level 27
+            </th>
+            <td rowspan="4">Shadow</td>
+            <td>Psychic</td>
+          </tr>
+          <tr><td>Crunch</td><td>Energy Ball</td></tr>
+          <tr>
+            <td rowspan="2">Dark</td><td>Snarl</td>
+            <td>Aura Sphere</td>
+          </tr>
+          <tr><td>Thunder Fang</td><td>Miracle Eye</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="6">
+              Reward: <img src="../../images/PokeDollar.png">648
+            </td>
+          </tr>
+        </table>
+        <br>
+        The biggest standouts in this battle is her Shadow Mewtwo and Houndoom, both of which have very powerful moves and can easily one shot your Pokemon and are difficult to take down, especially if Aromatisse manages to get the screens up. The good news is that this battle is effectively a 12v6, with Keta as your partner, and the rest of her Pokemon are not too threatening. If you're able to set up on Floette or Golbat, you can easily sweep her team and be ready for Houndoom and Mewtwo. Two of Keta's Pokemon has Fake Out, which you can take advantage of to deal heavy damage. If you manage to take out one of her two aces, turning the battle into a 2v1 will even the odds by a lot.
+        <br><br>
+        After the battle, you and Aelita can enter the back door of the previous room. Head over and go down the elevator, making sure to pick up the data for our next battle. After a cutscene you'll find yourself in another Dimensional Rift, and once you step onto the middle platform, a battle will begin.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 2/CaratosMountain/VSRiftVolcanion.png">
+        <div class="eventTrainerName">
+          Dimensional Rift Volcanion
+          <span class="eventTrainerTooltip">Despite being a legendary, this is a 6v1 battle and it doesn't have the strongest of moves. It's also really slow, so you can just chip away at it with your Pokemon advantage. Rock-type, Grass-type, Electric-type, or Ground-type moves will deal heavy damage to it, so you probably have something that will work against it.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/721_1.png">
+              <br>
+              Volcanion, Level 23 - Demon Stone
+            </th>
+            <td rowspan="2">Fire</td>
+            <td>Overheat</td>
+          </tr>
+          <tr><td>Water Pulse</td></tr>
+          <tr><td rowspan="2">Water</td><td>Rock Slide</td></tr>
+          <tr><td>Bulldoze</td></tr>
+        </table>
+        <br>
+        After the battle, watch the cutscene play out. You'll eventually reappear on Sheridan Arena.
+        <br>
+        <p class="subsectionHeader">Caratos Aftermath</p>
+        Eldest will ask you to meet at the Celebi statue near the village entrance from Amethyst Cave, so go on ahead and head over there. Touch the statue and be transported to the Spring of Purification. After a short cutscene, you can now purify Pokemon here. Pokemon that are purified from their Shadow forms tend to have extra moves that it can't normally learn through any means. For now, here's the list of Shadow Pokemon that you potentially have. Moves with a * are moves that it normally cannot learn.
+        <br><br>
+        <table class="TrainerTableShow" id="Rebattles">
+          <tr class="heading">
+            <td>Pokemon</td>
+            <td>Extra Move Learned</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Meowth (Kantonian)
+            </td>
+            <td>Beat Up*, Bite, Glare*, Fury Swipes</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Finneon
+            </td>
+            <td>Tailwind, Water Gun, Headbutt*, Tail Glow*</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Cacnea
+            </td>
+            <td>Leech Seed, Power-Up Punch, Absorb, Toxic Spikes*</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Grimer (Alolan)
+            </td>
+            <td>Aromatherapy*, Poison Gas, Harden, Bite</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Ponyta
+            </td>
+            <td>High Horsepower, Fell Stinger*, Flame Wheel, Hypnosis</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Vanillite
+            </td>
+            <td>Upraor, Will-O-Wisp*, Mist, Avalanche</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Bonsly
+            </td>
+            <td>Rock Throw, Shift Gear*, Tackle*, Fake Tears</td>
+          </tr>
+          <tr class="innertrainer">
+            <td>
+              Shadow Quagsire
+            </td>
+            <td>Flame Burst*, Water Pulse, Refresh*</td>
+          </tr>
+        </table>
+        <br>
+        Once you're done, our next destination is Goldenwood Town. Step onto the red square to return to Sheridan Village, we can return here by touching the statue at any point in time. Once outside, Keta's spirit will come ask you to meet him in Amethyst Grotto. You can go with him now if you want, and that'll be continued <a class="continueElsewhere" href="SheridanGymLeader.html">here.</a> There's sidequests we can do now though, including the Help Plaza quests, so if you want to do those first go ahead and say no.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="../Chapter2/SheridanVillageArena.html">&lt&lt Sheridan Village & Sheridan Arena</a>
+        <span class="nextWalkthroughPage">
+        <a href="../Chapter2/SheridanSidequests.html">Sheridan Sidequests &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div>  
+        <div id="TeamXenZeneth" class="TrainerPopup">
+          <span class="close" id="TeamXenZenethClose">&times;</span>
+          <p class="normalTrainerTitle" style="text-align:center;">
+            Team Xen Zeneth
+          </p>
+          <table class="trainerPopupContent">
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/037.png">
+                <br>
+                Vulpix, Level 18
+              </th>
+              <td rowspan="4">Fire</td>
+              <td>Fire Spin</td>
+            </tr>
+            <tr><td>Payback</td></tr>
+            <tr><td>Quick Attack</td></tr>
+            <tr><td>Confuse Ray</td></tr>
+  
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/425.png">
+                <br>
+                Drifloon, Level 19
+              </th>
+              <td rowspan="2">Ghost</td>
+              <td>Gust</td>
+            </tr>
+            <tr><td>Payback</td></tr>
+            <tr><td rowspan="2">Flying</td><td>Astonish</td></tr>
+            <tr><td>Focus Energy</td></tr>
+  
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/582_shadow.png">
+                <br>
+                Shadow Vanillite, Level 19
+              </th>
+              <td rowspan="4">Shadow</td>
+              <td>---</td>
+            </tr>
+            <tr><td>---</td></tr>
+            <tr><td>---</td></tr>
+            <tr><td>---</td></tr>
+  
+            <tr>
+              <td class="moneyGained" colspan="6">
+                Reward: <img src="../../images/PokeDollar.png">76
+              </td>
+            </tr>
+          </table>
+        </div>
+  
+        <div id="TeamXenTimothy" class="TrainerPopup">
+          <span class="close" id="TeamXenTimothyClose">&times;</span>
+          <p class="normalTrainerTitle" style="text-align:center;">
+            Team Xen Timothy
+          </p>
+          <table class="trainerPopupContent">
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/341.png">
+                <br>
+                Corphish, Level 19
+              </th>
+              <td rowspan="4">Water</td>
+              <td>Bubble Beam</td>
+            </tr>
+            <tr><td>Vice Grip</td></tr>
+            <tr><td>Leer</td></tr>
+            <tr><td>Protect</td></tr>
+  
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/304.png">
+                <br>
+                Aron, Level 18
+              </th>
+              <td rowspan="2">Steel</td>
+              <td>Rock Tomb</td>
+            </tr>
+            <tr><td>Metal Claw</td></tr>
+            <tr><td rowspan="2">Rock</td><td>Headbutt</td></tr>
+            <tr><td>Protect</td></tr>
+  
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/559.png">
+                <br>
+                Scraggy, Level 19
+              </th>
+              <td rowspan="2">Dark</td>
+              <td>Feint Attack</td>
+            </tr>
+            <tr><td>Low Kick</td></tr>
+            <tr><td rowspan="2">Fighting</td><td>Swagger</td></tr>
+            <tr><td>Sand Attack</td></tr>
+  
+            <tr>
+              <th rowspan="4">
+                <img class="trainerPokemonImage" src="../../images/PokemonSprites/438_shadow.png">
+                <br>
+                Shadow Bonsly, Level 19
+              </th>
+              <td rowspan="4">Shadow</td>
+              <td>---</td>
+            </tr>
+            <tr><td>---</td></tr>
+            <tr><td>---</td></tr>
+            <tr><td>---</td></tr>
+  
+            <tr>
+              <td class="moneyGained" colspan="6">
+                Reward: <img src="../../images/PokeDollar.png">76
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere">
+      </div>
+
+      <!-- Maps Start Here -->
+      <div id="CaratosMountainOneMap" class="EncounterPopup">
+        <span class="close" id="CaratosMountainOneMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Caratos Mountain - Room One
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/CaratosMountain/Carotos Mountain.png">
+      </div>
+
+      <div id="CaratosMountainTwoMap" class="EncounterPopup">
+        <span class="close" id="CaratosMountainTwoMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Caratos Mountain - Room Two
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/CaratosMountain/Carotos Mountain 2.png">
+      </div>
+
+      <div id="MadelisPalaceOneMap" class="EncounterPopup">
+        <span class="close" id="MadelisPalaceOneMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Madelis' Palace - Outside
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/CaratosMountain/Madelis' Palace.png">
+      </div>
+
+      <div id="MadelisPalaceTwoMap" class="EncounterPopup">
+        <span class="close" id="MadelisPalaceTwoMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Madelis' Palace - Inside
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 2/FullMaps/CaratosMountain/Madelis' Laboratory.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

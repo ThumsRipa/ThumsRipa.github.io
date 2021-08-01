@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - East Gearen City (Continued)</title>
+
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([1],['OutsideTrainers']);encountersCreate([['East Gearen City', ['Grass', 'Events']], ['Chrisola Hotel Rooftop', ['Grass']], ['Gearen Park', ['Grass']]], [1,0]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="EastGearenCityRightMapTxT">East Gearen City (Right)</a><br><br>
+  </div>
+`
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenGrassTxT">East Gearen City Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenEventsTxT">East Gearen City - Others</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GearenParkTxT">Gearen Park</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="HotelEncountersTxT">Chrisola Hotel Rooftop Pokemon</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketTopLeftTxT">Gearen Market<br>Top Left Vendor</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomLeftTxT">Gearen Market<br>Bottom Left Vendor</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomMiddleTxT">Gearen Market<br>Bottom Middle Vendor<br>Weekdays, 11:00am-8:00pm</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="MarketBottomRightTxT">Gearen Market<br>Bottom Right Vendor<br>Weekdays, 11:00am-8:00pm</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="BerryEmporiumTxT">Shopping Emporium<br>Berry Emporium</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="PokeballShopTxT">Shopping Emporium<br>Pokeball Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="CasinoShopTxT">Chrisola Hotel<br>Casino Shop</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="APShopTxT">Chrisola Hotel<br>AP Shop</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Elemental.html#GrassyTerrain" target="_blank" class="encounterDetailsSidebar">Grassy Terrain<br>Location: Gearen Park</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      East Gearen City (Right)
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">East Gearen City (Right) - Outside<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="OutsideTrainersButton" onclick="showTrainerTable('OutsideTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="RightGearenOutsideHiddenButton" onclick="showHiddenTable('RightGearenOutsideHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/GearenMarket.bmp">
+        <br>
+        <table class="TrainerTable" id="OutsideTrainers">
+        </table>
+        <table class="TrainerTable" id="RightGearenOutsideHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Super Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/SuperRepel.bmp"></span></a></td>
+            <td>Grass patch left of Gearen Gym</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Poke Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/Pokeball.bmp"></span></a></td>
+            <td>Grass patch left of Gearen Gym</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Resist Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ResistWing.bmp"></span></a></td>
+            <td>Grass patch right of Gearen Gym</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Revive<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/Revive.bmp"></span></a></td>
+            <td>Below Prima Donna Bianca</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Revive<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/Revive.bmp"></span></a></td>
+            <td>Below Prima Donna Bianca</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Paralyze Heal<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ParalyzeHeal.bmp"></span></a></td>
+            <td>Left flower pot by Chrisola Hotel</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Green Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GreenShard.bmp"></span></a></td>
+            <td>Left flower pot by Chrisola Hotel</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Antidote<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/Antidote.bmp"></span></a></td>
+            <td>Below the train tracks</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/BlueShard.bmp"></span></a></td>
+            <td>Middle of the road below the train station</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/Repel.bmp"></span></a></td>
+            <td>Grassy area by Aqua Building</td>
+          </tr>
+        </table>
+        <br>
+        Immediately as you enter the right side, you'll come across the Gearen Marketplace. Here, you'll find a multitude of shops where you can buy or sell your items. The top left seller will sell you basic supplies, while the bottom left seller sells status healing items. The top right dude will sell you Pokeballs for <img src="../../images/PokeDollar.png">400, but if you buy four he will give you a Voltorb. If you are playing during the weekdays and it is daytime (11:00am-8:00pm), there will be two more vendors along the bottom row. The bottom middle seller will sell Reverse Candies and Soda Pops, while the bottom right seller will sell you Black Flutes and White Flutes.
+        <br><br>
+        You can also go into the <span class="ImportantName">Shopping Emporium.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/ShoppingEmporium.bmp"></span></span> The Berry Emporium sells berries, and the Pokeball Boutique sells different Pokeballs. For now, you'll want to buy at least one Pecha Berry for later on. More variations of Pokeballs and berries will be unlocked as we progress through the story. With that done, go ahead and go back left and this time go north. You'll find patches of grass, but the encounters are the same as the left side.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/FirstGym.bmp">
+        <br>
+        This building right here is the gym. If you enter it, you'll find that the Gym Leader is currently not there, so let's explore the city a bit more. Keep going right, and you'll find a small tent with a Super Potion next to it. This is <span class="ImportantName">Luck's Tent.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/Luck'sTent.bmp"></span></span> If you have been having troubles with battles or find battles too easy, you can come here to change the difficulty. This will be free the first time you enter the tent, but after that you will have to pay colored shards to change the difficulty. Once you're done, go ahead and head down and then to the right. You can battle <a href="javascript:void(0)" class="normalTrainerName" id="PrimaDonnaBiancaName">Prima Donna Bianca.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/PrimaDonnaBianca.bmp"></span></a>
+        <br><br>
+        Right past Bianca and up the stairs is Chrisola Hotel. If you sneak around the garden, you can get a <span class="ImportantName">TM83 - Infestation.</span> We'll explore the hotel a bit later, so head downstairs and all the way to the right. There's a little pathway that leads up north, where there's an Iron. Head back down, and just a little ways from there 
+        <a href="javascript:void(0)" class="normalTrainerName" id="CoolGuySimName">Cool Guy Sim<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/CoolGuySim.bmp"></span></a>
+        will challenge you to a battle. After battling him, head into the house with the Bellosom statues to watch a cutscene. You'll be prompted to give her a Pecha Berry, so if you haven't bought one you can buy one from the Berry Emporium. The girl will introduce herself as <span class="ImportantName">Veronica, AKA Venam<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/Venam.png"></span></span>. She'll invite you to hang out in the sewers and will take her leave. We'll follow her in a bit, but there's a few more things we can do around the city. If you do want to follow her, you'll have to battle <a href="javascript:void(0)" class="normalTrainerName" id="GangMemberRufusName">Gang Member Rufus<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/GangMemberRufus.bmp"></span></a> to the south of her house. If you want to go ahead and meet up with her at the sewers, continue down past Rufus and head right. The walkthrough will continue <a class="continueElsewhere" href="GearenSewers.html">here.</a> Otherwise, we'll keep exploring the city for a little while longer.
+        <br><br>
+        Keep going left along the road and you'll come across a four-way intersection. The last two trainers in this city are 
+        <a href="javascript:void(0)" class="normalTrainerName" id="HikerDenkoName">Hiker Denko<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/HikerDenko.bmp"></span></a>
+        who is hanging out on the bridge up top and <a href="javascript:void(0)" class="normalTrainerName" id="PrimaDonnaPenelopeName">Prima Donna Penelope<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/PrimaDonnaPenelope.bmp"></span></a> who is just to the left of this intersection. There's a park to the south, but we'll explore some of the buildings first.
+        <br><br>
+        <p class="subsectionHeader">Chrisola Hotel<button class="showHiddenButton" id="HotelHiddenButton" onclick="showHiddenTable('HotelHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/ChrisolaHotel.bmp">
+        <table class="TrainerTable" id="HotelHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/RedShard.png"></span></a></td>
+            <td>Chrisola Hotel - Left Hallway</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Ether<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/Ether.png"></span></a></td>
+            <td>Chrisola Hotel - Left Hallway</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Repel<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/Repel.png"></span></a></td>
+            <td>Chrisola Hotel - Pool Area, outside the elevator</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Potion<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/Potion.png"></span></a></td>
+            <td>Chrisola Hotel - Pool Area, upper left corner</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Burn Heal<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/BurnHeal.png"></span></a></td>
+            <td>Chrisola Hotel - Pool Area, upper left corner</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Oran Berry<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/OranBerry.png"></span></a></td>
+            <td>Chrisola Hotel - Rooftop, left side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Reverse Candy<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/ReverseCandy.png"></span></a></td>
+            <td>Chrisola Hotel - Rooftop, right side</td>
+          </tr>
+        </table>
+        <br>
+        Head back up to Chrisola Hotel and enter it. You'll be put into a short cutscene where you're introduced to Ms. Blakeory, but you won't learn much about her before she flies away on a helicopter. You'll be able to explore the hotel now. In the lobby, you can get a <span class="hiddenItemText">Super Potion<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ChrisolaHotel/SuperPotion.png"></span></span> from this man on the bottom right. Go ahead and move on to the right hallway. The first open door will be occupied by a lady and her Shinx, but we can't do anything about that currently. The room all the way on the top right will contain <span class="ImportantName">TM21 - Frustration,</span> which can be a very powerful Normal-type move at this point since your Pokemon aren't friendly with you yet. There's a few hidden items in the left hallway.
+        <br><br>
+        Once you are back in the lobby, head up to the elevator. We have access to a few floors, so head down to the basement first where the pool is. There's a few hidden items along the ground, but otherwise we'll need to have Surf to get the item in the middle. Head back to the elevator and go to the second floor. In the Casino, talk to <span class="ImportantName">this woman<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/ChrisolaHotel/CoinCase.png"></span></span>, who will complain about her addiction and throw her Coin Case away. We'll be able to retrieve it later for our own use. On the far left there is <span class="ImportantName">Rarity<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/ChrisolaHotel/LotteryCorner.png"></span></span> who will roll the lottery for you once a day. Head all the way down, and you'll enter the Achievement Points Shop, or the AP Shop for short. Talking to <span class="ImportantName">this girl<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/ChrisolaHotel/AchievementCard.png"></span></span> will give you the Achievement Card, which you can use to check how many points you earned. The AP Shop is on the top right corner, and sells Golden Tools for you to use. These Golden Tools can be used as HMs, so make sure to buy them when you have the points to spare. That's it for this floor, head back to the elevator and head to the third floor.
+        <br><br>
+        The Battle Room is quite empty at the moment, but you can use <span class="ImportantName">this machine<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/ChrisolaHotel/RecoveryComponent.png"></span></span> to rest up and heal your Pokemon. On the rooftop, there are patches of grass with different Pokemon you can catch. If you catch a Male Cherubi, we can trade it for a Buneary very soon. That's everything for this hotel, so head back out into the streets.
+        <br><br>
+        Outside the hotel, if you've seen Buizel run away from the Pier, you'll find it <span class="ImportantName">along the right edge<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/Buizel2.png"></span></span> of the city. If you interact with it, its previous trainer will come over and try to take Buizel back. Battle him, and then you can take Buizel with you if you win.
+        <br><br>
+        <div class="eventTrainerName" style="text-align:center;">
+          Charmer Buzzington
+          <span class="eventTrainerTooltip">This isn't a particularly challenging battle if you have a full team. A good Flying-type or Bug-type Pokemon can take care of his Bulbasaur and Exeggcute, and a Grass-type like Bellsprout can one hit KO the Rhyhorn if you're on even levels.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/001.png">
+              <br>
+              Bulbasaur, Level 9
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Vine Whip</td>
+          </tr>
+          <tr><td>Tackle</td></tr>
+          <tr><td rowspan="2">Poison</td><td>Growl</td></tr>
+          <tr><td>Leech Seed</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/102.png">
+              <br>
+              Exeggcute, Level 9
+            </th>
+            <td rowspan="2">Grass</td>
+            <td>Uproar</td>
+          </tr>
+          <tr><td>Barrage</td></tr>
+          <tr><td rowspan="2">Psychic</td><td>Hypnosis</td></tr>
+          <tr><td>Reflect</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/111.png">
+              <br>
+              Rhyhorn, Level 10
+            </th>
+            <td rowspan="2">Rock</td>
+            <td>Horn Attack</td>
+          </tr>
+          <tr><td>Fury Attack</td></tr>
+          <tr><td rowspan="2">Ground</td><td>Scary Face</td></tr>
+          <tr><td>Tail Whip</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">180
+            </td>
+          </tr>
+        </table>
+        <br>
+        <p class="subsectionHeader">Aqua Building</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/AquaBuilding.bmp">
+        <br>
+        Head over to Aqua Building, which is located below the Gearen Market; across the bridge and to the right. On the first floor, talking to <span class="ImportantName">this ranger<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/RightSide/CherubiTrade.png"></span></span> will allow you to trade the Male Cherubi for a Buneary. The scientist by the eleveator will also give you an <span class="hiddenItemText">Ultra Ball<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/UltraBall.png"></span></span>. On the second floor, at the very bottom, you'll find an Old Rod. There's not really anywhere we can fish yet, so just hold on to it for now. I would not advise going to the third floor, but if you do choose to make sure to save beforehand.
+        <br><br>
+        <p class="subsectionHeader">Gearen Park<button class="showHiddenButton" id="GearenHiddenButton" onclick="showHiddenTable('GearenHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/GearenPark.bmp">
+        <table class="TrainerTable" id="GearenHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Heart Scale<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/HeartScale.png"></span></a></td>
+            <td>Outside Gearen Park</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Tiny Mushroom<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/TinyMushroom.png"></span></a></td>
+            <td>Outside Gearen Park</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Honey<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/Honey.png"></span></a></td>
+            <td>Top left quadrant</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Honey<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/Honey2.png"></span></a></td>
+            <td>Left side, by the path</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Carbos<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/Carbos.png"></span></a></td>
+            <td>Bottom left quadrant</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Leaf Stone<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/Carbos.png"></span></a></td>
+            <td>Middle of the bottom side, in the tall grass</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Yellow Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/YellowShard.png"></span></a></td>
+            <td>Bottom right quadrant</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Blue Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/BlueShard.png"></span></a></td>
+            <td>Right side</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Muscle Wing<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/MuscleWing.png"></span></a></td>
+            <td>Top right quadrant</td>
+          </tr>
+        </table>
+        <br>
+        Our final detour before we move on with the story will be Gearen Park. From Aqua Building, head down south and down the small set of stairs. Before you head into Gearen Park proper, there's a <span class="hiddenItemText">Heart Scale<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/HeartScale.png"></span></span> and a <span class="hiddenItemText">Tiny Mushroom<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/GearenPark/TinyMushroom.png"></span></span> you can pick up. Inside Gearen Park, there are a few new Pokemon here to check out, and a lot of hidden items. Of those, the Leaf Stone is probably the most useful item, as you can use it to evolve a few grass types that you might have, and you can sell the Carbos for extra cash.
+        <br><br>
+        Battles fought in Gearen Park are fought on the <a class="continueElsewhere" href="../Information/FieldEffects-Elemental.html#GrassyTerrain" target="_blank">Grassy Terrain.</a> As you may know, differrent Terrains have been introduced to the main series game, but have minimal effect on the battle. In Pokemon Rejuvenation, the field you battle in will heavily influence the battle, powering up moves, adjusting abilities, changing the type chart, and many other effects. If you are not familiar with Field Effects in general, I recommend you reading an overview about them <a class="continueElsewhere" href="../Information/FieldEffects.html" target=_blank>here.</a>
+        <br><br>
+        <p class="subsectionHeader">To the Sewers</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/RightSide/Sewers.bmp">
+        <br>
+        With all the detours out of the way, we can finally continue the story. Heal up and either Chrisola Hotel or Gearen Lab, then head to the bottom right corner, past <a href="javascript:void(0)" class="ImportantName">Gang Member Rufus<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/TrainerBattles/RightSide/GangMemberRufus.bmp"></span></a>, and talk to Ren and Venam. They'll talk about how Melia's underground figuring out the power issues, and invite you to join them in the sewers. Before you do that, head a little more down and you'll meet Karrina, the leader of the local gang. A little bit past her is a <span class="hiddenItemText">Reverse Candy.<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Hidden Items/RightSide/ReverseCandy.bmp"></span></span>
+      </p>
+    
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="EastGearenCity-1.html">&lt&lt Oceana Pier and Gearen Lab</a>
+        <span class="nextWalkthroughPage">
+          <a href="GearenSewers.html">East Gearen Sewers &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      <div id="EastGearenCityRightMap" class="EncounterPopup">
+        <span class="close" id="EastGearenCityRightMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen City (Right)
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/EastGearenCity-RightNoEvents.png">
+      </div>
+
+      <div id="GearenParkMap" class="EncounterPopup">
+        <span class="close" id="GearenParkMapClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Gearen Park
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/GearenPark.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      <div id="MarketTopLeft" class="EncounterPopup">
+        <span class="close" id="MarketTopLeftClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen Market - Top Left Vendor
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Poke Ball
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">200
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Potion
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Gourmet Treat
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">1500
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Repel
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">350
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Reverse Candy
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">50
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="MarketBottomLeft" class="EncounterPopup">
+        <span class="close" id="MarketBottomLeftClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen Market - Bottom Left Vendor
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Burn Heal
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">250
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Ice Heal
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">250
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Antidote
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">100
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Awakening
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">250
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Paralyze Heal
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">200
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="MarketBottomMiddle" class="EncounterPopup">
+        <span class="close" id="MarketBottomMiddleClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen Market - Bottom Middle Vendor<br>Weekdays, 11:00am-8:00pm
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Reverse Candy
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">50
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Soda Pop
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="MarketBottomRight" class="EncounterPopup">
+        <span class="close" id="MarketBottomRightClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          East Gearen Market - Bottom Right Vendor<br>Weekdays, 11:00am-8:00pm
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Black Flute
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">400
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              White Flute
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">400
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="BerryEmporium" class="EncounterPopup">
+        <span class="close" id="BerryEmporiumClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Shopping Emporium - Berry Emporium
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Oran Berry
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">200
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Pecha Berry
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="PokeballShop" class="EncounterPopup">
+        <span class="close" id="PokeballShopClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Shopping Emporium - Pokeball Shop
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Heavy Ball
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Moon Ball
+            </td>
+            <td>
+              <img src="../../images/PokeDollar.png">300
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="CasinoShop" class="EncounterPopup">
+        <span class="close" id="CasinoShopClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Chrisola Hotel - Casino Shop
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              TM70 - Flash
+            </td>
+            <td>
+              1000 Coins
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              TM10 - Hidden Power
+            </td>
+            <td>
+              4000 Coins
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              TM90 -  Substitute
+            </td>
+            <td>
+              7000 Coins
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="APShop" class="EncounterPopup">
+        <span class="close" id="APShopClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Chrisola Hotel - Casino Shop
+        </p>
+        <br>
+        <table class="shopPopupContent">
+          <tr>
+            <td class="shopheader">
+              Item
+            </td>
+            <td class="shopheader">
+              Price
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              HP Up
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              PP Up
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Protein
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Iron
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Calcium
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Zinc
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Carbos
+            </td>
+            <td>
+              3 AP
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Rare Candy
+            </td>
+            <td>
+              10 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Attack Card
+            </td>
+            <td>
+              10 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Defense Card
+            </td>
+            <td>
+              10 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              SPAttack Card
+            </td>
+            <td>
+              10 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              SPDefense Card
+            </td>
+            <td>
+              10 AP
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Golden Axe
+            </td>
+            <td>
+              15 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Hammer
+            </td>
+            <td>
+              15 AP
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Golden Surfboard
+            </td>
+            <td>
+              20 AP
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Golden Gauntlet
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Scuba Gear
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Wings
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Jetpack
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Driftboard
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Golden Claws
+            </td>
+            <td>
+              25 AP
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Exp. All (On)
+            </td>
+            <td>
+              30 AP
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>

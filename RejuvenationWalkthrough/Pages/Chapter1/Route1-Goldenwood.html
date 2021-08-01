@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pokemon Rejuvenation - Badge One - Goldenwood Forest</title>
+
+<link rel="stylesheet" href="../../styles/MainElements.css">
+<link rel="stylesheet" href="../../styles/WalkthroughElements.css">
+
+<script src="../../Scripts/battlepokedex.js"></script>
+<script src="../../Scripts/movespokedex.js"></script>
+<script src="../../Scripts/fullEncounterTooltips.js"></script>
+<script src="../../Scripts/fullEncounters.js"></script>
+<script src="../../Scripts/fullEncountersWalkthrough.js"></script>
+<script src="../../Scripts/walkthroughTrainers.js"></script>
+<script src="../../Scripts/walkthroughShopList.js"></script>
+<script src="../../Scripts/walkthroughElements.js"></script>
+<script src="../../Scripts/onload.js"></script>
+
+</head>
+
+<body onload="trainersSet([3],['CaveTrainers']);encountersCreate([['Route 1', ['Grass', 'Fishing', 'Events']],['Goldenwood Forest', ['Grass', 'Fishing']], ['Goldenwood Cave', ['Cave', 'Fishing', 'Events']]], [0,0]);globalrunOnLoad('First');">
+
+  <!-- Left Side Bar -->
+
+  <div class="popUpNavigation" id="popUpNav">
+  </div>
+
+  <!-- Left Popup Side Bar -->
+
+  <div class="trainerSidebar" id="mapSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="RouteOneTxT">Route 1</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodForestTxT">Goldenwood Forest</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodCaveTxT">Goldenwood Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodGroveTxT">Goldenwood Grove</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="encounterSidebarContent">
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="Route1GrassTxT">Route 1 Grass</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodForestEncTxT">Goldenwood Forest</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodCaveEncTxT">Goldenwood Cave</a><br><br>
+    <a href="javascript:void(0)" class="encounterDetailsSidebar" id="GoldenwoodEventsTxT">Route 1 & Goldenwood Forest - Others</a><br><br>
+  </div>
+
+  <div class="trainerSidebar" id="shopSidebarContent">
+    <h1 class="noSideBar">None</h1>
+  </div>
+
+  <div class="trainerSidebar" id="fieldEffects">
+    <a href="../Information/FieldEffects-Telluric.html#ForestField" target="_blank" class="encounterDetailsSidebar">Forest Field<br>Locations: Route 1 and Goldenwood Forest</a><br><br>
+    <a href="../Information/FieldEffects-Telluric.html#Cave" target="_blank" class="encounterDetailsSidebar">Cave<br>Location: Goldenwood Cave</a><br><br>
+  </div>
+
+  <!-- Main Walkthrough Content -->
+  
+  <div class="maincontent">
+    <div class="currentLocation">
+      Route 1 & Goldenwood Forest
+    </div>
+    <div class="walkthrough">
+      <p class="walkthroughText">
+        <p class="subsectionHeader">The Train Station</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Tesla.png">
+        <br>
+        As you enter the train station, you'll meet Tesla again. She'll catch up with you for a bit, and then buys you a train ticket to Route 1. She'll also hand you a few Potions. Before we get on the train, you can talk to the old man on the left side or use the Pokemon Box near him. If you do have to return, future tickets will cost <img src=../../images/PokeDollar.png>100. Once you're ready, get on the train.
+        <p class="subsectionHeader">Route 1</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Route 1.png">
+        <br>
+        You'll appear right on the Route 1 station. Head down stairs, but before turning right up to Melia, there's a <span class="hiddenItemText">Potion<span class="hiddenItemImage"><img class=hiddenMapImage src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/Potion.png"></span></span> hidden in the shade of a tree. Be sure to also collect the Super Repel on the right. Head up and Melia will welcome you to Route 1, and will go ahead into Goldenwood Forest. There's a Whismur here that you can give a Gourmet Treat to for the opportunity to catch it. The encounters here will vary by time, but if you want a Rockruff then we'll be able to find those easier once we're in the forest proper. Battles here will take place in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#ForestField" target=_blank>Forest Field.</a> You can also use this opportunity to heal with the golden star or use the Pokemon Box with the green star. Once you're reading, head up and into Goldenwood Forest.
+        <br><br>
+        <p class="subsectionHeader">Goldenwood Forest<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="ForestTrainersButton" onclick="showTrainerTable('ForestTrainers')">Show Trainers</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/GoldenwoodForest.png">
+        <br>
+        <table class="TrainerTable" id="ForestTrainers">
+          <tr class="heading">
+            <td>Trainer</td>
+            <td>Location</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="FishermanShaneTxT">Fisherman Shane<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/FishermanShane.png"></span></a></td>
+            <td>Goldenwood Forest<br>(East of the Lake)</td>
+          </tr>
+          <tr class="innertrainer">
+            <td><a href="javascript:void(0)" class="normalTrainerNameTable" id="FishermanOrlandoTxT">Fisherman Orlando<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/FishermanOrlando.png"></span></a></td>
+            <td>Goldenwood Forest<br>(North of the Lake)</td>
+          </tr>
+        </table>
+        <br>
+        Goldenwood Forest is pretty expansive, but also pretty linear. Go ahead and talk with Melia first, and she'll give you a short guided tour of the forest. The two of you will find yourself at the stairs leading up to Goldenwood Cave. Before entering though, grab the Potion, and you can also go back and fight <a href="javascript:void(0)" class="normalTrainerName" id="FishermanShaneName">Fisherman Shane<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/FishermanShane.png"></span></a> and <a href="javascript:void(0)" class="normalTrainerName" id="FishermanOrlandoName">Fisherman Orlando.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/FishermanOrlando.png"></span></a> The grass here doesn't have any new encounters, but the rarity of the Pokemon would have changed from Route 1.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Driftblim.png">
+        <br>
+        Before heading up into Goldenwood Cave, talk to the Driftblim a little to the left. You'll be taken into a short cutscene, and you'll get a HP Up for your troubles. Go back and switch up your Pokemon if you want, then head into Goldenwood Cave.
+        <br><br>
+        <p class="subsectionHeader">Goldenwood Cave<span class="showTrainersButtonAnchor"><button class="showTrainersButton" id="CaveTrainersButton" onclick="showTrainerTable('CaveTrainers')">Show Trainers</button></span><button class="showHiddenButton" id="CaveHiddenButton" onclick="showHiddenTable('CaveHidden')">Show Hidden Items</button></span></p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/MeliaParty.png">
+        <br>
+        <table class="TrainerTable" id="CaveTrainers">
+        </table>
+        <table class="TrainerTable" id="CaveHidden">
+          <tr class="heading">
+            <td>Item</td>
+            <td>Location</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Red Shard<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/RedShard.png"></span></a></td>
+            <td>In a rock by the entrance area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Tiny Mushroom<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/TinyMushroom.png"></span></a></td>
+            <td>Flower patch up the first set of stairs</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Tiny Mushroom<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/TinyMushroom.png"></span></a></td>
+            <td>Flower patch up the first set of stairs</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Tiny Mushroom<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/TinyMushroom2.png"></span></a></td>
+            <td>On the upper landing, around the middle part</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Tiny Mushroom<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/TinyMushroom3.png"></span></a></td>
+            <td>On the upper landing, back near the entrance area</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">PP Up<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/PPUp.png"></span></a></td>
+            <td>Near Culvier Clan Mars</td>
+          </tr>
+          <tr>
+            <td><a class="normalTrainerNameTable">Great Ball<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Hidden Items/GreatBall.png"></span></a></td>
+            <td>In the middle rock through the mural</td>
+          </tr>
+        </table>
+        <br>
+        Similar to Gearen Sewers, you'll be paired up with Melia for most of this cave, and all the battles will be in the Doubles format. Additionally, battles here will be fought in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#Cave" target=_blank>Cave</a> field. The first set of trainers are <a href="javascript:void(0)" class="normalTrainerName" id="SchoolboyDarinGangMemberEmileName">Schoolboy Darin and Gang Member Emile.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/SchoolboyDarinGangMemberEmile.png"></span></a> There's an item nearby, but we'll have to come back for it after we have Rock Smash. A little past them is <a href="javascript:void(0)" class="normalTrainerName" id="CoolGuyJeffYoungsterNickolusName">Cool Guy Jeff and Youngster Nickolus,<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/CoolGuyJeffYoungsterNickolus.png"></span></a> and then <a href="javascript:void(0)" class="normalTrainerName" id="OptimistKairiTouristKarinName">Optimist Kairi and Tourist Karin.<span class="normalTrainerImage"><img class=normalTrainerMap src="../../images/Screenshots/Chapter 1/Goldenwood/Trainers/OptimistKairiTouristKarin.png"></span></a>. Near the end, before you go inbetween the narrow path by the two rocks, head up the stairs to the right. Here, you can find a two Tiny Mushrooms to sell later.
+        <br><br>
+        That's all there is to do, but you can use Melia to heal up your Pokemon while you are grinding levels. Once you walk past the two rocks, Melia will leave your party. After a short cutscene, she'll head off deeper into the cave. Before you follow her, you can also undergo Culvier Clan Mars' challenge. We won't be able to return here for a while after this, so if you want a Sewaddle now is the time.
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/MarsChallenge.png">
+        <br>
+        <div class="eventTrainerName">
+          Challenger Mars
+          <span class="eventTrainerTooltip">Without the right Pokemon, this battle can be very rough. Since the battle is fought in a <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#Cave" target="_blank">Cave</a>, Special Flying moves are reduced in power. Rock-type moves are boosted on this field, but Rock-type Pokemon will likely be taken down by the very powerful Seed Bomb that all of Mars' Pokemon carry. If Sewaddle gets a Light Screen off, taking down Mars' team can be very difficult. If you got a Fire starter, this battle will most likely be much easier. If you don't, consider going back to East Gearen City and grabbing a Nidoran of either gender as they can be very useful, Bug/Flying types can also do good damage, but will likely be taken down by Leavanny's damage output. If you manage to take down Leavanny though, the rest of her Pokemon do not have a large enough Attack stat to one hit KO your Pokemon.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/540.png">
+              <br>
+              Sewaddle, Level 15 - Light Clay
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Return</td>
+          </tr>
+          <td>Bug Bite</td>  
+          <tr><td rowspan="2">Grass</td><td>Seed Bomb</td></tr>
+          <td>Light Screen</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/541.png">
+              <br>
+              Swadloon, Level 18 - Miracle Seed
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Return</td>
+          </tr>
+          <td>Seed Bomb</td>  
+          <tr><td rowspan="2">Grass</td><td>Iron Defense</td></tr>
+          <td>Double Team</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/542.png">
+              <br>
+              Leavanny, Level 20 - Leftovers
+            </th>
+            <td rowspan="2">Bug</td>
+            <td>Return</td>
+          </tr>
+          <td>Seed Bomb</td>  
+          <tr><td rowspan="2">Grass</td><td>Iron Defense</td></tr>
+          <td>Synthesis</td>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">80, Sewaddle
+            </td>
+          </tr>
+        </table>
+        <br>
+        Either way, once you're done with this you can follow Melia deeper into the cave. Be sure to grab the PP Up in the rock on the way. Once you're out, you'll find yourself in Goldenwood Grove.
+        <br><br>
+        <p class="subsectionHeader">Goldenwood Grove</p>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/Picnic.png">
+        <br>
+        There's not much to do here, the encounters are the same as in Goldenwood Forest. Go ahead and talk to Melia and enjoy the cutscene. Once that ends, Melia will ask you for a battle, so when you're ready go ahead and challenge her. This battle will be fought once again in the <a class="continueElsewhere" href="../Information/FieldEffects-Telluric.html#ForestField" target=_blank>Forest Field.</a>
+        <br><br>
+        <img class="centeredImage" src="../../images/Screenshots/Chapter 1/Goldenwood/VSMelia.png">
+        <br>
+        <div class="eventTrainerName">
+          Pre-Leader Melia
+          <span class="eventTrainerTooltip">If you've been doing a bit of grinding, your Pokemon should be higher level than her at this point. If your levels are even, then this battle could be a little challenging. Buneary carries Fire Punch, which is very strong at this point in the game, Eevee and Stufful can steal your berries, and Togepi has the possibility of getting stat boosts from Ancient Power. If you're struggling, you can level up and just out-stat her Normal-type team.</span>
+        </div>
+        <table class="eventTrainerBattle">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/540.png">
+              <br>
+              Buneary, Level 13
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Fake Out</td>
+          </tr>
+          <tr><td>Double Hit</td></tr>
+          <tr><td>Fire Punch</td></tr>
+          <tr><td>Baby Doll Eyes</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/540.png">
+              <br>
+              Eevee, Level 13
+            </th>
+            <td rowspan="4">Normal</td>
+            <td>Covet</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr><td>Mud Slap</td></tr>
+          <tr><td>Baby Doll Eyes</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/759.png">
+              <br>
+              Stufful, Level 14
+            </th>
+            <td rowspan="2">Normal</td>
+            <td>Covet</td>
+          </tr>
+          <tr><td>Bite</td></tr>
+          <tr>
+            <td rowspan="2">Fighting</td>
+            <td>Mud Slap</td>
+          </tr>
+          <tr><td>Baby Doll Eyes</td></tr>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/175.png">
+              <br>
+              Togepi, Level 14 - Oran Berry
+            </th>
+            <td rowspan="4">Fairy</td>
+            <td>Ancient Power</td>
+          </tr>
+          <tr><td>Echoed Voice</td></tr>
+          <tr><td>Yawn</td></tr>
+          <tr><td>Metronome</td></tr>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">105
+            </td>
+          </tr>
+        </table>
+        <br><br>
+        Once you defeat her, she'll start packing up the picnic. Right as the two of you are about to fold the blanket, an explosion wracks the area. Melia tells you to leave the blanket and heads off to Goldenwood Forest. You can go back and battle Mars if you didn't earlier, and once you're ready go through Goldenwood Cave and out into Goldenwood Forest.
+      </p>
+      
+      <!--End Hyperlinks--->
+      <br><br>
+      <p class="previousWalkthroughPage">
+        <a href="GearenSewers.html">&lt&lt The Abandoned Sewers</a>
+        <span class="nextWalkthroughPage">
+          <a href="GoldenwoodForest-2.html">Goldenwood Forest (Continued) &gt&gt</a>
+        </span>
+      </p>
+
+      <!-- Trainers -->
+      <div id="trainersHere"></div>
+      <div id="FishermanShane" class="TrainerPopup">
+        <span class="close" id="FishermanShaneClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Fisherman Shane
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 5
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <td>Tackle</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 8
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <td>Tackle</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 10
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <td>Tackle</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 11
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <td>Tackle</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">66
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="FishermanOrlando" class="TrainerPopup">
+        <span class="close" id="FishermanOrlandoClose">&times;</span>
+        <p class="normalTrainerTitle" style="text-align:center;">
+        Fisherman Orlando
+        </p>
+        <table class="trainerPopupContent">
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/456.png">
+              <br>
+              Finneon, Level 8
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Water Gun</td>
+          </tr>
+          <td>Pound</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/456.png">
+              <br>
+              Finneon, Level 8
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Water Gun</td>
+          </tr>
+          <td>Pound</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <th rowspan="4">
+              <img class="trainerPokemonImage" src="../../images/PokemonSprites/129.png">
+              <br>
+              Magikarp, Level 9
+            </th>
+            <td rowspan="4">Water</td>
+            <td>Splash</td>
+          </tr>
+          <td>Tackle</td>  
+          <tr>
+            <td>---</td>
+          </tr>
+          <td>---</td>
+
+          <tr>
+            <td class="moneyGained" colspan="3">
+              Reward: <img src="../../images/PokeDollar.png">54
+            </td>
+          </tr>
+        </table>
+      </div>
+    
+      <!-- Encounters Start Here -->
+      <div id="encountersHere"></div>
+
+      <!-- Maps Start Here -->
+      <div id="RouteOne" class="EncounterPopup">
+        <span class="close" id="RouteOneClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Route 1
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/Route1.png">
+      </div>
+
+      <div id="GoldenwoodForest" class="EncounterPopup">
+        <span class="close" id="GoldenwoodForestClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Forest
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodForest.png">
+      </div>
+
+      <div id="GoldenwoodCave" class="EncounterPopup">
+        <span class="close" id="GoldenwoodCaveClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Cave
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodCave.png">
+      </div>
+
+      <div id="GoldenwoodGrove" class="EncounterPopup">
+        <span class="close" id="GoldenwoodGroveClose">&times;</span>
+        <p class="encounterDetails" style="text-align:center;">
+          Goldenwood Grove
+        </p>
+        <br>
+        <img class="MapPopup" src="../../images/Screenshots/Chapter 1/FullMaps/Goldenwood/GoldenwoodGrove.png">
+      </div>
+
+      <!-- Shops Start Here -->
+      
+
+    </div>
+  </div>
+
+  <!-- Right Side Navigation -->
+
+  <div class="sidenavRight" id="rightSidebar">
+  </div>
+
+  <div class="resourcenavRight" id="resourceSidebar">
+  </div>
+
+  <script>
+    window.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        escapeToClose();
+      }
+    })
+  </script>
+</body>
+</html>
