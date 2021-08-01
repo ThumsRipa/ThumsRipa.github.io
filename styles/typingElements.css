@@ -1,0 +1,179 @@
+/* Custom Colors */
+:root {
+    --typeBug: #A6B91A;
+    --typeDark: #332b25;
+    --typeDragon: #6F35FC;
+    --typeElectric: #F7D02C;
+    --typeFairy: #D685AD;
+    --typeFighting: #C22E28;
+    --typeFire: #EE8130;
+    --typeFlying: #A98FF3;
+    --typeGhost: #735797;
+    --typeGrass: #7AC74C;
+    --typeGround: #E2BF65;
+    --typeIce: #96D9D6;
+    --typeNormal: #A8A77A;
+    --typePoison: #A33EA1;
+    --typePsychic: #F95587;
+    --typeRock: #B6A136;
+    --typeSteel: #B7B7CE;
+    --typeWater: #6390F0;
+    --typeShadow: #3a793a;
+
+    --morningAvailable: #E5DE44;
+    --daytimeAvailable: #EF810E;
+    --nightAvailable: #0A64B1;
+    --alldayAvailable: cornsilk;
+    --rocksmashAvailable: #d36645;
+    --fishingAvailable: #3573b9;
+    --headbuttAvailable: #b7cec8;
+
+    --veryLowStat: rgb(196, 0, 0);
+    --belowAverageStat: rgb(197, 197, 0);
+    --aboveAverageStat: rgb(70, 156, 0);
+    --veryHighStat: rgb(0, 252, 0);
+}
+
+.bugType {
+    background-color: var(--typeBug);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.darkType {
+    background-color: var(--typeDark);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dragonType {
+    background-color: var(--typeDragon);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.electricType {
+    background-color: var(--typeElectric);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fairyType {
+    background-color: var(--typeFairy);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fightingType {
+    background-color: var(--typeFighting);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.fireType {
+    background-color: var(--typeFire);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flyingType {
+    background-color: var(--typeFlying);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ghostType {
+    background-color: var(--typeGhost);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grassType {
+    background-color: var(--typeGrass);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.groundType {
+    background-color: var(--typeGround);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.iceType {
+    background-color: var(--typeIce);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.normalType {
+    background-color: var(--typeNormal);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.poisonType {
+    background-color: var(--typePoison);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.psychicType {
+    background-color: var(--typePsychic);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rockType {
+    background-color: var(--typeRock);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.steelType {
+    background-color: var(--typeSteel);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.waterType {
+    background-color: var(--typeWater);
+    color: white;
+    font-weight: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
