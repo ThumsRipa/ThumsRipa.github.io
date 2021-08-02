@@ -1,3 +1,6 @@
+var allmoves=JSON.parse(movetext)
+var allmovesDetails=JSON.parse(moveDetails)
+
 function readText(){
     var notFound=true;
     var inputField=document.getElementById("myTextInput"); //Input text field
@@ -209,7 +212,7 @@ function createbattlePokedexText(PokemontoDetail, formNumber){
   return fulltext;
 } //create an array of output strings for a Pokemon
 
-function outputMoves(pokeName){
+function outputMovesV0(pokeName){
   var allmoves=JSON.parse(movetext)
   if(pokeName==""){
     return "None";
@@ -244,7 +247,118 @@ function outputMoves(pokeName){
   }
   fulltext+='</tbody></table>'
   return fulltext;
-} //get the level-up learnable moves for the Pokemon
+} //get the level-up learnable moves for the Pokemon - Deprecated
+
+function outputMoves(pokeName){
+  if(pokeName==""){
+    return "None"
+  }
+  otherOutput=""
+  keyList=[]
+  moveList=[]
+  moveLevel=[]
+  moveID=[]
+  tooltipOutput=[]
+  pokeName=getMoveException(pokeName);
+  fulltext='<table class="pokedexMoveTable"><tr><th class="levelHeader">Level</th><th class="typeHeader">Type</th><th class="damageHeader">Damage Type</th><th class="powerHeader">Power</th><th class="accHeader">Accuracy</th><th class="nameHeader">Move Name</th>'
+  for (var key in allmoves.pokemon_name){
+      if(allmoves.pokemon_name[key]==pokeName){
+          keyList.push(key)
+          moveID.push(getIDByName(allmoves.move_name[key].toLowerCase()))
+      }
+  }
+  i=0;
+  for (var key in keyList){
+      moveList.push(allmoves.move_name[keyList[key]])
+      moveLevel.push(allmoves.level[keyList[key]])
+      otherOutput="Move Type: ____<br>Power: "+allmovesDetails.power[moveID[i]]+"<br>Accuracy: "+allmovesDetails.accuracy[moveID[i]]
+      tooltipOutput.push(otherOutput);
+      i++
+  }
+  i=0;
+  for (var key in keyList){
+      damageType=getdamageTypeEffect(allmovesDetails.type_id[moveID[i]],allmovesDetails.damage_class_id[moveID[i]])
+      fulltext+='<tr>'
+      fulltext+='<td class="levelCell">'+moveLevel[key]+'</td>'
+      fulltext+='<td class="typeCell" style="background-color: var(--type'+damageType[1]+');">'+damageType[1]+'</td>'
+      fulltext+='<td class="pokemonDamageTypeCell"><img class="damageType" src="../../images/moveTypeIcons/'+damageType[0]+'.png"></td>'
+      if(allmovesDetails.power[moveID[i]]==null){
+          fulltext+='<td class="powerCell">---</td>'
+      } else {
+          fulltext+='<td class="powerCell">'+allmovesDetails.power[moveID[i]]+'</td>'
+      }
+      if(allmovesDetails.accuracy[moveID[i]]==null){
+          fulltext+='<td class="accCell">---</td>'
+      } else {
+          fulltext+='<td class="accCell">'+allmovesDetails.accuracy[moveID[i]]+'</td>'
+      }
+      fulltext+='<td class="pokemonMoveNameCell">'+moveList[key]+'</td>';
+      fulltext+='</tr>';
+      i++;
+  }
+  return fulltext
+}  //get the level-uplearnable moves for the Pokemon
+
+function getIDByName(code) {
+  code=code.replaceAll(" ", "-")
+  for (var key in allmovesDetails.identifier){
+      if(allmovesDetails.identifier[key]==code){
+          return key;
+      }
+  }
+} //Helper function for outputMoves(pokeName)
+
+function getdamageTypeEffect(typeID, damagetypeID){
+  moveOutput=[]
+  //damage Type
+  if(damagetypeID==1){
+      moveOutput.push("other"); //status moves or other
+  } else if (damagetypeID==2) {
+      moveOutput.push("physical");
+  } else {
+      moveOutput.push("special");
+  }
+
+  //Type
+  if(typeID==1){
+      moveOutput.push("Normal");
+  } else if (typeID==2) {
+      moveOutput.push("Fighting");
+  } else if (typeID==3) {
+      moveOutput.push("Flying");
+  } else if (typeID==4) {
+      moveOutput.push("Poison");
+  } else if (typeID==5) {
+      moveOutput.push("Ground");
+  } else if (typeID==6) {
+      moveOutput.push("Rock");
+  } else if (typeID==7) {
+      moveOutput.push("Bug");
+  } else if (typeID==8) {
+      moveOutput.push("Ghost");
+  } else if (typeID==9) {
+      moveOutput.push("Steel");
+  } else if (typeID==10) {
+      moveOutput.push("Fire");
+  } else if (typeID==11) {
+      moveOutput.push("Water");
+  } else if (typeID==12) {
+      moveOutput.push("Grass");
+  } else if (typeID==13) {
+      moveOutput.push("Electric");
+  } else if (typeID==14) {
+      moveOutput.push("Psychic");
+  } else if (typeID==15) {
+      moveOutput.push("Ice");
+  } else if (typeID==16) {
+      moveOutput.push("Dragon");
+  } else if (typeID==17) {
+      moveOutput.push("Dark");
+  } else if (typeID==18) {
+      moveOutput.push("Fairy");
+  }
+  return moveOutput;
+} //Helper function for outputMoves(pokeName)
 
 function getBaseForm(thisPokemon, formNumber){
   var nextPokemon=thisPokemon;
@@ -602,8 +716,7 @@ function getMoveException(pokeName){
     pokeName+="Aevia"
     return pokeName
   }
-
-  return "";
+  return pokeName;
 } //get exception for moveset
 
 function autocomplete(inp, arr, alltext) {
