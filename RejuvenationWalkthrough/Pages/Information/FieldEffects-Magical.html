@@ -51,9 +51,9 @@
     <a href="FieldEffects-Synthetic.html#GlitchField" class="encounterDetailsSidebar">Glitch Field</a><br><br>
     <a href="FieldEffects-Synthetic.html#BigTopArena" class="encounterDetailsSidebar">Big Top Arena</a><br><br>
     <a href="FieldEffects-Synthetic.html#MirrorArena" class="encounterDetailsSidebar">Mirror Arena</a><br><br>
+    <a href="FieldEffects-Synthetic.html#ColosseumField" class="encounterDetailsSidebar">Colosseum Field</a><br><br>
     <a href="FieldEffects-Synthetic.html#ChessBoard" class="encounterDetailsSidebar">Chess Board</a><br><br>
     <a href="FieldEffects-Synthetic.html#FlowerGardenField" class="encounterDetailsSidebar">Flower Garden Field</a><br><br>
-    <a href="FieldEffects-Synthetic.html#ColosseumField" class="encounterDetailsSidebar">Colosseum Field</a><br><br>
   </div>
 
   <div class="trainerSidebar" id="MagicalFields">
@@ -88,7 +88,7 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Move: Psychic Terrain, Genesis Super Nova<br>Ability: Psychic Surge</td><td class="FieldEffectEffects">5 Turns<br>Only on empty fields</td></tr>
+        <tr><td class="FieldEffectEffects">Move: Psychic Terrain, Genesis Super Nova<br>Ability: Psychic Surge</td><td class="FieldEffectEffects">5 Turns<br>Only on empty fields<br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
         <tr><td colspan="2" class="FieldEffectEffects">Priority moves will fail against grounded targets</td></tr>
@@ -115,6 +115,7 @@
         <tr><td class="FieldEffectEffects">Psych Up, Meditate<br>Mind Reader, Miracle Eye</td><td class="FieldEffectEffects">Additionally boosts Special Attack by two stages</td></tr>
         <tr><td class="FieldEffectEffects">Kinesis</td><td class="FieldEffectEffects">Additionally lowers the target's Attack and Special Attack by 2 stages</td></tr>
         <tr><td class="FieldEffectEffects">Telekinesis</td><td class="FieldEffectEffects">Additionally lowers the target's Defense and Special Defense by 2 stages</td></tr>
+        <tr><td class="FieldEffectEffects">Shattered Psyche</td><td class="FieldEffectEffects">Always causes confusion</td></tr>
         <tr><td class="FieldEffectEffects">Trick Room, Magic Room, Wonder Room<br>Gravity</td><td class="FieldEffectEffects">Lasts 8 turns instead of 5</td></tr>
         
         <tr><td class="FieldEffectEffects">Nature Power</td><td class="FieldEffectEffects">Turns into Psychic</td></tr>
@@ -183,12 +184,12 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Flame Burst, Heat Wave, Lava Plume, Burn Up<br>Eruption, Inferno, Blast Burn</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="FieldChanged">Frozen Dimensional Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Flame Burst, Heat Wave, Lava Plume, Burn Up<br>Eruption, Inferno, Blast Burn, Inferno Overdrive</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="FieldChanged">Frozen Dimensional Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
-        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Sheer Cold<br>Ice Burn, Freeze Shock, Cold Truth</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="FieldChanged">Frozen Dimensional Field</a></td></tr>
-        <tr><td class="FieldEffectEffects">Purify</td><td class="FieldEffectEffects">Reverts to previous field</td></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Sheer Cold<br>Ice Burn, Freeze Shock, Cold Truth</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#FrozenDimensionalField" class="FieldChanged">Frozen Dimensional Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Seed Flare, Purify</td><td class="FieldEffectEffects">Field changes to no field<br>Weather must not be Shadow Sky</td></tr>
         <tr><td class="FieldEffectEffects">Precipice Blades</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#InfernalField" class="FieldChanged">Infernal Field</a></td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
@@ -239,13 +240,13 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Sheer Cold<br>Ice Burn, Freeze Shock, Cold Truth</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Magical.html#DimensionalField" class="FieldChanged">Dimensional Field</a></td></tr>
-        <tr><td class="FieldEffectEffects">Glaciate</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Elemental.html#InfernalField" class="FieldChanged">Infernal Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Blizzard, Glaciate, Sheer Cold<br>Ice Burn, Freeze Shock, Cold Truth</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Magical.html#DimensionalField" class="FieldChanged">Dimensional Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Glaciate</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Elemental.html#InfernalField" class="FieldChanged">Infernal Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
         
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
-        <tr><td class="FieldEffectEffects">Flame Burst, Heat Wave, Lava Plume, Burn Up<br>Eruption, Inferno, Blast Burn</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#DimensionalField" class="FieldChanged">Dimensional Field</a></td></tr>
-        <tr><td class="FieldEffectEffects">Seed Flare, Purify</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Flame Burst, Heat Wave, Lava Plume, Burn Up<br>Eruption, Inferno, Blast Burn, Inferno Overdrive</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#DimensionalField" class="FieldChanged">Dimensional Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Purify</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Elemental.html#IcyField" class="FieldChanged">Icy Field</a></td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
         <tr><td class="FieldEffectEffects" colspan="2">Effect of Room moves are permanent</td></tr>
@@ -295,8 +296,8 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Flash, Dazzling Gleam</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#HauntedField" class="FieldChanged">Haunted Field</a><br>Only lasts until the end of the turn</td></tr>
-        <tr><td class="FieldEffectEffects">Purify, Sacred Fire, Origin Pulse, Judgement</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#HauntedField" class="FieldChanged">Haunted Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Flash, Dazzling Gleam</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#HauntedField" class="FieldChanged">Haunted Field</a><br>Only lasts for three turns</td></tr>
+        <tr><td class="FieldEffectEffects">Purify, Sacred Fire, Origin Pulse, Judgement</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#HauntedField" class="FieldChanged">Haunted Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
@@ -344,12 +345,12 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Curse, Trick-or-Treat, Ominous Wind<br>Phantom Force, Shadow Force, Spectral Scream</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#BlessedField" class="FieldChanged">Blessed Field</a</td></tr>
+        <tr><td class="FieldEffectEffects">Curse*, Trick-or-Treat, Ominous Wind<br>Phantom Force, Shadow Force, Spectral Scream</td><td class="FieldEffectEffects">Only when on <a href="FieldEffects-Magical.html#BlessedField" class="FieldChanged">Blessed Field</a><br>*Only if user is a Ghost-type</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
         <tr><td class="FieldEffectEffects">Flash, Dazzling Gleam</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#BlessedField" class="FieldChanged">Blessed Field</a><br>Only lasts until the end of the turn</td></tr>
-        <tr><td class="FieldEffectEffects">Purify, Sacred Fire, Origin Pulse, Judgement</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#BlessedField" class="FieldChanged">Blessed Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Purify, Sacred Fire, Origin Pulse, Judgement</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#BlessedField" class="FieldChanged">Blessed Field</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
         <tr><td class="FieldEffectEffects" colspan="2">Pokemon with the Sleep status take 1/16 Max HP after each turn</td></tr>
@@ -426,7 +427,7 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
-        <tr><td class="FieldEffectEffects">Purify</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#ForestField" class="FieldChanged">Forest Field</a></td></tr>
+        <tr><td class="FieldEffectEffects">Purify</td><td class="FieldEffectEffects">Reverts to previous field (<a href="FieldEffects-Telluric.html#ForestField" class="FieldChanged">Forest Field</a> if no previous field)</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
         <tr><td class="FieldEffectEffects" colspan="2">Grounded Grass-type Pokemon heal 1/16 Max HP after each turn</td></tr>
@@ -481,7 +482,7 @@
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Change/Destruction</th></tr> <!--Destruction-->
         <tr><th class="FieldEffectType">Moves</th><th class="FieldEffectType">Change</th></tr>
         <tr><td class="FieldEffectEffects">Dark Pulse, Dark Void, Night Daze</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Magical.html#DarkCrystalCavern" class="FieldChanged">Dark Crystal Cavern</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
-        <tr><td class="FieldEffectEffects">Bulldoze, Magnitude, Earthquake</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#Cave" class="FieldChanged">Cave</a><br>Requires two uses<br>Base Power of damaging moves increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Bulldoze, Magnitude, Earthquake, Tectonic Rage*</td><td class="FieldEffectEffects">Field changes to <a href="FieldEffects-Telluric.html#Cave" class="FieldChanged">Cave</a><br>Requires two uses<br>Requires only one use<br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">General Changes</th></tr> <!--General Changes-->
         <tr><td class="FieldEffectEffects" colspan="2">Stealth Rocks deal, randomly out of these four, Fire-type, Water-type, Grass-type, or Psychic-type damage</td></tr>
@@ -496,7 +497,7 @@
         <tr><td class="FieldEffectEffects" colspan="2">Rock-type moves deal, randomly out of these four, Fire-type, Water-type, Grass-type, or Psychic-type damage in addition to its usual type<br>These moves also gain the additional typing: Strength, Rock Climb, Judgement, Prismatic Laser, Multi-Attack</td></tr>
         <tr><td class="FieldEffectEffects" colspan="2">Dragon-type moves have their Base Power increased by 1.5x</td></tr>
         <tr><td class="FieldEffectEffects">Rock Tomb, Power Gem, Ancient Power, Diamond Storm<br>Rock Smash, Prismatic Laser, Luster Purge</td><td class="FieldEffectEffects">Base Power increased by 1.5x</td></tr>
-        <tr><td class="FieldEffectEffects">Aurora Beam, Signal Beam, Moongeist Beam, Dazzling Gleam<br>Mirror Shot, Flash Cannon, Techno Blast, Doom Desire<br>Black-Hole Eclipse, Tectonic Rage<br>Menacing Moonraze Maelstrom, Photon Geyser</td><td class="FieldEffectEffects">Base Power increased by 1.3x</td></tr>
+        <tr><td class="FieldEffectEffects">Aurora Beam, Signal Beam, Moongeist Beam, Dazzling Gleam<br>Mirror Shot, Flash Cannon, Techno Blast, Doom Desire<br>'Black-Hole Eclipse', Menacing Moonraze Maelstrom, Photon Geyser</td><td class="FieldEffectEffects">Base Power increased by 1.3x</td></tr>
         <tr><td class="FieldEffectEffects">Rock Polish</td><td class="FieldEffectEffects">Additionally increases user's Attack and Special Attack by one stage</td></tr>
         <tr><td class="FieldEffectEffects">Aurora Veil</td><td class="FieldEffectEffects">Can be used regardless of weather</td></tr>
 
@@ -555,7 +556,7 @@
       <table class="FieldEffectTable">
         <tr><th colspan="2" class="FieldEffectOverviewTable">Terrain Creation</th></tr> <!--Creation-->
         <tr><th class="FieldEffectType">Moves/Abilities</th><th class="FieldEffectType">Note</th></tr>
-        <tr><td class="FieldEffectEffects">Mist Ball</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Elemental.html#DragonsDen" class="FieldChanged">Dragon's Den</a></td></tr>
+        <tr><td class="FieldEffectEffects">Mist Ball</td><td class="FieldEffectEffects">Only when in <a href="FieldEffects-Elemental.html#DragonsDen" class="FieldChanged">Dragon's Den</a><br>Base Power of damaging moves increased by 1.3x</td></tr>
 
         <tr><th colspan="2" class="FieldEffectOverviewTable">Abilities Modified</th></tr> <!--Abilities-->
         <tr><th class="FieldEffectType">Ability</th><th class="FieldEffectType">Modification</th></tr>
