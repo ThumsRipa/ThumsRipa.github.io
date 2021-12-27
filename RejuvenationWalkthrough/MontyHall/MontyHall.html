@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Site</title>
+
+<style>
+    .MontyHallTable {
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        border-collapse: collapse;
+    }
+
+    .MontyHallTable tr{
+        height: 100px;
+    }
+
+    .MontyHallTable td{
+        border: black 1px solid;
+    }
+
+    .NotThisDoor{
+        background-color: aqua;
+    }
+
+    .CorrectDoorHidden{
+        background-color: aqua;
+    }
+
+    .FakeDoorHidden{
+        background-color: aqua;
+    }
+
+    .ChosenDoorClosed{
+        background-color: aqua;
+    }
+
+    .WrongDoorsOpen{
+        background-color: red;
+    }
+
+    .PrizeReveal{
+        background-color: greenyellow;
+    }
+
+</style>
+
+</head>
+
+<body onload="PrizeDoor=InitializeDoor()">
+
+    <div id="tableLocation">
+        <table class="MontyHallTable">
+            <tr>
+                <td class="NotThisDoor">Door 1</td><td>Door 2</td><td>Door 3</td><td>Door 4</td>
+            </tr>
+            <tr>
+                <td>Door 5</td><td>Door 6</td><td>Door 7</td><td>Door 8</td>
+            </tr>
+            <tr>
+                <td>Door 9</td><td>Door 10</td><td>Door 11</td><td>Door 12</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <input type="text" id="chosenDoor">
+    <button onclick="OpenDoors()">Choose Door</button>
+    <br><br>
+    <button onclick="RevealPrizes()">Reveal Prize</button>
+
+    <script>
+        tableLoc=document.getElementById("tableLocation")
+        var PrizeDoor;
+        var tempstring;
+        var fakeDoor
+        function InitializeDoor(){
+            PrizeDoor = Math.floor(Math.random()*10)+1
+            fakeDoor = Math.floor(Math.random()*10)+1
+            while(PrizeDoor==fakeDoor){
+                fakeDoor = Math.floor(Math.random()*10)
+            }
+            tempstring="";
+            tempstring='<table class="MontyHallTable"><tr>';
+            for(curLoop=1; curLoop<13; curLoop++){
+                if(curLoop==1 || curLoop==5 || curLoop==9){
+                    tempstring+='<tr>'
+                }
+                numberLoop=curLoop+0;
+                if(curLoop==PrizeDoor){
+                    tempstring+='<td class="CorrectDoorHidden" id="PrizesHere">Door '+ numberLoop + '</td>'
+                } else if(curLoop==fakeDoor) {
+                    tempstring+='<td class="FakeDoorHidden">Door '+ numberLoop + '</td>'
+                } else {
+                    tempstring+='<td class="NotThisDoor">Door '+ numberLoop + '</td>'
+                }
+                if(curLoop==4 || curLoop==8 || curLoop==12){
+                    tempstring+='</tr>'
+                }
+            }
+            tempstring+='</table>';
+
+            tableLoc.innerHTML=tempstring
+            
+            return Math.floor(Math.random()*13)
+        }
+
+        function OpenDoors(){
+            chosenValue=document.getElementById("chosenDoor")
+            chosenDoorValue=parseInt(chosenValue.value);
+            if(chosenDoorValue>PrizeDoor){
+                chosenDoorValue=chosenDoorValue-1
+            }
+            if(chosenDoorValue>=fakeDoor){
+                chosenDoorValue=chosenDoorValue-1
+            }
+            if(parseInt(chosenValue.value)==PrizeDoor){
+                tempstring=tempstring.replaceAll("NotThisDoor", "WrongDoorsOpen")
+                tableLoc.innerHTML=tempstring
+            } else {
+                for(curLoop=1; curLoop<13; curLoop++){
+                    if(curLoop==chosenDoorValue){
+                        tempstring=tempstring.replace("NotThisDoor", "ChosenDoorClosed")
+                    } else {
+                        tempstring=tempstring.replace("NotThisDoor", "WrongDoorsOpen")
+                    }
+                }
+                tempstring=tempstring.replace("FakeDoorHidden", "WrongDoorsOpen")
+                tableLoc.innerHTML=tempstring
+            }
+        }
+
+        function RevealPrizes(){
+            tempstring=tempstring.replaceAll("CorrectDoorHidden", "PrizeReveal")
+            tableLoc.innerHTML=tempstring
+        }
+
+    </script>
+</body>
+</html>

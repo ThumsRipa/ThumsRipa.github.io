@@ -75,6 +75,14 @@ function showText(alltext){
     docOut.innerHTML="";
   }
 
+  docOut = document.getElementById("FormOutput");
+  var checkboxCheck=document.getElementById("showMoves");
+  if(checkboxCheck.checked){
+    docOut.innerHTML=alltext[3];
+  } else {
+    docOut.innerHTML="";
+  }
+
   setClickables();
   return alltext;
 }
@@ -208,6 +216,17 @@ function createbattlePokedexText(PokemontoDetail, formNumber){
 
   //Levelup Moves
   fulltext.push(outputMoves(actualPokemon[0]));
+
+  //Other Forms
+  if(PokemontoDetail.length>8){
+    temptext=""
+    for(i=7; i<PokemontoDetail.length; i++){
+      temptext=temptext+PokemontoDetail[i][0]+", "
+    }
+    fulltext.push(temptext)
+  } else{
+    fulltext.push("")
+  }
 
   return fulltext;
 } //create an array of output strings for a Pokemon

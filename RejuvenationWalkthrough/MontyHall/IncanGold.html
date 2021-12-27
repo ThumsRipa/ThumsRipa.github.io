@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Incan Gold</title>
+
+<style>
+    head{
+        margin: 0;
+    }
+    body{
+        margin: 0;
+    }
+
+    .roundResultsTable{
+        border: 1px solid black;
+        border-collapse: collapse;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .roundResultsTable td {
+        border: 1px solid black;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .templeNameClass {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+</style>
+</head>
+
+<body onload="reset();">
+    
+    <div class="fixedScroll" style="position: fixed;width: 100%;background-color:lightgray; margin: 0 0 0 0;">
+        <br>
+        <div id="NumberOfPlayersDisplay" style="width: 100%;margin-bottom: 0px;min-height: 70px;padding-bottom: 0;">
+            <input type="text" id="PlayerNumbers" style="margin-left: 35%;width: 30%;margin-bottom: 0px;padding-bottom: 0px;" value="">  
+            <br>
+            <button style="margin-left: 45%;width: 10%;" onclick="readPlayerNumbers();">Enter Number of Players</button>
+        </div>
+    </div>
+    
+    <br><br><br><br>
+    <br><br><br><br>
+    
+    <div id="allresults" style="min-height: 300px;width: 70%;font-size: 20px;padding-left: 20px;">
+        <p class="templeNameClass" style="text-align: center;">Temple 1:</p>
+        <div id="Round1Result"></div><br>
+        <p class="templeNameClass" style="text-align: center;">Temple 2:</p>
+        <div id="Round2Result"></div><br>
+        <p class="templeNameClass" style="text-align: center;">Temple 3:</p>
+        <div id="Round3Result"></div><br>
+        <p class="templeNameClass" style="text-align: center;">Temple 4:</p>
+        <div id="Round4Result"></div><br>
+        <p class="templeNameClass" style="text-align: center;">Temple 5:</p>
+        <div id="Round5Result"></div><br>
+    </div>
+
+    <div style="position: fixed;right: 0px;top: 0px; background-color: rgba(211, 211, 211);padding-top: 5%;padding-bottom: 1000px;width: 25%;padding-left: 10px;">
+        <p style="font-weight: bolder; font-size: 25px;text-align: center;">Card Information:</p>
+        <div id="AllExtras" style="width: 100%;font-size: 20px;">
+            <div id="ExtraInfo1" style="width:50%">
+                <div id="CardsLeft">- Cards Left</div><br>
+                <div id="GemCardsLeft">- Gems Cards Left</div><br>
+                <div id="TrapCardsLeft">- Trap Cards Left</div><br>
+                <div id="TrapCardsDetails" style="padding-left: 30px;">---<br>---<br>---<br>---<br>---<br></div><br>
+                <div id="ArtCardsLeft">- Artifact Cards Left</div><br>
+            </div>
+            <div id="ExtraInfo2" style="width:50%">
+                <div id="PlayersLeft">- Players Remaining</div><br>
+            </div>
+        </div>
+
+        <br><br><br><br>
+    
+        <div id="AllButtons" style="width: 100%;font-size: 20px;">
+            <button onclick="setUpDeck(currenttempleNum+1);">Shuffle Cards</button>
+            <button onclick="drawCard();">Draw Card</button>
+        </div>
+    
+        <div id="PlayersLeaveDiv" style="width: 100%; right: 50px;">
+            <p style="font-size: 20px; font-weight: bold;margin-bottom: 0px;padding-bottom: 0px;">Enter Amount of Players Leaving Temple Below:</p><br>
+            <input type="text" id="PlayersLeaving" value="" style="width:350px;height: 40px;">
+            <button onclick="PlayersLeave();" ><p style="font-weight: bold;">Leave Temple</p></button>
+            <br>
+            <div id="LeavingPlayersGemCount" style="min-height: 30px;font-size: 20px;font-weight: bolder;text-align: center;"></div>
+        </div>
+    </div>
+
+
+
+    <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+
+
+    <script>
+        allGemCards = ["Gem01", "Gem02", "Gem03", "Gem04", "Gem05", "Gem06", "Gem07", "Gem08", "Gem09", "Gem10", "Gem11", "Gem12", "Gem13", "Gem14", "Gem15", "Gem16", "Gem17", "Gem18", "Gem19", "Gem20", "Gem21", "Gem22", "Gem23", "Gem24", "Gem25", "Gem26", "Gem27", "Gem28", "Gem29", "Gem30"];
+        allTrapCards = ["TrapF", "TrapF", "TrapF", "TrapS", "TrapS", "TrapS", "TrapR", "TrapR", "TrapR", "TrapM", "TrapM", "TrapM", "TrapP", "TrapP", "TrapP"];
+        trapNumbers = [0,0,0,0,0];
+        trapCount = [3,3,3,3,3];
+        allArtifactCards = [];
+        templeNames = ['Round1Result', 'Round2Result', 'Round3Result', 'Round4Result', 'Round5Result'];
+        playedCards = [];
+
+        endOfGame=false;
+        addedArtifact=false;
+        playerNumEntered=false;
+        totalCards=0;
+        GemCardsNum=0;
+        TrapCardsNum=0;
+        ArtCardsNum=0;
+        numberOfPlayers=0;
+        playersRemaining=0;
+        currenttempleNum=0;
+                
+        function displayCardNumbers(){
+            numberValueLoc = document.getElementById("CardsLeft");
+            numberValueLoc.innerHTML = totalCards + " Cards Left in Deck";
+            
+            numberValueLoc = document.getElementById("GemCardsLeft");
+            numberValueLoc.innerHTML = GemCardsNum + " Gem Cards Left in Deck";
+            
+            numberValueLoc = document.getElementById("TrapCardsLeft");
+            numberValueLoc.innerHTML = TrapCardsNum + " Trap Cards Left in Deck";
+            
+            numberValueLoc = document.getElementById("ArtCardsLeft");
+            numberValueLoc.innerHTML = ArtCardsNum + " Artifact Cards Left in Deck";
+            
+            numberValueLoc = document.getElementById("PlayersLeft");
+            numberValueLoc.innerHTML = playersRemaining + " Players Left";
+
+            numberValueLoc = document.getElementById("TrapCardsDetails");
+            trapString = "";
+            trapString += trapCount[0]-trapNumbers[0].toString() + " Fire Traps Left<br>";
+            trapString += trapCount[1]-trapNumbers[1].toString() + " Snake Traps Left<br>";
+            trapString += trapCount[2]-trapNumbers[2].toString() + " Rock Traps Left<br>";
+            trapString += trapCount[3]-trapNumbers[3].toString() + " Mummy Traps Left<br>";
+            trapString += trapCount[4]-trapNumbers[4].toString() + " Spider Traps Left<br>";
+            numberValueLoc.innerHTML = trapString;
+        }
+        
+        function setUpDeck(roundNumber){
+            if(!playerNumEntered || currenttempleNum>4){
+                return;
+            }
+            playedCards = [];
+            currentTrapDeck = allTrapCards.slice();
+            currentGemDeck = allGemCards.slice();
+            
+            currentGemDeck = shuffle(currentGemDeck);
+            currentTrapDeck = shuffle(currentTrapDeck);
+            currentGemDeck = shuffle(currentGemDeck);
+            currentTrapDeck = shuffle(currentTrapDeck);
+            currentGemDeck = shuffle(currentGemDeck);
+            currentTrapDeck = shuffle(currentTrapDeck);
+            if(allArtifactCards.length<roundNumber && !addedArtifact){
+                allArtifactCards.push("Artifact");
+                addedArtifact = true;
+            }
+            trapNumbers = [0,0,0,0,0]
+            endOfGame = false;
+            GemCardsNum = currentGemDeck.length;
+            TrapCardsNum = currentTrapDeck.length;
+            ArtCardsNum = allArtifactCards.length;
+            totalCards = GemCardsNum + TrapCardsNum + ArtCardsNum;
+            playersRemaining = numberOfPlayers;
+            
+            displayCardNumbers();
+        }
+
+        function drawCard(){
+            roundName=templeNames[currenttempleNum];
+            if(!playerNumEntered){
+                return
+            }
+            eachPlayerGems = 0;
+            gemValue = 0;
+            altText = "";
+            if(endOfGame || currenttempleNum>4){
+                return;
+            }
+            resultDiv = document.getElementById(roundName);
+            currentText = resultDiv.innerHTML;
+            totalCards = currentGemDeck.length + currentTrapDeck.length;
+            randomIndex = Math.floor(Math.random() * totalCards);
+            if((randomIndex == 0 || totalCards==0) && allArtifactCards.length>0){
+                thisCard = allArtifactCards[0];
+                thisCard += "<br>[5]"
+                allArtifactCards.shift();
+                ArtCardsNum -= 1;
+            } else if (randomIndex <= currentTrapDeck.length && currentTrapDeck.length>0) {
+                thisCard = currentTrapDeck[0];
+                currentTrapDeck.shift();
+                TrapCardsNum -= 1;
+            } else {
+                thisCard = currentGemDeck[0];
+                gemValue = checkGemValue(thisCard);
+                eachPlayerGems = (gemValue-(gemValue%playersRemaining))/playersRemaining;
+                thisCard = gemValue.toString() + " Gems Found<br>Each player receives " + eachPlayerGems + " gems";
+                thisCard += "<br>(" + gemValue%playersRemaining + " leftover)"
+                currentGemDeck.shift();
+                GemCardsNum -= 1;
+            }
+            thisCard = addTrap(thisCard);
+
+            playedCards.push(thisCard);
+
+            if(currentText == ''){
+                currentText = thisCard;
+            } else {
+                currentText += ", "+thisCard;
+            }
+
+            currentText = generateTable(playedCards);
+
+            if(endGameCheck()){
+                currentText += '<p style="text-align:center;font-weight:bolder">The temple has collapsed. End of Round.</p>'
+                endOfGame = true;
+                addedArtifact = false;
+                currenttempleNum += 1;
+            } else {
+                currentText += altText;
+            }
+            resultDiv.innerHTML = currentText;
+            displayCardNumbers();
+        }
+        
+        function checkGemValue(GemCard){
+            return parseInt(GemCard.slice(-2));
+        }
+
+        function addTrap(curCard){
+            if(curCard == "TrapF"){
+                trapNumbers[0]++;
+                return "Trap<br>Fire";
+            } else if (curCard == "TrapS"){
+                trapNumbers[1]++;
+                return "Trap<br>Snake";
+            } else if (curCard == "TrapR"){
+                trapNumbers[2]++;
+                return "Trap<br>Rocks";
+            } else if (curCard == "TrapM"){
+                trapNumbers[3]++;
+                return "Trap<br>Mummy";
+            } else if (curCard == "TrapP"){
+                trapNumbers[4]++;
+                return "Trap<br>Spider";
+            } else return curCard;
+        }
+
+        function endGameCheck(){
+            if(trapNumbers[0]==2){
+                locationNum=allTrapCards.indexOf('TrapF');
+                allTrapCards.splice(locationNum,1);
+                trapCount[0]--;
+                return true;
+            } else if(trapNumbers[1]==2){
+                locationNum=allTrapCards.indexOf('TrapS');
+                allTrapCards.splice(locationNum,1);
+                trapCount[1]--;
+                return true;
+            } else if(trapNumbers[2]==2){
+                locationNum=allTrapCards.indexOf('TrapR');
+                allTrapCards.splice(locationNum,1);
+                trapCount[2]--;
+                return true;
+            } else if(trapNumbers[3]==2){
+                locationNum=allTrapCards.indexOf('TrapM');
+                allTrapCards.splice(locationNum,1);
+                trapCount[3]--;
+                return true;
+            } else if(trapNumbers[4]==2){
+                locationNum=allTrapCards.indexOf('TrapP');
+                allTrapCards.splice(locationNum,1);
+                trapCount[4]--;
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function shuffle(array) {
+            let currentIndex = array.length,  randomIndex;
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+            }
+            return array;
+        }
+
+        function reset(){
+            allGemCards = ["Gem01", "Gem02", "Gem03", "Gem04", "Gem05", "Gem06", "Gem07", "Gem08", "Gem09", "Gem10", "Gem11", "Gem12", "Gem13", "Gem14", "Gem15", "Gem16", "Gem17", "Gem18", "Gem19", "Gem20", "Gem21", "Gem22", "Gem23", "Gem24", "Gem25", "Gem26", "Gem27", "Gem28", "Gem29", "Gem30"];
+            allTrapCards = ["TrapF", "TrapF", "TrapF", "TrapS", "TrapS", "TrapS", "TrapR", "TrapR", "TrapR", "TrapM", "TrapM", "TrapM", "TrapP", "TrapP", "TrapP"];
+            allArtifactCards = [];
+            endOfGame=false;
+            addedArtifact=false;
+            totalCards=0;
+            GemCardsNum=0;
+            TrapCardsNum=0;
+            ArtCardsNum=0;
+            numberOfPlayers=0;
+            
+            resultDiv = document.getElementById("Round1Result");
+            resultDiv.innerHTML = "";
+            resultDiv = document.getElementById("Round2Result");
+            resultDiv.innerHTML = "";
+            resultDiv = document.getElementById("Round3Result");
+            resultDiv.innerHTML = "";
+            resultDiv = document.getElementById("Round4Result");
+            resultDiv.innerHTML = "";
+            resultDiv = document.getElementById("Round5Result");
+            resultDiv.innerHTML = "";
+
+            currenttempleNum=0;
+            currentTemple=templeNames[0];
+        }
+        
+        function readPlayerNumbers(){
+            PlayerNumberInput = document.getElementById("PlayerNumbers").value;
+            numberOfPlayers = PlayerNumberInput;
+            tempstring = '<p style="width: 30%;margin-left: 35%;font-size:25px;text-align:center;font-weight:bold;">The number of players for this game is ' + numberOfPlayers;
+            PlayerNumberDisplay = document.getElementById("NumberOfPlayersDisplay");
+            PlayerNumberDisplay.innerHTML = tempstring;
+            playerNumEntered=true;
+        }
+        
+        function getPosition(thisString, pattern, n) {
+            var i = -1;
+            while (n-- && i++ < thisString.length) {
+                i = thisString.indexOf(pattern, i);
+                if (i < 0) break;
+            }
+            return i;
+        }
+        
+        function replaceAt(thisString, index, replacement) {
+            return thisString.substr(0, index) + replacement + thisString.substr(index + 1);
+        }
+
+        function PlayersLeave(){
+            if(endOfGame){
+                return;
+            }
+            if(!playerNumEntered){
+                return
+            }
+
+            playersLeavingLoc = document.getElementById("LeavingPlayersGemCount");
+            
+            gemsLeavingNumber = 0;
+            artifactLeavingNumber = 0;
+            currentParen = 1;
+            
+            PlayersLeavingNumberInput = document.getElementById("PlayersLeaving").value;
+            PlayersLeavingNum = parseInt(PlayersLeavingNumberInput);
+            playersRemaining = playersRemaining - PlayersLeavingNum;
+            
+            curTempleResultDiv = document.getElementById(templeNames[currenttempleNum]);
+            curTempleResult = curTempleResultDiv.innerHTML;
+                        
+            parenthesesLoc = getPosition(curTempleResult, "(", currentParen);
+            currentParen += 1;
+            
+            while(parenthesesLoc != -1){
+                curGemsLeaving = parseInt(curTempleResult.charAt(parenthesesLoc+1));
+                remained = curGemsLeaving%PlayersLeavingNum;
+                gemsLeavingNumber += (curGemsLeaving - remained);
+                curTempleResult = replaceAt(curTempleResult, parenthesesLoc+1, remained.toString());
+                parenthesesLoc = getPosition(curTempleResult, "(", currentParen);
+                currentParen += 1;
+            }
+            gemsLeavingNumber=gemsLeavingNumber/PlayersLeavingNum;
+
+            if(PlayersLeavingNum==1){
+                currentParen = 1;
+                parenthesesLoc = getPosition(curTempleResult, "[", currentParen);
+                currentParen += 1;
+                
+                while(parenthesesLoc != -1){
+                    curGemsLeaving = parseInt(curTempleResult.charAt(parenthesesLoc+1));
+                    gemsLeavingNumber += curGemsLeaving;
+                    curTempleResult = replaceAt(curTempleResult, parenthesesLoc+1, "0");
+                    parenthesesLoc = getPosition(curTempleResult, "[", currentParen);
+                    currentParen += 1;
+                }
+            }
+
+            playersLeavingLoc.innerHTML = "Each player that is leaving receives " + gemsLeavingNumber + " gems";
+            curTempleResultDiv.innerHTML = curTempleResult;
+            
+            displayCardNumbers();
+
+            if(playersRemaining==0){
+                resultDiv = document.getElementById(templeNames[currenttempleNum]);
+                currentText = resultDiv.innerHTML;
+                currentText += '<p style="font-weight:bolder;text-align:center;">All players have left the temple. End of Round.</p>';
+                resultDiv.innerHTML = currentText;
+                endOfGame = true;
+                addedArtifact = false;
+                currenttempleNum += 1;
+            }
+        }
+
+        function generateTable(cardArray){
+            tableString = '<table class="roundResultsTable"><tr>';
+            cellCount = 0;
+            while(cellCount<cardArray.length){
+                tableString += '<td>'
+                if(cardArray[cellCount].search("Spider")!=-1){
+                    tableString += '<img src="Spider.png"><br>'
+                } else if (cardArray[cellCount].search("Snake")!=-1){
+                    tableString += '<img src="Snake.png"><br>'
+                } else if (cardArray[cellCount].search("Fire")!=-1){
+                    tableString += '<img src="Fire.png"><br>'
+                } else if (cardArray[cellCount].search("Rock")!=-1){
+                    tableString += '<img src="Rock.png"><br>'
+                } else if (cardArray[cellCount].search("Mummy")!=-1){
+                    tableString += '<img src="Mummy.png"><br>'
+                } else if (cardArray[cellCount].search("Artifact")!=-1){
+                    tableString += '<img src="Artifact.png"><br>'
+                } else {
+                    tableString += '<img src="Gem.png"><br>'
+                } 
+                tableString += cardArray[cellCount] + '</td>';
+                cellCount++;
+                if(cellCount % 5 == 0){
+                    tableString += '</tr><tr>'
+                }
+            }
+            tableString += '</tr></table>'
+            return tableString;
+        }
+
+    </script>
+</body>
+</html>
