@@ -10,7 +10,7 @@ var currentAnswer = '';
 
 function escapeToClose(){
     document.getElementById("questionDiv").style.display="none";
-} //Press escape to close from the question view
+} //Press escape to close from the questions view
 
 function setSet(){
     document.getElementById('chooseSet').style.display='none';
