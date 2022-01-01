@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistics Jeopardy</title>
+    <link rel="stylesheet" href="jeopardy.css">
+
+    <script src="jeopardyquestions.js"></script> <!--Question list from csv-->
+    <script src="jeopardy.js"></script> <!--Main javascript-->
+</head>
+
+<body>
+    <div id="chooseSet">
+        <div class="buttonLoc"><button class="setButton" onclick="setNumber=1;setSet();">Chapter 1-2</button></div>
+        <div class="buttonLoc"><button class="setButton" onclick="setNumber=2;setSet();">Chapter 3</button></div>
+        <div class="buttonLoc"><button class="setButton" onclick="setNumber=3;setSet();">Chapter 4-5</button></div>
+    </div>
+
+    <div id="gameLocation">
+    </div>
+
+
+    <div id="questionDiv">
+    </div>
+
+
+    <script>
+        var setNumber = 1;
+        var curQuestion = ''
+        window.addEventListener('keydown', function (event) {
+          if (event.key === 'Escape') {
+            escapeToClose();
+          }
+        })
+      </script>
+</body>
