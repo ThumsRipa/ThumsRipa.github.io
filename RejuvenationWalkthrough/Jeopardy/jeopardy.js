@@ -8,6 +8,36 @@ var allCategories = [
 
 var currentAnswer = '';
 
+function csvJSON(csv){
+
+    var lines=csv.split("\n");
+  
+    var result = [];
+  
+    var headers=lines[0].split(",");
+  
+    for(var i=1;i<lines.length;i++){
+  
+        var obj = {};
+        var currentline=lines[i].split(",");
+  
+        for(var j=0;j<headers.length;j++){
+            obj[headers[j]] = currentline[j];
+        }
+  
+        result.push(obj);
+  
+    }
+    
+
+    //const headers2 = Object.keys(result[0]).filter(key => !['Set', 'Qnum', 'QuestionType', 'Question', 'Answer', 'Choice1', 'Choice2', 'Choice3', 'Choice4'].includes(key));
+    const mapper = result.map(obj => headers.map(key => obj[key]))
+    const newResult = [headers, ...mapper];
+
+    return newResult; //JavaScript object
+    //return JSON.stringify(Object.assign({}, result)); //JSON
+  } // from http://techslides.com/convert-csv-to-json-in-javascript  
+
 function escapeToClose(){
     document.getElementById("questionDiv").style.display="none";
 } //Press escape to close from the questions view

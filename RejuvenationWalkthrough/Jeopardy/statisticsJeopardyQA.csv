@@ -1,0 +1,66 @@
+﻿Set,Category,Qnum,QuestionType,Question,Answer,Choice1,Choice2,Choice3,Choice4
+1,1,1,Multiple Choice,"What is the collection of all outcomes, responses, measurements, or counts that are of interest",Population,Population,Parameter,Sample,Statistic
+1,1,2,Multiple Choice,What is the name of a data that is far removed from the other entries,Outlier,Gaps,Outliers,Skews,Deviations
+1,1,3,Multiple Choice,What is the type of study that relies on mathematical or physical models to reproduce the conditions of a situation or process,Simulation,Observational Study,Simulation,Experiment,Survey
+1,1,4,Fill in the blank,What is the value that is in the middle of an ordered set of data,Median,,,,
+1,1,5,Fill in the blank,What is the branch of statistics that involves utilizing data to draw conclusions about a population,Inferential Statistics,,,,
+1,2,1,TF,True or False. Credit card numbers are qualitative data,TRUE,,,,
+1,2,2,TF,True or False. Data at the ratio level of measurement can be qualitative data,FALSE,,,,
+1,2,3,Multiple Choice,Classify the type of data collection: Eight drivers where selected and drove 500 miles while listening to different genres of music,Experiment,Observational Study,Simulation,Experiment,Survey
+1,2,4,Multiple Choice,Classify this data: Volume of soup bowls,Ratio,Nominal,Ordinal,Interval,Ratio
+1,2,5,Multiple Choice,What occurs when an experimenter cannot tell the difference between the effects of different factors on the variable,Confounding Variable,Confounding Variable,Blinding,Placebo Effect,Replication
+1,3,1,TF,True or False. There can only be one type of bias in any statistical study,FALSE,,,,
+1,3,2,Multiple Choice,How many types of sampling methods are there?,Five,Two,Three,Four,Five
+1,3,3,Multiple Choice,Identify this type of bias: 2000 questionaires were went and 100 were received back,Non-response bias,Response Bias,Non-response Bias,Sampling Error,Wording Bias
+1,3,4,Multiple Choice,Identify this type of sampling: A random number generator was used to pick 10 people from population of 100,Simple Random Sample,Stratified Sampling,Convenience Sampling,Systematic Sampling,Simple Random Sampling
+1,3,5,Multiple Choice,"Identify this type of sampling: All high schoolers were divided into their grade levels, and 4 people from each grade are randomly chosen to be interviewed",Stratified Sample,Stratified Sampling,Cluster Sampling,Systematic Sampling,Simple Random Sampling
+1,4,1,Multiple Choice,What is the difference between the maximum and the minimum in a quantitative dataset,Range,Class Width,Range,Midpoint,Frequency
+1,4,2,TF,"True or False. In a Frequency Histogram, the bars must be touching",TRUE,,,,
+1,4,3,Multiple Choice,What is the sum of the frequency of that class and all the previous classes,Cumulative Frequency,Frequency,Cumulative Frequency,Relative Frequency,Frequency Polygon
+1,4,4,Fill in the blank,"Find the midpoint between these two data points: 185, 217",201,,,,
+1,4,5,Multiple Choice,What can be found by dividing the range by the number of desired classes,Class Width,Class Width,Range,Midpoint,Frequency
+1,5,1,Multiple Choice,"What is the type of graph, chart, or plot that is constructed using a circle",Pie Chart,Pie Chart,Bar Chart,Pareto Chart,Frequency Histogram
+1,5,2,TF,"True or False. In a Scatterplot, the dots must be connected with a line",FALSE,,,,
+1,5,3,Multiple Choice,"What is the type of graph, chart, or plot that is constructed using bars and is ordered from highest to lowest",Pareto Chart,Frequency Polygon,Frequency Histogram,Pareto Chart,Bar Chart
+1,5,4,Multiple Choice,How many modes can there be in a dataset that has n number of entries?,0 to n,0 or 1,"0, 1, or 2",0 to n,All Real Numbers
+1,5,5,Multiple Choice,"If the mean is far greater than the median, what is the shape of the distribution?",Skewed Right,Skewed Right,Skewed Left,Uniform,Symmetric
+2,1,1,Multiple Choice,What is the result of a single trial in a probability experiment,Outcome,Event,Simple Event,Outcome,Sample Space
+2,1,2,Multiple Choice,What is the probability based on observations obtained from multiple trials in a probability experiment,Empirical Probability,Subjective Probability,Classical Probability,Empirical Probability,Total Frequency
+2,1,3,Multiple Choice,"What probability fact states that if an experiment is repeated over and over, the empirical probability approaches the classical probability",Law of Large Numbers,Law of Large Numbers,Range of Probability Rule,Fundamental Counting Principle,Complement of Events
+2,1,4,Multiple Choice,What is the selection of a number of objects where order does not matter,Combination,Permutation,Distinguished Permutation,Combination,Factorial
+2,1,5,Multiple Choice,What rule is used to find the probability of two events occurring in a sequence,Multiplication Rule,Multiplication Rule,Addition Rule,Range of Probabilities Rule,Fundamental Cleaning Principle
+2,2,1,Multiple Choice,What is the probability of rolling a 8 on a 12-sided die,1/12,8/12,3/4,12/8,1/12
+2,2,2,Multiple Choice,What is the probability of rolling greater or equal to 14 on a 20-sided die,7/20,6/20,14/20,7/14,7/20
+2,2,3,Multiple Choice,What is the probability of drawing a face card as the first card in a standard deck,12/52,1/4,1/12,12/52,16/52
+2,2,4,Fill in the blank,"In a bag with 5 red marbles, 13 green marbles, and 6 blue marbles, what is the probability of drawing a red marble",5/24,,,,
+2,2,5,Fill in the blank,Three coins are flipped. What is the probability of getting at least one tails,7/8,,,,
+2,3,1,Multiple Choice,Event A is rolling a 12-sided die to try to get a 5. Event B is rolling the same 12-sided die to try to get a 3. Which of the following is true of these two events?,Independent and Mutually Exclusive,Independent and Mutually Exclusive,Independent and Not Mutually Exclusive,Dependent and Mutually Exclusive,Dependent and Not Mutually Exclusive
+2,3,2,Multiple Choice,Event A is drawing a card with a value less than 6 from a standard deck of cards. Event B is drawing a Diamond-suit card from the same deck of cards. Which of the following is true of these two events?,Dependent and Not Mutually Exclusive,Independent and Mutually Exclusive,Independent and Not Mutually Exclusive,Dependent and Mutually Exclusive,Dependent and Not Mutually Exclusive
+2,3,3,Multiple Choice,Event A is rolling a 12-sided die to try to get a 5. Event B is rolling a different 12-sided die to try to get a 3. Calculate P(A and B),1/144,2/12,8/12,1/144,2/144
+2,3,4,Multiple Choice,Event A is rolling a 12-sided die to try to get a 5. Event B is rolling a different 12-sided die to try to get a value less than 3. Calculate P(A or B),4/12,3/12,4/12,3/144,4/144
+2,3,5,Fill in the blank,Event A is flipping two coins and getting two heads. Event B is flipping the same two coins and getting two tails. Calculate P(A or B),2/4,,,,
+2,4,1,Multiple Choice,There are four different textbooks. How many ways are there to arrange all four textbooks?,24,256,64,24,12
+2,4,2,Multiple Choice,A five digit password is created using the digits 0 to 9. How many ways are there to create the password?,30240,3628800,30240,252,120
+2,4,3,Multiple Choice,How many ways are there to select 3 volunteers from a group of 12 students?,220,479001600,79833600,1320,220
+2,4,4,Fill in the blank,A student council has 11 members. How many ways are there to select a president and a vice president?,110,,,,
+2,4,5,Fill in the blank,"Out of 20 songs in a playlist, you enjoy 16 of the songs. If the playlist was shuffled, what is the probability that you will not like the first four songs (assume order does not matter)",1/116280,,,,
+3,1,1,Multiple Choice,What is the type of distribution that lists each random variable together with its probablity in a table,Discrete Probability Distribution,Frequency Distribution,Discrete Probability Distribution,Binomial Distribution,Normal Distribution
+3,1,2,TF,True or False. A Geometric Distribution can be used even if the events are not independent,FALSE,,,,
+3,1,3,TF,"True or False. In a normal distribution, the mean, median and mode are all approximately equal",TRUE,,,,
+3,1,4,Fill in the blank,What is the type of distribution that counts the number of successes in a fixed number of trials,Binomial Distribution,,,,
+3,1,5,Multiple Choice,What idea helps us form a connection between the sample and the population,Central Limit Theorem,Sampling Distribution,Population Distribution,Probability Distribution,Central Limit Theorem
+3,2,1,Multiple Choice,Identify the probability distribution to use: Given that 10% of manufactured parts are defective. The manager wants to find the probability that the first defective part found is the 10th part,Geometric Distribution,Binomial Distribution,Geometric Distribution,Poisson Distribution,Normal Distribution
+3,2,2,TF,True or False. A basketball player makes 10 shots out of 12. A friend tells him that the probability of him missing the first shot and making the second is about 14%,TRUE,,,,
+3,2,3,Multiple Choice,"Identify the probability distribution to use: The mean number of heart transplants per day is 6, with a success rate of 97%. A doctor wants to find the probability that exactly 18 out of 20 operations are successful",Binomial Distribution,Binomial Distribution,Geometric Distribution,Poisson Distribution,Normal Distribution
+3,2,4,Fill in the blank,"Calculate the probability: A soccer player, on average, takes 7 penalty kicks during practice time with a goal rate of 96%. Find the probability that the soccer player takes 10 penalty kicks during practice time",About 7%,,,,
+3,2,5,Fill in the blank,"Calculate the probability: A soccer player, on average, takes 7 penalty kicks during practice time with a goal rate of 96%. Find the probability that the soccer player makes 10 penalty kicks out of 12",About 7%,,,,
+3,3,1,TF,True or False. You must use a Z-Table to convert between an X-Value and a Z-Value,FALSE,,,,
+3,3,2,Fill in the blank,"A dataset has a mean of 12 minutes and a standard deviation of 3 minutes. Given x=15 minutes, find its percentile",About 84%,,,,
+3,3,3,Fill in the blank,"A dataset has a mean of 12 minutes and a standard deviation of 3 minutes. If it is at the 24th percentile, find its X-Value",About 9.9 minutes,,,,
+3,3,4,Fill in the blank,"A marathon with 100 people had a finish time of 1.4 hours with a standard deviation of 0.25 hours. If you took 1 hour to run the race, how many people were faster than you?",About 5-6 people,,,,
+3,3,5,Fill in the blank,"The english portion of the SAT scores for a certain year has a mean of 670 and a standard deviation of 35. In order to be in the top 10%, what is the lowest possible score you can get?",715,,,,
+3,4,1,TF,True or False. The Central Limit Theorem can always be used on any dataset with any sample size,FALSE,,,,
+3,4,2,Multiple Choice,"In a dataset of {2, 3, 4}, what is the sample mean if a sample size of n=2 is used?",3,2,3,3.5,4
+3,4,3,TF,"True or False. When doing a sampling distribution of the sample means, both the mean and standard deviation of the sample will be equal to the mean and standard deviation of the population",FALSE,,,,
+3,4,4,Fill in the blank,"The braking distances (from 60km per hour to a complete stop) of a car are normally distributed, with a mean of 136 feet and a standard deviation of 15 feet. A random sample of size 85 is drawn from the population, calculate the mean of the sample means",136,,,,
+3,4,5,Fill in the blank,"The braking distances (from 60km per hour to a complete stop) of a car are normally distributed, with a mean of 136 feet and a standard deviation of 15 feet. A random sample of size 20 is drawn from the population, calculate the standard deviation of the sample means",3.35,,,,

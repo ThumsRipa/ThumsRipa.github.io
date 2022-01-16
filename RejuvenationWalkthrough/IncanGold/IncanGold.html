@@ -36,15 +36,14 @@
     
     <div class="fixedScroll" style="position: fixed;width: 100%;background-color:lightgray; margin: 0 0 0 0;">
         <br>
-        <div id="NumberOfPlayersDisplay" style="width: 100%;margin-bottom: 0px;min-height: 70px;padding-bottom: 0;">
+        <div id="NumberOfPlayersDisplay" style="width: 100%;margin-bottom: 0px;min-height: 50px;padding-bottom: 0;">
             <input type="text" id="PlayerNumbers" style="margin-left: 35%;width: 30%;margin-bottom: 0px;padding-bottom: 0px;" value="">  
             <br>
-            <button style="margin-left: 45%;width: 10%;" onclick="readPlayerNumbers();">Enter Number of Players</button>
+            <button style="margin-left: 40%;width: 20%;" onclick="readPlayerNumbers();">Enter Number of Players</button>
         </div>
     </div>
     
-    <br><br><br><br>
-    <br><br><br><br>
+    <br><br><br><br><br>
     
     <div id="allresults" style="min-height: 300px;width: 70%;font-size: 20px;padding-left: 20px;">
         <p class="templeNameClass" style="text-align: center;">Temple 1:</p>
@@ -60,9 +59,9 @@
     </div>
 
     <div style="position: fixed;right: 0px;top: 0px; background-color: rgba(211, 211, 211);padding-top: 5%;padding-bottom: 1000px;width: 25%;padding-left: 10px;">
-        <p style="font-weight: bolder; font-size: 25px;text-align: center;">Card Information:</p>
-        <div id="AllExtras" style="width: 100%;font-size: 20px;">
-            <div id="ExtraInfo1" style="width:50%">
+        <p style="font-weight: bolder; font-size: 20px;text-align: center;">Card Information:</p>
+        <div id="AllExtras" style="width: 100%;font-size: 15px;">
+            <div id="ExtraInfo1" style="width:100%">
                 <div id="CardsLeft">- Cards Left</div><br>
                 <div id="GemCardsLeft">- Gems Cards Left</div><br>
                 <div id="TrapCardsLeft">- Trap Cards Left</div><br>
@@ -73,8 +72,6 @@
                 <div id="PlayersLeft">- Players Remaining</div><br>
             </div>
         </div>
-
-        <br><br><br><br>
     
         <div id="AllButtons" style="width: 100%;font-size: 20px;">
             <button onclick="setUpDeck(currenttempleNum+1);">Shuffle Cards</button>
@@ -82,11 +79,11 @@
         </div>
     
         <div id="PlayersLeaveDiv" style="width: 100%; right: 50px;">
-            <p style="font-size: 20px; font-weight: bold;margin-bottom: 0px;padding-bottom: 0px;">Enter Amount of Players Leaving Temple Below:</p><br>
-            <input type="text" id="PlayersLeaving" value="" style="width:350px;height: 40px;">
-            <button onclick="PlayersLeave();" ><p style="font-weight: bold;">Leave Temple</p></button>
+            <p style="font-size: 15px; font-weight: bold;margin-bottom: 0px;padding-bottom: 0px;">Enter Amount of Players Leaving Temple Below:</p><br>
+            <input type="text" id="PlayersLeaving" value="" style="width:300px;height: 15px;">
+            <button onclick="PlayersLeave();" style="height:30px;width:50%;margin-left:20%;">Leave Temple</button>
             <br>
-            <div id="LeavingPlayersGemCount" style="min-height: 30px;font-size: 20px;font-weight: bolder;text-align: center;"></div>
+            <div id="LeavingPlayersGemCount" style="min-height: 30px;font-size: 17px;text-align: center;"></div>
         </div>
     </div>
 
@@ -209,12 +206,6 @@
 
             playedCards.push(thisCard);
 
-            if(currentText == ''){
-                currentText = thisCard;
-            } else {
-                currentText += ", "+thisCard;
-            }
-
             currentText = generateTable(playedCards);
 
             if(endGameCheck()){
@@ -325,7 +316,7 @@
         function readPlayerNumbers(){
             PlayerNumberInput = document.getElementById("PlayerNumbers").value;
             numberOfPlayers = PlayerNumberInput;
-            tempstring = '<p style="width: 30%;margin-left: 35%;font-size:25px;text-align:center;font-weight:bold;">The number of players for this game is ' + numberOfPlayers;
+            tempstring = '<p style="width: 50%;margin-left: 25%;font-size:20px;text-align:center;font-weight:bold;margin-bottom: 0px;padding-bottom: 0px;height:30px;">The number of players for this game is ' + numberOfPlayers;
             PlayerNumberDisplay = document.getElementById("NumberOfPlayersDisplay");
             PlayerNumberDisplay.innerHTML = tempstring;
             playerNumEntered=true;
@@ -359,6 +350,9 @@
             currentParen = 1;
             
             PlayersLeavingNumberInput = document.getElementById("PlayersLeaving").value;
+            if(isNaN(PlayersLeavingNumberInput)){
+                return;
+            }
             PlayersLeavingNum = parseInt(PlayersLeavingNumberInput);
             playersRemaining = playersRemaining - PlayersLeavingNum;
             
@@ -409,8 +403,17 @@
         }
 
         function generateTable(cardArray){
-            tableString = '<table class="roundResultsTable"><tr>';
-            cellCount = 0;
+            cellCount = cardArray.length-1;
+            if(currentText == ''){
+                tableString = '<table class="roundResultsTable"><tr>';
+            } else {
+                if(cellCount % 5 != 0){
+                    tableString  = currentText.slice(0, -21);
+                } else {
+                    tableString = currentText.slice(0, -16);
+                }
+            }
+            
             while(cellCount<cardArray.length){
                 tableString += '<td>'
                 if(cardArray[cellCount].search("Spider")!=-1){
